@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9D5DF225C2BA0091CF44FF1 /* Pods_PressureUlcerSurvey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D33CBD0B6034AEDB88EC4F0A /* Pods_PressureUlcerSurvey.framework */; };
+		DD01982F1F67730E00967BB6 /* JSONCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD01982C1F67730E00967BB6 /* JSONCompatible.swift */; };
+		DD0198301F67730E00967BB6 /* Patient_Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD01982D1F67730E00967BB6 /* Patient_Detail.swift */; };
+		DD0198311F67730E00967BB6 /* Ulcer_info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD01982E1F67730E00967BB6 /* Ulcer_info.swift */; };
+		DD10E9631F60548F0016BCC4 /* wound location.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DD10E9621F60548F0016BCC4 /* wound location.JPG */; };
+		DD1F17A61F63234700DB4818 /* PUAPIs.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DD1F17A51F63234700DB4818 /* PUAPIs.rtf */; };
+		DD2D51E11EDFC7CA00111839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D51E01EDFC7CA00111839 /* AppDelegate.swift */; };
+		DD2D51E71EDFC7DF00111839 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D51E21EDFC7DF00111839 /* DetailViewController.swift */; };
+		DD2D51E81EDFC7DF00111839 /* GoToUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D51E31EDFC7DF00111839 /* GoToUnits.swift */; };
+		DD2D51EA1EDFC7DF00111839 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2D51E51EDFC7DF00111839 /* Main.storyboard */; };
+		DD2D51EB1EDFC7DF00111839 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D51E61EDFC7DF00111839 /* MasterViewController.swift */; };
+		DD2D51F11EDFCBD700111839 /* SimpleHuman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD2D51F01EDFCBD700111839 /* SimpleHuman.jpg */; };
+		DD3B57A71F6ADD0800AD8245 /* FrontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3B57A61F6ADD0800AD8245 /* FrontView.swift */; };
+		DD4B09A81F6ECD97007859D4 /* BackUlcersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4B09A71F6ECD97007859D4 /* BackUlcersTableViewController.swift */; };
+		DD4B09AA1F6ECDE6007859D4 /* FrontUlcersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4B09A91F6ECDE6007859D4 /* FrontUlcersTableViewController.swift */; };
+		DD5270741F6C699600389A60 /* Do what screen.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DD5270731F6C699600389A60 /* Do what screen.JPG */; };
+		DD54755B1F01D04C0091C63F /* UnitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54755A1F01D04C0091C63F /* UnitCollectionViewCell.swift */; };
+		DD56C07A1ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD56C0781ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodeld */; };
+		DD56C0831ECF8FE0005B1C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD56C0821ECF8FE0005B1C3A /* Assets.xcassets */; };
+		DD56C0861ECF8FE0005B1C3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD56C0841ECF8FE0005B1C3A /* LaunchScreen.storyboard */; };
+		DD6B71BC1F1CF561001DFD0C /* GlobalMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6B71BB1F1CF561001DFD0C /* GlobalMethods.swift */; };
+		DD9759561F75567700A1D7CD /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9759551F75567700A1D7CD /* BackView.swift */; };
+		DD9759581F7556F800A1D7CD /* BackHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9759571F7556F800A1D7CD /* BackHeaderCell.swift */; };
+		DD97595A1F75570D00A1D7CD /* BackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9759591F75570D00A1D7CD /* BackViewCell.swift */; };
+		DD9A2BC31F13E8670063EB3C /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A2BC21F13E8670063EB3C /* GlobalData.swift */; };
+		DD9A2BC71F140A960063EB3C /* patient_detail.json in Resources */ = {isa = PBXBuildFile; fileRef = DD9A2BC41F140A960063EB3C /* patient_detail.json */; };
+		DD9A2BC81F140A960063EB3C /* patient_summary.json in Resources */ = {isa = PBXBuildFile; fileRef = DD9A2BC51F140A960063EB3C /* patient_summary.json */; };
+		DD9A2BC91F140A960063EB3C /* units.json in Resources */ = {isa = PBXBuildFile; fileRef = DD9A2BC61F140A960063EB3C /* units.json */; };
+		DD9C1E981F15699B002A9C07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2D51F31EDFCF2E00111839 /* UIKit.framework */; };
+		DD9C1E9A1F1569A0002A9C07 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C1E991F1569A0002A9C07 /* Alamofire.framework */; };
+		DD9C1E9C1F1569A5002A9C07 /* Pods_PressureUlcerSurvey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C1E9B1F1569A5002A9C07 /* Pods_PressureUlcerSurvey.framework */; };
+		DD9C1E9E1F1569AA002A9C07 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C1E9D1F1569AA002A9C07 /* SwiftyJSON.framework */; };
+		DDABC9EB1F71838400C46144 /* FrontHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABC9EA1F71838400C46144 /* FrontHeaderCell.swift */; };
+		DDABC9EE1F71840100C46144 /* FrontViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABC9ED1F71840100C46144 /* FrontViewCell.swift */; };
+		DDABC9F11F71A76800C46144 /* HeaderViewCellMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDABC9F01F71A76800C46144 /* HeaderViewCellMaster.swift */; };
+		DDB493541F6D820D0054441B /* peopleBack.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB4934E1F6D820D0054441B /* peopleBack.png */; };
+		DDB493551F6D820D0054441B /* peopleBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB4934F1F6D820D0054441B /* peopleBack@2x.png */; };
+		DDB493561F6D820D0054441B /* peopleBack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB493501F6D820D0054441B /* peopleBack@3x.png */; };
+		DDB493571F6D820D0054441B /* peopleFront 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB493511F6D820D0054441B /* peopleFront 2.png */; };
+		DDB493581F6D820D0054441B /* peopleFront@2x 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB493521F6D820D0054441B /* peopleFront@2x 2.png */; };
+		DDB493591F6D820D0054441B /* peopleFront@3x 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB493531F6D820D0054441B /* peopleFront@3x 2.png */; };
+		DDB493631F6D83A80054441B /* BMBack@2x copy.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB4935D1F6D83A80054441B /* BMBack@2x copy.png */; };
+		DDB493641F6D83A80054441B /* BMBack@3x copy.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB4935E1F6D83A80054441B /* BMBack@3x copy.png */; };
+		DDB493651F6D83A80054441B /* BMFront.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB4935F1F6D83A80054441B /* BMFront.png */; };
+		DDB493661F6D83A80054441B /* BMFront@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB493601F6D83A80054441B /* BMFront@2x.png */; };
+		DDB493671F6D83A80054441B /* BMFront@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB493611F6D83A80054441B /* BMFront@3x.png */; };
+		DDCD817C1F6030FF00AF63EB /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD817B1F6030FF00AF63EB /* HeaderCell.swift */; };
+		DDCD817E1F60394900AF63EB /* JSONCalls.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDCD817D1F60394900AF63EB /* JSONCalls.txt */; };
+		DDD11D281F0EC7C700086D9F /* GoToLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD11D271F0EC7C700086D9F /* GoToLogin.swift */; };
+		DDF59D791F618136003D44DF /* DLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF59D781F618136003D44DF /* DLAppDelegate.m */; };
+		DDF59D7B1F61814D003D44DF /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF59D7A1F61814D003D44DF /* DLRadioButton.framework */; };
+		DDF59D7D1F6182A9003D44DF /* DLRadioButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDF59D7A1F61814D003D44DF /* DLRadioButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DDF7EB641F6A2CAA00AC243A /* SimpleHumanBack.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF7EB621F6A2CAA00AC243A /* SimpleHumanBack.png */; };
+		DDF7EB651F6A2CAA00AC243A /* SimpleHumanFront.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDF7EB631F6A2CAA00AC243A /* SimpleHumanFront.jpg */; };
+		DDF7EB6D1F6A349E00AC243A /* UlcerLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF7EB6C1F6A349E00AC243A /* UlcerLocation.swift */; };
+		DDFA02A61F6EB52000B323CF /* BMBack.png in Resources */ = {isa = PBXBuildFile; fileRef = DDFA02A51F6EB52000B323CF /* BMBack.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DDF59D7E1F6182A9003D44DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DDF59D7D1F6182A9003D44DF /* DLRadioButton.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0DD3BDD0262F9886EF317B9B /* Pods-PressureUlcerSurvey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PressureUlcerSurvey.release.xcconfig"; path = "Pods/Target Support Files/Pods-PressureUlcerSurvey/Pods-PressureUlcerSurvey.release.xcconfig"; sourceTree = "<group>"; };
+		3B0E560E2B7C349D761F7B54 /* Pods-PressureUlcerSurvey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PressureUlcerSurvey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PressureUlcerSurvey/Pods-PressureUlcerSurvey.debug.xcconfig"; sourceTree = "<group>"; };
+		D33CBD0B6034AEDB88EC4F0A /* Pods_PressureUlcerSurvey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PressureUlcerSurvey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD01982C1F67730E00967BB6 /* JSONCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONCompatible.swift; sourceTree = "<group>"; };
+		DD01982D1F67730E00967BB6 /* Patient_Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient_Detail.swift; sourceTree = "<group>"; };
+		DD01982E1F67730E00967BB6 /* Ulcer_info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ulcer_info.swift; sourceTree = "<group>"; };
+		DD10E9621F60548F0016BCC4 /* wound location.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "wound location.JPG"; path = "PressureUlcerSurvey/wound location.JPG"; sourceTree = "<group>"; };
+		DD1F17A51F63234700DB4818 /* PUAPIs.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = PUAPIs.rtf; sourceTree = "<group>"; };
+		DD2D51E01EDFC7CA00111839 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD2D51E21EDFC7DF00111839 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DD2D51E31EDFC7DF00111839 /* GoToUnits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoToUnits.swift; sourceTree = "<group>"; };
+		DD2D51E51EDFC7DF00111839 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DD2D51E61EDFC7DF00111839 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		DD2D51F01EDFCBD700111839 /* SimpleHuman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SimpleHuman.jpg; path = PressureUlcerSurvey/SimpleHuman.jpg; sourceTree = "<group>"; };
+		DD2D51F31EDFCF2E00111839 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DD3B57A61F6ADD0800AD8245 /* FrontView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontView.swift; sourceTree = "<group>"; };
+		DD4B09A71F6ECD97007859D4 /* BackUlcersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackUlcersTableViewController.swift; sourceTree = "<group>"; };
+		DD4B09A91F6ECDE6007859D4 /* FrontUlcersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontUlcersTableViewController.swift; sourceTree = "<group>"; };
+		DD5270731F6C699600389A60 /* Do what screen.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Do what screen.JPG"; sourceTree = "<group>"; };
+		DD54755A1F01D04C0091C63F /* UnitCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD56C0731ECF8FE0005B1C3A /* PressureUlcerSurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PressureUlcerSurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD56C0791ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PressureUlcerSurvey.xcdatamodel; sourceTree = "<group>"; };
+		DD56C0821ECF8FE0005B1C3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD56C0851ECF8FE0005B1C3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD56C0871ECF8FE0005B1C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD6B71BB1F1CF561001DFD0C /* GlobalMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalMethods.swift; path = PressureUlcerSurvey/GlobalMethods.swift; sourceTree = "<group>"; };
+		DD8448871F1519FA0039DA60 /* SwiftyJSON */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SwiftyJSON; path = "../../../Library/Developer/Xcode/DerivedData/SwiftyJSON-ggrphxvqkrnnpaahnhriqxigqtjd/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/SwiftyJSON"; sourceTree = "<group>"; };
+		DD8448891F151A3D0039DA60 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/SwiftyJSON-ggrphxvqkrnnpaahnhriqxigqtjd/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		DD866CC01F15682100496BD7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		DD866CC21F15682600496BD7 /* Pods_PressureUlcerSurvey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_PressureUlcerSurvey.framework; path = "Pods/../build/Debug-iphoneos/Pods_PressureUlcerSurvey.framework"; sourceTree = "<group>"; };
+		DD866CC41F15682900496BD7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		DD9759551F75567700A1D7CD /* BackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
+		DD9759571F7556F800A1D7CD /* BackHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackHeaderCell.swift; sourceTree = "<group>"; };
+		DD9759591F75570D00A1D7CD /* BackViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackViewCell.swift; sourceTree = "<group>"; };
+		DD9A2BC21F13E8670063EB3C /* GlobalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
+		DD9A2BC41F140A960063EB3C /* patient_detail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = patient_detail.json; sourceTree = "<group>"; };
+		DD9A2BC51F140A960063EB3C /* patient_summary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = patient_summary.json; sourceTree = "<group>"; };
+		DD9A2BC61F140A960063EB3C /* units.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = units.json; sourceTree = "<group>"; };
+		DD9C1E991F1569A0002A9C07 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/PressureUlcerSurvey-eyxrhmeoobnlxvejxslwlgpbgyxh/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		DD9C1E9B1F1569A5002A9C07 /* Pods_PressureUlcerSurvey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_PressureUlcerSurvey.framework; path = "Pods/../build/Debug-iphoneos/Pods_PressureUlcerSurvey.framework"; sourceTree = "<group>"; };
+		DD9C1E9D1F1569AA002A9C07 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/PressureUlcerSurvey-eyxrhmeoobnlxvejxslwlgpbgyxh/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		DDABC9EA1F71838400C46144 /* FrontHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontHeaderCell.swift; sourceTree = "<group>"; };
+		DDABC9ED1F71840100C46144 /* FrontViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontViewCell.swift; sourceTree = "<group>"; };
+		DDABC9F01F71A76800C46144 /* HeaderViewCellMaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderViewCellMaster.swift; path = ../HeaderViewCellMaster.swift; sourceTree = "<group>"; };
+		DDB4934E1F6D820D0054441B /* peopleBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peopleBack.png; sourceTree = "<group>"; };
+		DDB4934F1F6D820D0054441B /* peopleBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peopleBack@2x.png"; sourceTree = "<group>"; };
+		DDB493501F6D820D0054441B /* peopleBack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peopleBack@3x.png"; sourceTree = "<group>"; };
+		DDB493511F6D820D0054441B /* peopleFront 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peopleFront 2.png"; sourceTree = "<group>"; };
+		DDB493521F6D820D0054441B /* peopleFront@2x 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peopleFront@2x 2.png"; sourceTree = "<group>"; };
+		DDB493531F6D820D0054441B /* peopleFront@3x 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "peopleFront@3x 2.png"; sourceTree = "<group>"; };
+		DDB4935D1F6D83A80054441B /* BMBack@2x copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMBack@2x copy.png"; sourceTree = "<group>"; };
+		DDB4935E1F6D83A80054441B /* BMBack@3x copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMBack@3x copy.png"; sourceTree = "<group>"; };
+		DDB4935F1F6D83A80054441B /* BMFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMFront.png; sourceTree = "<group>"; };
+		DDB493601F6D83A80054441B /* BMFront@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMFront@2x.png"; sourceTree = "<group>"; };
+		DDB493611F6D83A80054441B /* BMFront@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMFront@3x.png"; sourceTree = "<group>"; };
+		DDCD817B1F6030FF00AF63EB /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		DDCD817D1F60394900AF63EB /* JSONCalls.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JSONCalls.txt; path = ../JSONCalls.txt; sourceTree = "<group>"; };
+		DDD11D271F0EC7C700086D9F /* GoToLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoToLogin.swift; sourceTree = "<group>"; };
+		DDF59D761F618135003D44DF /* PressureUlcerSurvey-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PressureUlcerSurvey-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		DDF59D771F618136003D44DF /* DLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLAppDelegate.h; sourceTree = "<group>"; };
+		DDF59D781F618136003D44DF /* DLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLAppDelegate.m; sourceTree = "<group>"; };
+		DDF59D7A1F61814D003D44DF /* DLRadioButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DLRadioButton.framework; sourceTree = "<group>"; };
+		DDF7EB621F6A2CAA00AC243A /* SimpleHumanBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SimpleHumanBack.png; sourceTree = "<group>"; };
+		DDF7EB631F6A2CAA00AC243A /* SimpleHumanFront.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SimpleHumanFront.jpg; sourceTree = "<group>"; };
+		DDF7EB6C1F6A349E00AC243A /* UlcerLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UlcerLocation.swift; path = PressureUlcerSurvey/UlcerLocation.swift; sourceTree = "<group>"; };
+		DDFA02A51F6EB52000B323CF /* BMBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMBack.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD56C0701ECF8FE0005B1C3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF59D7B1F61814D003D44DF /* DLRadioButton.framework in Frameworks */,
+				DD9C1E981F15699B002A9C07 /* UIKit.framework in Frameworks */,
+				DD9C1E9C1F1569A5002A9C07 /* Pods_PressureUlcerSurvey.framework in Frameworks */,
+				DD9C1E9E1F1569AA002A9C07 /* SwiftyJSON.framework in Frameworks */,
+				DD9C1E9A1F1569A0002A9C07 /* Alamofire.framework in Frameworks */,
+				C9D5DF225C2BA0091CF44FF1 /* Pods_PressureUlcerSurvey.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0373EEA0CD46EFC7BAFCDF8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B0E560E2B7C349D761F7B54 /* Pods-PressureUlcerSurvey.debug.xcconfig */,
+				0DD3BDD0262F9886EF317B9B /* Pods-PressureUlcerSurvey.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD0198321F67793F00967BB6 /* JSON Junk */ = {
+			isa = PBXGroup;
+			children = (
+				DD01982C1F67730E00967BB6 /* JSONCompatible.swift */,
+				DD01982D1F67730E00967BB6 /* Patient_Detail.swift */,
+				DD01982E1F67730E00967BB6 /* Ulcer_info.swift */,
+			);
+			name = "JSON Junk";
+			sourceTree = "<group>";
+		};
+		DD2D51F21EDFCF2D00111839 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C1E9D1F1569AA002A9C07 /* SwiftyJSON.framework */,
+				DD9C1E9B1F1569A5002A9C07 /* Pods_PressureUlcerSurvey.framework */,
+				DD9C1E991F1569A0002A9C07 /* Alamofire.framework */,
+				DD866CC41F15682900496BD7 /* SwiftyJSON.framework */,
+				DD866CC21F15682600496BD7 /* Pods_PressureUlcerSurvey.framework */,
+				DD866CC01F15682100496BD7 /* Alamofire.framework */,
+				DD8448891F151A3D0039DA60 /* SwiftyJSON.framework */,
+				DD8448871F1519FA0039DA60 /* SwiftyJSON */,
+				DD2D51F31EDFCF2E00111839 /* UIKit.framework */,
+				D33CBD0B6034AEDB88EC4F0A /* Pods_PressureUlcerSurvey.framework */,
+				DDF59D7A1F61814D003D44DF /* DLRadioButton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD54755C1F01D0E40091C63F /* UnitSelection */ = {
+			isa = PBXGroup;
+			children = (
+				DD54755A1F01D04C0091C63F /* UnitCollectionViewCell.swift */,
+				DD2D51E31EDFC7DF00111839 /* GoToUnits.swift */,
+			);
+			name = UnitSelection;
+			sourceTree = "<group>";
+		};
+		DD56C06A1ECF8FE0005B1C3A = {
+			isa = PBXGroup;
+			children = (
+				DD6B71BD1F1CF585001DFD0C /* GlobalsMethodsAndSingletons */,
+				DDF59D7F1F61832E003D44DF /* RadioButtons */,
+				DD56C0751ECF8FE0005B1C3A /* PressureUlcerSurvey */,
+				DD0198321F67793F00967BB6 /* JSON Junk */,
+				DD56C0911ECF96B1005B1C3A /* Images */,
+				DD9A2BCA1F140A9D0063EB3C /* JSON examples */,
+				DD56C0741ECF8FE0005B1C3A /* Products */,
+				DD2D51F21EDFCF2D00111839 /* Frameworks */,
+				0373EEA0CD46EFC7BAFCDF8D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		DD56C0741ECF8FE0005B1C3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD56C0731ECF8FE0005B1C3A /* PressureUlcerSurvey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD56C0751ECF8FE0005B1C3A /* PressureUlcerSurvey */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D51E51EDFC7DF00111839 /* Main.storyboard */,
+				DD9A2BCB1F140C570063EB3C /* MainViews */,
+				DD9A2BCC1F140C640063EB3C /* Login */,
+				DD54755C1F01D0E40091C63F /* UnitSelection */,
+				DD9A2BCD1F140C780063EB3C /* infoDataModel */,
+			);
+			path = PressureUlcerSurvey;
+			sourceTree = "<group>";
+		};
+		DD56C0911ECF96B1005B1C3A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DDB4935A1F6D82210054441B /* ICONS */,
+				DDF7EB621F6A2CAA00AC243A /* SimpleHumanBack.png */,
+				DDF7EB631F6A2CAA00AC243A /* SimpleHumanFront.jpg */,
+				DD10E9621F60548F0016BCC4 /* wound location.JPG */,
+				DD5270731F6C699600389A60 /* Do what screen.JPG */,
+				DD2D51F01EDFCBD700111839 /* SimpleHuman.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		DD6B71BD1F1CF585001DFD0C /* GlobalsMethodsAndSingletons */ = {
+			isa = PBXGroup;
+			children = (
+				DD9A2BC21F13E8670063EB3C /* GlobalData.swift */,
+				DD6B71BB1F1CF561001DFD0C /* GlobalMethods.swift */,
+				DDF7EB6C1F6A349E00AC243A /* UlcerLocation.swift */,
+			);
+			name = GlobalsMethodsAndSingletons;
+			sourceTree = "<group>";
+		};
+		DD9A2BCA1F140A9D0063EB3C /* JSON examples */ = {
+			isa = PBXGroup;
+			children = (
+				DD1F17A51F63234700DB4818 /* PUAPIs.rtf */,
+				DDCD817D1F60394900AF63EB /* JSONCalls.txt */,
+				DD9A2BC41F140A960063EB3C /* patient_detail.json */,
+				DD9A2BC51F140A960063EB3C /* patient_summary.json */,
+				DD9A2BC61F140A960063EB3C /* units.json */,
+			);
+			name = "JSON examples";
+			path = PressureUlcerSurvey;
+			sourceTree = "<group>";
+		};
+		DD9A2BCB1F140C570063EB3C /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D51E21EDFC7DF00111839 /* DetailViewController.swift */,
+				DD2D51E61EDFC7DF00111839 /* MasterViewController.swift */,
+				DD2D51E01EDFC7CA00111839 /* AppDelegate.swift */,
+				DDCD817B1F6030FF00AF63EB /* HeaderCell.swift */,
+				DDABC9F01F71A76800C46144 /* HeaderViewCellMaster.swift */,
+				DDABC9EF1F71840E00C46144 /* Front */,
+				DDCC9C421F73656B00597763 /* Back */,
+				DDABC9EC1F7183B800C46144 /* NotUsed */,
+			);
+			name = MainViews;
+			sourceTree = "<group>";
+		};
+		DD9A2BCC1F140C640063EB3C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DDD11D271F0EC7C700086D9F /* GoToLogin.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		DD9A2BCD1F140C780063EB3C /* infoDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD56C0841ECF8FE0005B1C3A /* LaunchScreen.storyboard */,
+				DD56C0871ECF8FE0005B1C3A /* Info.plist */,
+				DD56C0821ECF8FE0005B1C3A /* Assets.xcassets */,
+				DD56C0781ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodeld */,
+			);
+			name = infoDataModel;
+			sourceTree = "<group>";
+		};
+		DDABC9EC1F7183B800C46144 /* NotUsed */ = {
+			isa = PBXGroup;
+			children = (
+				DD4B09A91F6ECDE6007859D4 /* FrontUlcersTableViewController.swift */,
+				DD4B09A71F6ECD97007859D4 /* BackUlcersTableViewController.swift */,
+			);
+			name = NotUsed;
+			sourceTree = "<group>";
+		};
+		DDABC9EF1F71840E00C46144 /* Front */ = {
+			isa = PBXGroup;
+			children = (
+				DD3B57A61F6ADD0800AD8245 /* FrontView.swift */,
+				DDABC9EA1F71838400C46144 /* FrontHeaderCell.swift */,
+				DDABC9ED1F71840100C46144 /* FrontViewCell.swift */,
+			);
+			name = Front;
+			sourceTree = "<group>";
+		};
+		DDB4935A1F6D82210054441B /* ICONS */ = {
+			isa = PBXGroup;
+			children = (
+				DDB493681F6D83AF0054441B /* Batman */,
+				DDB4935B1F6D83940054441B /* Person */,
+			);
+			name = ICONS;
+			sourceTree = "<group>";
+		};
+		DDB4935B1F6D83940054441B /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				DDB4934E1F6D820D0054441B /* peopleBack.png */,
+				DDB4934F1F6D820D0054441B /* peopleBack@2x.png */,
+				DDB493501F6D820D0054441B /* peopleBack@3x.png */,
+				DDB493511F6D820D0054441B /* peopleFront 2.png */,
+				DDB493521F6D820D0054441B /* peopleFront@2x 2.png */,
+				DDB493531F6D820D0054441B /* peopleFront@3x 2.png */,
+			);
+			name = Person;
+			sourceTree = "<group>";
+		};
+		DDB493681F6D83AF0054441B /* Batman */ = {
+			isa = PBXGroup;
+			children = (
+				DDFA02A51F6EB52000B323CF /* BMBack.png */,
+				DDB4935D1F6D83A80054441B /* BMBack@2x copy.png */,
+				DDB4935E1F6D83A80054441B /* BMBack@3x copy.png */,
+				DDB4935F1F6D83A80054441B /* BMFront.png */,
+				DDB493601F6D83A80054441B /* BMFront@2x.png */,
+				DDB493611F6D83A80054441B /* BMFront@3x.png */,
+			);
+			name = Batman;
+			sourceTree = "<group>";
+		};
+		DDCC9C421F73656B00597763 /* Back */ = {
+			isa = PBXGroup;
+			children = (
+				DD9759551F75567700A1D7CD /* BackView.swift */,
+				DD9759571F7556F800A1D7CD /* BackHeaderCell.swift */,
+				DD9759591F75570D00A1D7CD /* BackViewCell.swift */,
+			);
+			name = Back;
+			sourceTree = "<group>";
+		};
+		DDF59D7F1F61832E003D44DF /* RadioButtons */ = {
+			isa = PBXGroup;
+			children = (
+				DDF59D761F618135003D44DF /* PressureUlcerSurvey-Bridging-Header.h */,
+				DDF59D771F618136003D44DF /* DLAppDelegate.h */,
+				DDF59D781F618136003D44DF /* DLAppDelegate.m */,
+			);
+			name = RadioButtons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD56C0721ECF8FE0005B1C3A /* PressureUlcerSurvey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD56C08A1ECF8FE0005B1C3A /* Build configuration list for PBXNativeTarget "PressureUlcerSurvey" */;
+			buildPhases = (
+				38D88C7E20346D37E0C89C92 /* [CP] Check Pods Manifest.lock */,
+				DD56C06F1ECF8FE0005B1C3A /* Sources */,
+				DD56C0701ECF8FE0005B1C3A /* Frameworks */,
+				DD56C0711ECF8FE0005B1C3A /* Resources */,
+				2E81280D94AC85CDB338634C /* [CP] Embed Pods Frameworks */,
+				55138E89A7A0DF48DC16AD1D /* [CP] Copy Pods Resources */,
+				DDF59D7E1F6182A9003D44DF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PressureUlcerSurvey;
+			productName = PressureUlcerSurvey;
+			productReference = DD56C0731ECF8FE0005B1C3A /* PressureUlcerSurvey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD56C06B1ECF8FE0005B1C3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Todd Papke";
+				TargetAttributes = {
+					DD56C0721ECF8FE0005B1C3A = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 9XWB995P9M;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DD56C06E1ECF8FE0005B1C3A /* Build configuration list for PBXProject "PressureUlcerSurvey" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD56C06A1ECF8FE0005B1C3A;
+			productRefGroup = DD56C0741ECF8FE0005B1C3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD56C0721ECF8FE0005B1C3A /* PressureUlcerSurvey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD56C0711ECF8FE0005B1C3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD56C0861ECF8FE0005B1C3A /* LaunchScreen.storyboard in Resources */,
+				DDB493631F6D83A80054441B /* BMBack@2x copy.png in Resources */,
+				DDB493591F6D820D0054441B /* peopleFront@3x 2.png in Resources */,
+				DDB493661F6D83A80054441B /* BMFront@2x.png in Resources */,
+				DDB493541F6D820D0054441B /* peopleBack.png in Resources */,
+				DD2D51F11EDFCBD700111839 /* SimpleHuman.jpg in Resources */,
+				DD5270741F6C699600389A60 /* Do what screen.JPG in Resources */,
+				DD10E9631F60548F0016BCC4 /* wound location.JPG in Resources */,
+				DDB493581F6D820D0054441B /* peopleFront@2x 2.png in Resources */,
+				DDB493561F6D820D0054441B /* peopleBack@3x.png in Resources */,
+				DD9A2BC71F140A960063EB3C /* patient_detail.json in Resources */,
+				DDB493571F6D820D0054441B /* peopleFront 2.png in Resources */,
+				DDFA02A61F6EB52000B323CF /* BMBack.png in Resources */,
+				DDB493651F6D83A80054441B /* BMFront.png in Resources */,
+				DD2D51EA1EDFC7DF00111839 /* Main.storyboard in Resources */,
+				DDB493551F6D820D0054441B /* peopleBack@2x.png in Resources */,
+				DDCD817E1F60394900AF63EB /* JSONCalls.txt in Resources */,
+				DD9A2BC81F140A960063EB3C /* patient_summary.json in Resources */,
+				DD56C0831ECF8FE0005B1C3A /* Assets.xcassets in Resources */,
+				DD1F17A61F63234700DB4818 /* PUAPIs.rtf in Resources */,
+				DDF7EB641F6A2CAA00AC243A /* SimpleHumanBack.png in Resources */,
+				DD9A2BC91F140A960063EB3C /* units.json in Resources */,
+				DDF7EB651F6A2CAA00AC243A /* SimpleHumanFront.jpg in Resources */,
+				DDB493671F6D83A80054441B /* BMFront@3x.png in Resources */,
+				DDB493641F6D83A80054441B /* BMBack@3x copy.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E81280D94AC85CDB338634C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PressureUlcerSurvey/Pods-PressureUlcerSurvey-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KGHighLightedButton/KGHighLightedButton.framework",
+				"${BUILT_PRODUCTS_DIR}/KGPressableButton/KGPressableButton.framework",
+				"${BUILT_PRODUCTS_DIR}/KGRadioButton/KGRadioButton.framework",
+				"${BUILT_PRODUCTS_DIR}/KGToggleButton/KGToggleButton.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KGHighLightedButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KGPressableButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KGRadioButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KGToggleButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PressureUlcerSurvey/Pods-PressureUlcerSurvey-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38D88C7E20346D37E0C89C92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PressureUlcerSurvey-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55138E89A7A0DF48DC16AD1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PressureUlcerSurvey/Pods-PressureUlcerSurvey-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD56C06F1ECF8FE0005B1C3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4B09A81F6ECD97007859D4 /* BackUlcersTableViewController.swift in Sources */,
+				DD97595A1F75570D00A1D7CD /* BackViewCell.swift in Sources */,
+				DDD11D281F0EC7C700086D9F /* GoToLogin.swift in Sources */,
+				DD2D51EB1EDFC7DF00111839 /* MasterViewController.swift in Sources */,
+				DD9759581F7556F800A1D7CD /* BackHeaderCell.swift in Sources */,
+				DD0198301F67730E00967BB6 /* Patient_Detail.swift in Sources */,
+				DDF59D791F618136003D44DF /* DLAppDelegate.m in Sources */,
+				DD2D51E81EDFC7DF00111839 /* GoToUnits.swift in Sources */,
+				DD2D51E71EDFC7DF00111839 /* DetailViewController.swift in Sources */,
+				DD2D51E11EDFC7CA00111839 /* AppDelegate.swift in Sources */,
+				DD9A2BC31F13E8670063EB3C /* GlobalData.swift in Sources */,
+				DD3B57A71F6ADD0800AD8245 /* FrontView.swift in Sources */,
+				DDCD817C1F6030FF00AF63EB /* HeaderCell.swift in Sources */,
+				DD6B71BC1F1CF561001DFD0C /* GlobalMethods.swift in Sources */,
+				DDF7EB6D1F6A349E00AC243A /* UlcerLocation.swift in Sources */,
+				DD01982F1F67730E00967BB6 /* JSONCompatible.swift in Sources */,
+				DDABC9F11F71A76800C46144 /* HeaderViewCellMaster.swift in Sources */,
+				DDABC9EE1F71840100C46144 /* FrontViewCell.swift in Sources */,
+				DD0198311F67730E00967BB6 /* Ulcer_info.swift in Sources */,
+				DD54755B1F01D04C0091C63F /* UnitCollectionViewCell.swift in Sources */,
+				DDABC9EB1F71838400C46144 /* FrontHeaderCell.swift in Sources */,
+				DD9759561F75567700A1D7CD /* BackView.swift in Sources */,
+				DD56C07A1ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodeld in Sources */,
+				DD4B09AA1F6ECDE6007859D4 /* FrontUlcersTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD56C0841ECF8FE0005B1C3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD56C0851ECF8FE0005B1C3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD56C0881ECF8FE0005B1C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD56C0891ECF8FE0005B1C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD56C08B1ECF8FE0005B1C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B0E560E2B7C349D761F7B54 /* Pods-PressureUlcerSurvey.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 9XWB995P9M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SwiftyJSON",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PressureUlcerSurvey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TheUniversityofIowa.PressureUlcerSurvey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PressureUlcerSurvey-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DD56C08C1ECF8FE0005B1C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DD3BDD0262F9886EF317B9B /* Pods-PressureUlcerSurvey.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 9XWB995P9M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SwiftyJSON",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PressureUlcerSurvey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TheUniversityofIowa.PressureUlcerSurvey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PressureUlcerSurvey-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD56C06E1ECF8FE0005B1C3A /* Build configuration list for PBXProject "PressureUlcerSurvey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD56C0881ECF8FE0005B1C3A /* Debug */,
+				DD56C0891ECF8FE0005B1C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD56C08A1ECF8FE0005B1C3A /* Build configuration list for PBXNativeTarget "PressureUlcerSurvey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD56C08B1ECF8FE0005B1C3A /* Debug */,
+				DD56C08C1ECF8FE0005B1C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD56C0781ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD56C0791ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodel */,
+			);
+			currentVersion = DD56C0791ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodel */;
+			path = PressureUlcerSurvey.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DD56C06B1ECF8FE0005B1C3A /* Project object */;
+}

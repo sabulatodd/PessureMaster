@@ -1,0 +1,6 @@
+framework module KGToggleButton {
+  umbrella header "KGToggleButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

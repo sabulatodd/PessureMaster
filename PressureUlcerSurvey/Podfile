@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+source 'https://github.com/CocoaPods/Specs.git'
+project '/Users/tpapke/Desktop/PUS8-22/PressureUlcerSurvey/PressureUlcerSurvey.xcodeproj'
+target 'PressureUlcerSurvey' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PressureUlcerSurvey
+  #pod 'Alamofire'
+  pod 'KGRadioButton'
+  pod 'KGPressableButton'
+  pod 'KGHighLightedButton'
+  # pod 'KGButtonBadge'
+  pod 'KGToggleButton'
+  pod 'Alamofire', git: 'https://github.com/Alamofire/Alamofire'
+pod 'SwiftyJSON', git: 'https://github.com/BaiduHiDeviOS/SwiftyJSON.git', branch: 'swift3'
+end

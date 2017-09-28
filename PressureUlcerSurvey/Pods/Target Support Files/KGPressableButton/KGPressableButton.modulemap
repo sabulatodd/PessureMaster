@@ -1,0 +1,6 @@
+framework module KGPressableButton {
+  umbrella header "KGPressableButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

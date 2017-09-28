@@ -1,0 +1,6 @@
+framework module KGHighLightedButton {
+  umbrella header "KGHighLightedButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

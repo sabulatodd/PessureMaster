@@ -1,0 +1,451 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fmodern\fcharset0 CourierNewPS-BoldMT;\f1\fnil\fcharset0 Consolas;\f2\fmodern\fcharset0 CourierNewPSMT;
+\f3\fnil\fcharset0 Calibri;\f4\fnil\fcharset0 Cambria;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red144\green1\blue18;\red42\green75\blue126;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c63922\c8235\c8235;\cssrgb\c21176\c37255\c56863;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl440\qc\partightenfactor0
+
+\f0\b\fs37\fsmilli18667 \cf2 \expnd0\expndtw0\kerning0
+API examples
+\f1\b0\fs28 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2 \cf2 All Calls are httpGet unless otherwise specified.
+\f1 \
+\pard\pardeftab720\sl300\partightenfactor0
+
+\fs25\fsmilli12667 \cf3 ~/api/Patient/unlock/\{Survey_ID:int\}
+\f3\fs29\fsmilli14667 \cf2 \
+
+\f1\fs25\fsmilli12667 \cf3 ~/api/Patient/lock/\{Survey_ID:int
+\f3\fs29\fsmilli14667 \cf2 \
+
+\f1\fs25\fsmilli12667 \cf3 \'a0
+\f3\fs29\fsmilli14667 \cf2 \
+
+\f1\fs25\fsmilli12667 \cf3 These are 2 calls that unlock/lock a patient.
+\f3\fs29\fsmilli14667 \cf2 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\fs28 \cf2 \'a0
+\f1 \
+\pard\pardeftab720\sl429\partightenfactor0
+
+\f4\b\fs37\fsmilli18667 \cf4 Call: /api/units/20173 \'96 Gets a list of Units\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\b0\fs28 \cf2 Returns
+\f1 \
+
+\f2 [
+\f1 \
+
+\f2 \{"Unit_data_ID":3,"Unit_Name":"1JPE"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":4,"Unit_Name":"1JPW"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":5,"Unit_Name":"2JPE"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":6,"Unit_Name":"2JPW"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":7,"Unit_Name":"3RCE"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":8,"Unit_Name":"3RCW"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":9,"Unit_Name":"4JPE"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":10,"Unit_Name":"4JPW"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":11,"Unit_Name":"4RCE1"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":12,"Unit_Name":"4RCW"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":13,"Unit_Name":"6JCE"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":14,"Unit_Name":"6JCW"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":15,"Unit_Name":"6RCE"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":16,"Unit_Name":"6RCW"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":17,"Unit_Name":"7RCS"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":18,"Unit_Name":"8JC"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":19,"Unit_Name":"CVICU"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":20,"Unit_Name":"MICU"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":21,"Unit_Name":"SIC1"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":22,"Unit_Name":"SIC2"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":23,"Unit_Name":"SIC3"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":24,"Unit_Name":"NIC1"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":25,"Unit_Name":"2BTEP"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":26,"Unit_Name":"7JCP"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":27,"Unit_Name":"2RCW2"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":28,"Unit_Name":"3BT2"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":29,"Unit_Name":"5 South"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":30,"Unit_Name":"RADIRPROC"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":31,"Unit_Name":"SFCH PICU"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":32,"Unit_Name":"SFCH NIC2"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":33,"Unit_Name":"SFCH09"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":34,"Unit_Name":"SFCH10"\},
+\f1 \
+
+\f2 \{"Unit_data_ID":35,"Unit_Name":"SFCH11"\}]
+\f1 \
+
+\f2 \'a0
+\f1 \
+\pard\pardeftab720\sl337\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf2 \
+\pard\pardeftab720\sl322\sa266\partightenfactor0
+
+\fs28 \cf2 \'a0
+\f3\fs29\fsmilli14667 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\fs28 \cf2 \'a0
+\f1 \
+\pard\pardeftab720\sl429\partightenfactor0
+
+\f4\b\fs37\fsmilli18667 \cf4 Call: ~/api/Patient_Summary/5\
+\pard\pardeftab720\sl337\sa266\partightenfactor0
+
+\f3\b0\fs29\fsmilli14667 \cf2 Gets the details of all patients given a Unit_Data_ID\
+\pard\pardeftab720\sl337\sa266\partightenfactor0
+
+\b \cf2 Returns: 
+\b0 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\fs28 \cf2 \'a0
+\f1 \
+
+\f2 [\{"Survey_ID":217,"MRN":"62210837","Pat_Name":"Will, Willard W Jr.","Age_Sex":"78 y.o. / M","Room_Bed":"2731 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false\},
+\f1 \
+
+\f2 \{"Survey_ID":219,"MRN":"94148637", "Pat_Name":"Fetters, Larry E","Age_Sex":"72 y.o. / M","Room_Bed":"2733 1","Survey_Status":"Complete, 1+\'a0 Pressure Injuries\'a0 Present","IsBeingEdited":true\},
+\f1 \
+
+\f2 \{"Survey_ID":215,"MRN":"54063386","Pat_Name":"Eakes, Wade E","Age_Sex":"63 y.o. / M","Room_Bed":"2735 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false\},
+\f1 \
+
+\f2 \{"Survey_ID":222,"MRN":"03216822","Pat_Name":"Krabacher, Linda L","Age_Sex":"64 y.o. / F","Room_Bed":"2737 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false\},
+\f1 \
+
+\f2 \{"Survey_ID":226,"MRN":"04578363","Pat_Name":"Dermody, John P","Age_Sex":"67 y.o. / M","Room_Bed":"2739 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false\},
+\f1 \
+
+\f2 \{"Survey_ID":218,"MRN":"84244430","Pat_Name":"Nerness, Mary E","Age_Sex":"61 y.o. / F","Room_Bed":"2741 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false\},
+\f1 \
+
+\f2 \{"Survey_ID":221,"MRN":"74005275","Pat_Name":"Sedrel, Randal B","Age_Sex":"61 y.o. / M","Room_Bed":"2744 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false\},
+\f1 \
+
+\f2 \{"Survey_ID":223,"MRN":"10136946","Pat_Name":"Lang, Evelyn F","Age_Sex":"78 y.o. / F","Room_Bed":"2745 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false\},
+\f1 \
+
+\f2 \{"Survey_ID":227,"MRN":"10845300","Pat_Name":"Wing, Darlene","Age_Sex":"81 y.o. / F","Room_Bed":"2745 2","Survey_Status":"Not yet surveyed","IsBeingEdited":false\},
+\f1 \
+
+\f2 \{"Survey_ID":220,"MRN":"81139830","Pat_Name":"Johnson, Linda S","Age_Sex":"64 y.o. / F","Room_Bed":"2746 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false\},
+\f1 \
+
+\f2 \{"Survey_ID":216,"MRN":"11031005","Pat_Name":"Stang, Judith A","Age_Sex":"72 y.o. / F","Room_Bed":"2746 2","Survey_Status":"Not yet surveyed","IsBeingEdited":false\},
+\f1 \
+
+\f2 \{"Survey_ID":225,"MRN":"74201623","Pat_Name":"Shannon, Sterling E","Age_Sex":"64 y.o. / M","Room_Bed":"2747 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false\},
+\f1 \
+
+\f2 \{"Survey_ID":224,"MRN":"10534496","Pat_Name":"Chandler, Gary","Age_Sex":"65 y.o. / M","Room_Bed":"2747 2","Survey_Status":"Not yet surveyed","IsBeingEdited":false\}]
+\f1 \
+\pard\pardeftab720\sl337\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf2 \
+\pard\pardeftab720\sl322\sa266\partightenfactor0
+
+\fs28 \cf2 \'a0
+\f3\fs29\fsmilli14667 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\fs28 \cf2 \'a0
+\f1 \
+
+\f2 \'a0
+\f1 \
+\pard\pardeftab720\sl429\partightenfactor0
+
+\f4\b\fs37\fsmilli18667 \cf4 Call: ~/api/Patient_detail/219\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\b0\fs28 \cf2 Geta details of a particular patient, specified by Survey ID
+\f1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f0\b \cf2 Returns:
+\f1\b0 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2 \cf2 \{"Survey_ID":219,"Unit_Data_ID":0,"MRN":"94148637","Pat_Name":"Fetters, Larry E","Age_Sex":"72 y.o. / M","Room_Bed":"2733 1","Visited_OR_this_Admission":true,"Survey_Status_Code":"C","IsBeingEdited":true,
+\f1 \
+
+\f2 "Ulcer_Info":[\{"Ulcer_Record_ID":40,"survey_ID":219,"Location":"ELB","Ulcer_Laterality":"R","Present_on_Admission":true,
+\f1 \
+
+\f2 "Present_on_Unit_Arrival":true,"Hospital_Location_Acquired":""\},
+\f1 \
+
+\f2 \{"Ulcer_Record_ID":40,"survey_ID":219,"Location":"ELB","Ulcer_Laterality":"R","Present_on_Admission":true,
+\f1 \
+
+\f2 "Present_on_Unit_Arrival":true,"Hospital_Location_Acquired":""\}]\}
+\f1 \
+
+\f2 \'a0
+\f1 \
+\pard\pardeftab720\sl429\partightenfactor0
+
+\f4\b\fs37\fsmilli18667 \cf4 Call: ~/api/Ulcers/add (This is an HTTPPost)\
+\pard\pardeftab720\sl337\sa266\partightenfactor0
+
+\f3\b0\fs29\fsmilli14667 \cf2 Adds an Ulcer Record \'96 Survey ID field in the JSON specifies the patient to which an Ulcer record is added.\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\fs28 \cf2 Sample Input data: (assigned to a variable)
+\f1 \
+
+\f2 \{
+\f1 \
+
+\f2 \'a0\'a0\'a0\'a0 "Ulcer_Record_ID": null,
+\f1 \
+
+\f2 \'a0\'a0\'a0\'a0 "survey_ID": 3,
+\f1 \
+
+\f2 \'a0\'a0\'a0\'a0 "Location": "CHE",
+\f1 \
+
+\f2 \'a0\'a0\'a0\'a0 "Ulcer_Laterality": "R",
+\f1 \
+
+\f2 \'a0\'a0\'a0\'a0 "Present_on_Admission": true,
+\f1 \
+
+\f2 \'a0\'a0\'a0\'a0 "Present_on_Unit_Arrival": true,
+\f1 \
+
+\f2 \'a0\'a0\'a0\'a0 "Hospital_Location_Acquired": "Main OR"
+\f1 \
+
+\f2 \'a0\}
+\f1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f0\b \cf2 \'a0REturns:
+\f2\b0  An Ulcer_record_ID, which is the auto-generated primary key of an ulcer record. If there is an error - e.g., the combination of survey_ID, Location and Laterality already exists, returns -1.
+\f1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2 \cf2 \'a0
+\f1 \
+\pard\pardeftab720\sl429\partightenfactor0
+
+\f4\b\fs37\fsmilli18667 \cf4 Call: ~/api/Ulcers/update (This is an HTTPPost)\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\b0\fs28 \cf2 Sample Input data: (assigned to a variable)
+\f1 \
+
+\f2 var data = \{
+\f1 \
+
+\f2 \'a0\'a0\'a0\'a0 "Ulcer_Record_ID": 32,
+\f1 \
+
+\f2 \'a0\'a0\'a0\'a0\'a0 "Location": "ANT",
+\f1 \
+
+\f2 \'a0\'a0\'a0\'a0 "Ulcer_Laterality": "R",
+\f1 \
+
+\f2 \'a0\'a0\'a0\'a0 "Present_on_Admission": true,
+\f1 \
+
+\f2 \'a0\'a0\'a0\'a0 "Present_on_Unit_Arrival": true,
+\f1 \
+
+\f2 \'a0\'a0\'a0\'a0 "Hospital_Location_Acquired": ""
+\f1 \
+
+\f2 \'a0\}
+\f1 \
+
+\f2 Note: For an update, the Ulcer_Record_ID of the ulcer record to be updated is passed in, along with other contents.
+\f1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f0\b \cf2 Returns:
+\f2\b0  True if successful, FAlse if there was an error - e.g., invalid Ulcer_Record_ID, Invalid location or Laterality.
+\f1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2 \cf2 \'a0
+\f1 \
+\pard\pardeftab720\sl429\partightenfactor0
+
+\f4\b\fs37\fsmilli18667 \cf4 Call: ~/api/Ulcers/delete/32 \
+\pard\pardeftab720\sl337\sa266\partightenfactor0
+
+\f3\b0\fs29\fsmilli14667 \cf2 Ulcer_Record_ID to be deleted is passed in - if accidentally created) \'a0Returns true if successfully deleted, False if error (invalid Record ID)\
+\pard\pardeftab720\sl429\partightenfactor0
+
+\f4\b\fs37\fsmilli18667 \cf4 Call:~/api/Unit_staff/5|tpapke \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\b0\fs28 \cf2 (Adds tpapke - healthcare ID - to surveyors for Unit_data_ID 5 (2JPE)
+\f1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f0\b \cf2 Returns
+\f2\b0 : 
+\f1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2 \cf2 True if success, false if User is already in the surveyors list (false can be ignored)
+\f1 \
+
+\f2 \'a0
+\f1 \
+\pard\pardeftab720\sl429\partightenfactor0
+
+\f4\b\fs37\fsmilli18667 \cf4 Call: ~/api/Unit_staff/delete/5|tpapke\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\b0\fs28 \cf2 \'a0
+\f1 \
+
+\f2 Removes user from the surveyors list of a unit. (Should rarely be needed). 
+\f1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f0\b \cf2 Returns:
+\f2\b0  true if user removed from list: would be false if user not in surveyors list or invalid Unit_data_ID
+\f1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2 \cf2 \'a0
+\f1 \
+\pard\pardeftab720\sl429\partightenfactor0
+
+\f4\b\fs37\fsmilli18667 \cf4 Call: ~/api/Patient/update\'a0 (this is an HTTPPut) \'96\
+\pard\pardeftab720\sl337\sa266\partightenfactor0
+
+\f3\b0\fs29\fsmilli14667 \cf2 \'a0the only fields that can be updated are:Visited_OR_this_Admission and\'a0 Survey_Status_Code. The full list of survey status codes is in the table Survey_Status_Codes.\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\fs28 \cf2 example data:
+\f1 \
+
+\f2 \{"Survey_ID": 219, "Visited_OR_this_Admission": false, "Survey_Status_Code": "C"\}
+\f1 \
+
+\f2 \'a0
+\f1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f0\b \cf2 Returns:
+\f2\b0  true if success, false if an error, such as invalid survey ID or invalid code
+\f1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2 \cf2 \'a0
+\f1 \
+\pard\pardeftab720\sl429\partightenfactor0
+
+\f4\b\fs37\fsmilli18667 \cf4 Call: ~/api/user_verify/tpapke---xxyyyyxxzzz \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\b0\fs28 \cf2 (supply the user\'92s healthcare password, separated by 3 hyphens from Healthcare ID)
+\f1 \
+
+\f2 \'a0
+\f1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f0\b \cf2 returns 
+\f2\b0 user name and optionally, designation , e.g., "Todd Papke (UI Healthcare)" 
+\f1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2 \cf2 returns empty string if failed to validate
+\f1 \
+
+\f2 \'a0
+\f1 \
+\pard\pardeftab720\sl429\partightenfactor0
+
+\f4\b\fs37\fsmilli18667 \cf4 ~/api/user_get/tpapke\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\b0\fs28 \cf2 Simply fetches a user name, given a healthcare ID, and stores the user in the database. the idea is that only one user in a team has to log in, others just supply healthcare ID to get authenticated.
+\f1 \
+
+\f2 \'a0
+\f1 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f0\b \cf2 returns
+\f2\b0  user name and optionally, designation , e.g., "Todd Papke (UI Healthcare)" if successful, returns empty string if invalid healthcare ID supplied.
+\f1 \
+}

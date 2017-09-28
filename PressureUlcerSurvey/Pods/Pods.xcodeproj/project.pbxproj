@@ -1,0 +1,1486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		102195759253D590D5AF09D99D577279 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61DD06AF15C6DCD9FE01A84D0D085BA /* Timeline.swift */; };
+		157C119B738E4C5D327EE18FC16090FF /* KGPressableButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A2709256FC2A78C91E4A9A977657938 /* KGPressableButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B3C2E69F18ECF53F7F715F724F67D6 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25B0746FE08E16DEA539E629D7682CAC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2DC295BF912EF272879FADF661B6C /* SwiftyJSON.swift */; };
+		3239595CBD23ED563D25A29623075F28 /* KGHighLightedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5C0A71F108C16E351CD0C64C04A403 /* KGHighLightedButton.swift */; };
+		32CD4E90EB7EB692378E0A50F7361725 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDCF7615EBD175AA8EFA90BCD8A1B488 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06D7DC55835C7C44E33F092A2D8D366 /* TaskDelegate.swift */; };
+		4455F178174388A9FAA4AA190D02D157 /* KGToggleButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F39BE1BC9AE931887CF3BB675B673B64 /* KGToggleButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F787E64B5BDF6EC663FA7386CBE802 /* Request.swift */; };
+		597CD1026E58326ECD8AFA780B2F56FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5D105CED2C4BB8A4D1300DCD87465532 /* KGRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3F18F449228814082AB49FA89EE14 /* KGRadioButton.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FDE897E1C7F12C5E27709E97855717 /* DispatchQueue+Alamofire.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE708A379C75527BB01B72A9B5DBD48 /* ServerTrustPolicy.swift */; };
+		6361065DABAF2BD7BBEA19EC33C5C492 /* KGPressableButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 690A86111B638700D0A4A0762FACC6C0 /* KGPressableButton-dummy.m */; };
+		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7A0767FD146DE61F78CFF10EAC2F0B48 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B81A6F139296AA4D6249FA30CAB7E85 /* SwiftyJSON-dummy.m */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB6FE1F8E81FFDE78FB434BC03E915 /* SessionDelegate.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F055B09A43BE675A559399508E1D69 /* Result.swift */; };
+		8690676B8B12DDDAD41127BBD44D0E39 /* KGHighLightedButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB641F643D638C043EB54CDBEC10E9E /* KGHighLightedButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9922A0A6ECBFB5CF2D7FD25BB55A673A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9D1F0BE54CA456B957D34F577DE88B59 /* KGHighLightedButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC005DF6700C234D44553AC7E5FD2C4 /* KGHighLightedButton-dummy.m */; };
+		9E914DBDC2FBC0911318EECA0DA5F948 /* Pods-PressureUlcerSurvey-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 970E38DCDFA5ED4AB00FE750110BF9E4 /* Pods-PressureUlcerSurvey-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8607863C0A71963C285C8AEA3E3294 /* AFError.swift */; };
+		A19CFA6FCE11EBF67E287599337AF99A /* KGRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 758D4C219352DDA4BF09C0E14B1D16D0 /* KGRadioButton-dummy.m */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346B3EC49D5A96D9F9E8966B462F13A6 /* NetworkReachabilityManager.swift */; };
+		A87F8FECC3B255FF8F42EDC42C9AB6A5 /* KGPressableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ABE27BB769E8F957F77863A0C0C03F /* KGPressableButton.swift */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F72DE94A7C6B4B931B55A81972900B /* Alamofire-dummy.m */; };
+		AC25636F8EE47ED63A4799F3B8560510 /* KGToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2761C0D0406D204E9B8E03835147C /* KGToggleButton.swift */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505FDA7CC893DB3903B9BF7B9E88F36 /* SessionManager.swift */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F9957B650CD38A9723B6065BE0816D /* MultipartFormData.swift */; };
+		B7ED5119AE92FB0BB4F1B0B5BE6EEE36 /* KGEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53112903E1CE9CBF7D5E9DE6C0D998 /* KGEnum.swift */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B148095A217EDC5B7BD4DF989F77ACD /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7696FB73B07764FBF22F27A5072EF086 /* ParameterEncoding.swift */; };
+		BF452D67405E3ED73C10C91B8B544775 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C7212B9A6E29B6A7BB4AFCC03A203465 /* Pods-PressureUlcerSurvey-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 987339267BC384ABDB9BFE9C79E78800 /* Pods-PressureUlcerSurvey-dummy.m */; };
+		CABD31877A9796E3BB2067AB590E35CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139EF01FA5420ADDB19BD887E1EC28CF /* Response.swift */; };
+		E21BD7E0E26B2A61EDF6D6DFF5A69F7F /* KGRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E467837F9C2BD29064C254BD9FE3C4D8 /* KGRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DB7602B51FD5A14AD77B0A8DED43A /* Notifications.swift */; };
+		F053D547E39F5FC2235FE3ED25746855 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2FA9E8EDE9E0D2B746535BCF56B8CD /* ResponseSerialization.swift */; };
+		F83BB42C15B7C9480BB82E8929B5538B /* KGToggleButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ED24BCF6559E7B2A4BFD8827FA3627 /* KGToggleButton-dummy.m */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4775CA13383F6FA15C605BFE3456B9 /* Alamofire.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		250C986B77B3CA7E18C7A4382A31C604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45126F75617442FAA7727FD4E22AFDD8;
+			remoteInfo = KGPressableButton;
+		};
+		284D22C8428C4767CAA2EB995568CAA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
+		3C6ED9D81AB1D7D9AB273215FF3B7A1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF589450E0A920A26F1D7D563C39FFFA;
+			remoteInfo = KGToggleButton;
+		};
+		55C2D19E308EC8598198022190C75D4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F953BE1D49FFE5D9A9943EC33A873D2;
+			remoteInfo = SwiftyJSON;
+		};
+		8E24774D9E5FFECF76D9856486386C58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F57195828F75EE8C1C1D740A8B1B6C3A;
+			remoteInfo = KGHighLightedButton;
+		};
+		DEB5359B900EA23B156CD760E73E40DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBD647DCBF67E2010B680AA0125F356F;
+			remoteInfo = KGRadioButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09303A32D0FCF6143D0ADE9F463DA8AE /* Pods-PressureUlcerSurvey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PressureUlcerSurvey.release.xcconfig"; sourceTree = "<group>"; };
+		098D2AD2E2DC9B4D47908EF2978D7F2A /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		09CB8ADCCADD276F46C70476F3AE0C5F /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		0B81A6F139296AA4D6249FA30CAB7E85 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		139EF01FA5420ADDB19BD887E1EC28CF /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		1480BF432609A9214C6C451D54F69386 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		19B7D6FA2095A46EE54F10AC27111605 /* Pods-PressureUlcerSurvey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PressureUlcerSurvey.debug.xcconfig"; sourceTree = "<group>"; };
+		19F4AAFB31C2EF03DC714F1EE9391C8D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C8607863C0A71963C285C8AEA3E3294 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		1D2083F5C62611ECC0961A795B27A3B9 /* KGRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KGRadioButton.modulemap; sourceTree = "<group>"; };
+		1DC005DF6700C234D44553AC7E5FD2C4 /* KGHighLightedButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KGHighLightedButton-dummy.m"; sourceTree = "<group>"; };
+		20ABE27BB769E8F957F77863A0C0C03F /* KGPressableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KGPressableButton.swift; path = KGPressableButton/KGPressableButton.swift; sourceTree = "<group>"; };
+		220A83ACA8E897D22A71F0D863A36C65 /* KGHighLightedButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KGHighLightedButton.modulemap; sourceTree = "<group>"; };
+		27C8BE16CF0F5FB6CC1861343224728B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F72DE94A7C6B4B931B55A81972900B /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		2A2709256FC2A78C91E4A9A977657938 /* KGPressableButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KGPressableButton-umbrella.h"; sourceTree = "<group>"; };
+		2F53112903E1CE9CBF7D5E9DE6C0D998 /* KGEnum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KGEnum.swift; path = KGHighLightedButton/KGEnum.swift; sourceTree = "<group>"; };
+		3184DDD197EDAD43D69BE47F8F1F0B6B /* KGToggleButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KGToggleButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		346B3EC49D5A96D9F9E8966B462F13A6 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		34FDE897E1C7F12C5E27709E97855717 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		35E5E10944488847E7127236A2546120 /* KGHighLightedButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KGHighLightedButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3628A182DE226EAE58BE9D66902F46DE /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ACF6A4FE25226EC777B4B64D9BCA087 /* KGPressableButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KGPressableButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E5E6CC794AC088162264CD23A721E3C /* Pods-PressureUlcerSurvey-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PressureUlcerSurvey-acknowledgements.plist"; sourceTree = "<group>"; };
+		46AA289DBC22976CC0C31DDC57424E9D /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		470279AB7FF280B62C75F235B2C3DEE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4886AC23889C70CC3FA3EF56E03DA66F /* Pods-PressureUlcerSurvey.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PressureUlcerSurvey.modulemap"; sourceTree = "<group>"; };
+		4B148095A217EDC5B7BD4DF989F77ACD /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		52B2A79EFA3E8A072FAF24FD837E44E7 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		57F3F18F449228814082AB49FA89EE14 /* KGRadioButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KGRadioButton.swift; path = KGRadioButton/KGRadioButton.swift; sourceTree = "<group>"; };
+		5CB641F643D638C043EB54CDBEC10E9E /* KGHighLightedButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KGHighLightedButton-umbrella.h"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		69018F21E38C9BFC232C9C333521AAB0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		690A86111B638700D0A4A0762FACC6C0 /* KGPressableButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KGPressableButton-dummy.m"; sourceTree = "<group>"; };
+		6B8F37E77445E9D7C1AE80F18F2B3079 /* KGToggleButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KGToggleButton-prefix.pch"; sourceTree = "<group>"; };
+		73F787E64B5BDF6EC663FA7386CBE802 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		73FF5845F4339FE9519252E7E025A851 /* Pods-PressureUlcerSurvey-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PressureUlcerSurvey-resources.sh"; sourceTree = "<group>"; };
+		758D4C219352DDA4BF09C0E14B1D16D0 /* KGRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KGRadioButton-dummy.m"; sourceTree = "<group>"; };
+		7599E7A061F3BD85C24F46B0274C9C5B /* KGHighLightedButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KGHighLightedButton.xcconfig; sourceTree = "<group>"; };
+		7696FB73B07764FBF22F27A5072EF086 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		7AA2761C0D0406D204E9B8E03835147C /* KGToggleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KGToggleButton.swift; path = KGToggleButton/KGToggleButton.swift; sourceTree = "<group>"; };
+		7D4A4BEE121AA65B22B971EAF81ED254 /* KGToggleButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KGToggleButton.xcconfig; sourceTree = "<group>"; };
+		7F0FA857E6A4FBE6FC061B9DF2A311CF /* KGPressableButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KGPressableButton.xcconfig; sourceTree = "<group>"; };
+		81AA286E8C2FB0E0FF832FB0F6A4613B /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		81CEA745FE0ADE6D20743A4238EFD312 /* KGRadioButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KGRadioButton.xcconfig; sourceTree = "<group>"; };
+		82227224219FCABE3E5A8AE3FA1DA375 /* Pods-PressureUlcerSurvey-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PressureUlcerSurvey-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8AE708A379C75527BB01B72A9B5DBD48 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		8DF81AE128BAC470B3C28A17E2A7B146 /* KGHighLightedButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KGHighLightedButton-prefix.pch"; sourceTree = "<group>"; };
+		9144FC36E5AA652AB947B1031C1D8BC6 /* KGPressableButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KGPressableButton.modulemap; sourceTree = "<group>"; };
+		91B7CB05B7D2B8919AB65FF291442C25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		970E38DCDFA5ED4AB00FE750110BF9E4 /* Pods-PressureUlcerSurvey-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PressureUlcerSurvey-umbrella.h"; sourceTree = "<group>"; };
+		987339267BC384ABDB9BFE9C79E78800 /* Pods-PressureUlcerSurvey-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PressureUlcerSurvey-dummy.m"; sourceTree = "<group>"; };
+		9EF3D1C88E813CE3099F64299BA31C42 /* KGPressableButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KGPressableButton-prefix.pch"; sourceTree = "<group>"; };
+		A3F055B09A43BE675A559399508E1D69 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		A5F9957B650CD38A9723B6065BE0816D /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		AB6DB7602B51FD5A14AD77B0A8DED43A /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		AE9379217FDFC4C1894E43AC5DF2D785 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF0F1E566F390EFCE9526305CA6614BB /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2ED24BCF6559E7B2A4BFD8827FA3627 /* KGToggleButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KGToggleButton-dummy.m"; sourceTree = "<group>"; };
+		B4F35A5ED698B5C5345888B511051D42 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF461DCACBA0E70229205A3ACEF5FE6D /* KGToggleButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KGToggleButton.modulemap; sourceTree = "<group>"; };
+		C06D7DC55835C7C44E33F092A2D8D366 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		C9B3C2E69F18ECF53F7F715F724F67D6 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		CA5C0A71F108C16E351CD0C64C04A403 /* KGHighLightedButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KGHighLightedButton.swift; path = KGHighLightedButton/KGHighLightedButton.swift; sourceTree = "<group>"; };
+		CAB538EB1E24466CF39963477B56FA9B /* KGRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KGRadioButton-prefix.pch"; sourceTree = "<group>"; };
+		CF4775CA13383F6FA15C605BFE3456B9 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		D1CB6FE1F8E81FFDE78FB434BC03E915 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		D61DD06AF15C6DCD9FE01A84D0D085BA /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		E467837F9C2BD29064C254BD9FE3C4D8 /* KGRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KGRadioButton-umbrella.h"; sourceTree = "<group>"; };
+		E6B50EE34ECCF09B2DAB5D11B3C61342 /* Pods_PressureUlcerSurvey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PressureUlcerSurvey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E050F3353E8A795363C1152BFAE6E1 /* Pods-PressureUlcerSurvey-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PressureUlcerSurvey-frameworks.sh"; sourceTree = "<group>"; };
+		ED5010AA9AE9FC9398B7E38F490EC229 /* KGRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KGRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2FA9E8EDE9E0D2B746535BCF56B8CD /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		F1A2DC295BF912EF272879FADF661B6C /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		F39BE1BC9AE931887CF3BB675B673B64 /* KGToggleButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KGToggleButton-umbrella.h"; sourceTree = "<group>"; };
+		F505FDA7CC893DB3903B9BF7B9E88F36 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		FDCF7615EBD175AA8EFA90BCD8A1B488 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		144C000FDE5571BFFB2C1CC436E2D475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF452D67405E3ED73C10C91B8B544775 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15934B06B602714C0422BD4444EF5CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				102195759253D590D5AF09D99D577279 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428A433BD7455F29F5C675BE96F9DF6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				597CD1026E58326ECD8AFA780B2F56FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99195E4207764744AEC07ECCBCD550EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B1FF5EC9A256A5E177C22BFED94F955 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CABD31877A9796E3BB2067AB590E35CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B267B9A5B0BFAA2E46C02CCB5D86CFD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9922A0A6ECBFB5CF2D7FD25BB55A673A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E358E99DC014852E0B7FDDFAC2B5154F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F053D547E39F5FC2235FE3ED25746855 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B810103B4512BB681D25CDE0427FC81 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				91B7CB05B7D2B8919AB65FF291442C25 /* Info.plist */,
+				BF461DCACBA0E70229205A3ACEF5FE6D /* KGToggleButton.modulemap */,
+				7D4A4BEE121AA65B22B971EAF81ED254 /* KGToggleButton.xcconfig */,
+				B2ED24BCF6559E7B2A4BFD8827FA3627 /* KGToggleButton-dummy.m */,
+				6B8F37E77445E9D7C1AE80F18F2B3079 /* KGToggleButton-prefix.pch */,
+				F39BE1BC9AE931887CF3BB675B673B64 /* KGToggleButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KGToggleButton";
+			sourceTree = "<group>";
+		};
+		20BEBFF6921838509AE934FE2613BA80 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				1C8607863C0A71963C285C8AEA3E3294 /* AFError.swift */,
+				CF4775CA13383F6FA15C605BFE3456B9 /* Alamofire.swift */,
+				34FDE897E1C7F12C5E27709E97855717 /* DispatchQueue+Alamofire.swift */,
+				A5F9957B650CD38A9723B6065BE0816D /* MultipartFormData.swift */,
+				346B3EC49D5A96D9F9E8966B462F13A6 /* NetworkReachabilityManager.swift */,
+				AB6DB7602B51FD5A14AD77B0A8DED43A /* Notifications.swift */,
+				7696FB73B07764FBF22F27A5072EF086 /* ParameterEncoding.swift */,
+				73F787E64B5BDF6EC663FA7386CBE802 /* Request.swift */,
+				139EF01FA5420ADDB19BD887E1EC28CF /* Response.swift */,
+				EF2FA9E8EDE9E0D2B746535BCF56B8CD /* ResponseSerialization.swift */,
+				A3F055B09A43BE675A559399508E1D69 /* Result.swift */,
+				8AE708A379C75527BB01B72A9B5DBD48 /* ServerTrustPolicy.swift */,
+				D1CB6FE1F8E81FFDE78FB434BC03E915 /* SessionDelegate.swift */,
+				F505FDA7CC893DB3903B9BF7B9E88F36 /* SessionManager.swift */,
+				C06D7DC55835C7C44E33F092A2D8D366 /* TaskDelegate.swift */,
+				D61DD06AF15C6DCD9FE01A84D0D085BA /* Timeline.swift */,
+				4B148095A217EDC5B7BD4DF989F77ACD /* Validation.swift */,
+				4CE7C503A429CAEF479689FB593AB383 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		2E8E01427BF13ED077B1169341658B73 /* KGToggleButton */ = {
+			isa = PBXGroup;
+			children = (
+				7AA2761C0D0406D204E9B8E03835147C /* KGToggleButton.swift */,
+				0B810103B4512BB681D25CDE0427FC81 /* Support Files */,
+			);
+			path = KGToggleButton;
+			sourceTree = "<group>";
+		};
+		3ABCDF5473D981F748CEDCEAF0EDD0F5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				470279AB7FF280B62C75F235B2C3DEE8 /* Info.plist */,
+				9144FC36E5AA652AB947B1031C1D8BC6 /* KGPressableButton.modulemap */,
+				7F0FA857E6A4FBE6FC061B9DF2A311CF /* KGPressableButton.xcconfig */,
+				690A86111B638700D0A4A0762FACC6C0 /* KGPressableButton-dummy.m */,
+				9EF3D1C88E813CE3099F64299BA31C42 /* KGPressableButton-prefix.pch */,
+				2A2709256FC2A78C91E4A9A977657938 /* KGPressableButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KGPressableButton";
+			sourceTree = "<group>";
+		};
+		4CE7C503A429CAEF479689FB593AB383 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				52B2A79EFA3E8A072FAF24FD837E44E7 /* Alamofire.modulemap */,
+				098D2AD2E2DC9B4D47908EF2978D7F2A /* Alamofire.xcconfig */,
+				27F72DE94A7C6B4B931B55A81972900B /* Alamofire-dummy.m */,
+				46AA289DBC22976CC0C31DDC57424E9D /* Alamofire-prefix.pch */,
+				C9B3C2E69F18ECF53F7F715F724F67D6 /* Alamofire-umbrella.h */,
+				AE9379217FDFC4C1894E43AC5DF2D785 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		4D10172B801791159C1CE490348A7861 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20BEBFF6921838509AE934FE2613BA80 /* Alamofire */,
+				F6F966BF944F00437E29B1610AF33717 /* KGHighLightedButton */,
+				A439AD6C0B243CC2421216FD48201374 /* KGPressableButton */,
+				6908B763FF2A854EA13A97108BAA0ADD /* KGRadioButton */,
+				2E8E01427BF13ED077B1169341658B73 /* KGToggleButton */,
+				EC15A37E1999FD48A4C43B317F3DB545 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4DD114C0BBE76E71BE2805F4CDCB533E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				27C8BE16CF0F5FB6CC1861343224728B /* Info.plist */,
+				220A83ACA8E897D22A71F0D863A36C65 /* KGHighLightedButton.modulemap */,
+				7599E7A061F3BD85C24F46B0274C9C5B /* KGHighLightedButton.xcconfig */,
+				1DC005DF6700C234D44553AC7E5FD2C4 /* KGHighLightedButton-dummy.m */,
+				8DF81AE128BAC470B3C28A17E2A7B146 /* KGHighLightedButton-prefix.pch */,
+				5CB641F643D638C043EB54CDBEC10E9E /* KGHighLightedButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KGHighLightedButton";
+			sourceTree = "<group>";
+		};
+		6908B763FF2A854EA13A97108BAA0ADD /* KGRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				57F3F18F449228814082AB49FA89EE14 /* KGRadioButton.swift */,
+				CD4AFAA0F97157B4ACE22A37C844A134 /* Support Files */,
+			);
+			path = KGRadioButton;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				4D10172B801791159C1CE490348A7861 /* Pods */,
+				EB17028D26FFE7D2F5CF82DD167BEFA3 /* Products */,
+				A7CF22E27B7C77BD682536BCF00D27D5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		994214719D88B26289046A36A280C9DD /* Pods-PressureUlcerSurvey */ = {
+			isa = PBXGroup;
+			children = (
+				B4F35A5ED698B5C5345888B511051D42 /* Info.plist */,
+				4886AC23889C70CC3FA3EF56E03DA66F /* Pods-PressureUlcerSurvey.modulemap */,
+				82227224219FCABE3E5A8AE3FA1DA375 /* Pods-PressureUlcerSurvey-acknowledgements.markdown */,
+				3E5E6CC794AC088162264CD23A721E3C /* Pods-PressureUlcerSurvey-acknowledgements.plist */,
+				987339267BC384ABDB9BFE9C79E78800 /* Pods-PressureUlcerSurvey-dummy.m */,
+				E8E050F3353E8A795363C1152BFAE6E1 /* Pods-PressureUlcerSurvey-frameworks.sh */,
+				73FF5845F4339FE9519252E7E025A851 /* Pods-PressureUlcerSurvey-resources.sh */,
+				970E38DCDFA5ED4AB00FE750110BF9E4 /* Pods-PressureUlcerSurvey-umbrella.h */,
+				19B7D6FA2095A46EE54F10AC27111605 /* Pods-PressureUlcerSurvey.debug.xcconfig */,
+				09303A32D0FCF6143D0ADE9F463DA8AE /* Pods-PressureUlcerSurvey.release.xcconfig */,
+			);
+			name = "Pods-PressureUlcerSurvey";
+			path = "Target Support Files/Pods-PressureUlcerSurvey";
+			sourceTree = "<group>";
+		};
+		A439AD6C0B243CC2421216FD48201374 /* KGPressableButton */ = {
+			isa = PBXGroup;
+			children = (
+				20ABE27BB769E8F957F77863A0C0C03F /* KGPressableButton.swift */,
+				3ABCDF5473D981F748CEDCEAF0EDD0F5 /* Support Files */,
+			);
+			path = KGPressableButton;
+			sourceTree = "<group>";
+		};
+		A7CF22E27B7C77BD682536BCF00D27D5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				994214719D88B26289046A36A280C9DD /* Pods-PressureUlcerSurvey */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD4AFAA0F97157B4ACE22A37C844A134 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19F4AAFB31C2EF03DC714F1EE9391C8D /* Info.plist */,
+				1D2083F5C62611ECC0961A795B27A3B9 /* KGRadioButton.modulemap */,
+				81CEA745FE0ADE6D20743A4238EFD312 /* KGRadioButton.xcconfig */,
+				758D4C219352DDA4BF09C0E14B1D16D0 /* KGRadioButton-dummy.m */,
+				CAB538EB1E24466CF39963477B56FA9B /* KGRadioButton-prefix.pch */,
+				E467837F9C2BD29064C254BD9FE3C4D8 /* KGRadioButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KGRadioButton";
+			sourceTree = "<group>";
+		};
+		D0A9FA1D6612CC9C8BDF64DDCEB96802 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69018F21E38C9BFC232C9C333521AAB0 /* Info.plist */,
+				1480BF432609A9214C6C451D54F69386 /* SwiftyJSON.modulemap */,
+				09CB8ADCCADD276F46C70476F3AE0C5F /* SwiftyJSON.xcconfig */,
+				0B81A6F139296AA4D6249FA30CAB7E85 /* SwiftyJSON-dummy.m */,
+				81AA286E8C2FB0E0FF832FB0F6A4613B /* SwiftyJSON-prefix.pch */,
+				FDCF7615EBD175AA8EFA90BCD8A1B488 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EB17028D26FFE7D2F5CF82DD167BEFA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F1E566F390EFCE9526305CA6614BB /* Alamofire.framework */,
+				35E5E10944488847E7127236A2546120 /* KGHighLightedButton.framework */,
+				3ACF6A4FE25226EC777B4B64D9BCA087 /* KGPressableButton.framework */,
+				ED5010AA9AE9FC9398B7E38F490EC229 /* KGRadioButton.framework */,
+				3184DDD197EDAD43D69BE47F8F1F0B6B /* KGToggleButton.framework */,
+				E6B50EE34ECCF09B2DAB5D11B3C61342 /* Pods_PressureUlcerSurvey.framework */,
+				3628A182DE226EAE58BE9D66902F46DE /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC15A37E1999FD48A4C43B317F3DB545 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				F1A2DC295BF912EF272879FADF661B6C /* SwiftyJSON.swift */,
+				D0A9FA1D6612CC9C8BDF64DDCEB96802 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		F6F966BF944F00437E29B1610AF33717 /* KGHighLightedButton */ = {
+			isa = PBXGroup;
+			children = (
+				2F53112903E1CE9CBF7D5E9DE6C0D998 /* KGEnum.swift */,
+				CA5C0A71F108C16E351CD0C64C04A403 /* KGHighLightedButton.swift */,
+				4DD114C0BBE76E71BE2805F4CDCB533E /* Support Files */,
+			);
+			path = KGHighLightedButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		401463A4A3209F905FF4F1B784B58C4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E914DBDC2FBC0911318EECA0DA5F948 /* Pods-PressureUlcerSurvey-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67ED6972C4CF2F3F5DE7D7E3260E3644 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E21BD7E0E26B2A61EDF6D6DFF5A69F7F /* KGRadioButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69839B248248811069B68D8832ABFFEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8690676B8B12DDDAD41127BBD44D0E39 /* KGHighLightedButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7188B3456B9EF6AB7498F5D81C3AC568 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CD4E90EB7EB692378E0A50F7361725 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE756A0865275A5B235A0FE69560C2AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4455F178174388A9FAA4AA190D02D157 /* KGToggleButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F179E7A19AA545B1B0C504DA1CE90607 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157C119B738E4C5D327EE18FC16090FF /* KGPressableButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F953BE1D49FFE5D9A9943EC33A873D2 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EE38377F3FED0D295807D3AD5C715A6 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				9558D879F10A3F63BF9BBC797A8B0C48 /* Sources */,
+				B267B9A5B0BFAA2E46C02CCB5D86CFD6 /* Frameworks */,
+				7188B3456B9EF6AB7498F5D81C3AC568 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 3628A182DE226EAE58BE9D66902F46DE /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		45126F75617442FAA7727FD4E22AFDD8 /* KGPressableButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B1C0AD8E893548D0510F55CD7034DFA /* Build configuration list for PBXNativeTarget "KGPressableButton" */;
+			buildPhases = (
+				A6BF7FAF8D2EFAD5884311C50B280E16 /* Sources */,
+				15934B06B602714C0422BD4444EF5CAB /* Frameworks */,
+				F179E7A19AA545B1B0C504DA1CE90607 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KGPressableButton;
+			productName = KGPressableButton;
+			productReference = 3ACF6A4FE25226EC777B4B64D9BCA087 /* KGPressableButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				32B9974868188C4803318E36329C87FE /* Sources */,
+				99195E4207764744AEC07ECCBCD550EB /* Frameworks */,
+				B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = AF0F1E566F390EFCE9526305CA6614BB /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AF589450E0A920A26F1D7D563C39FFFA /* KGToggleButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72CB07CFAB583C8A989E2B89C4A57A90 /* Build configuration list for PBXNativeTarget "KGToggleButton" */;
+			buildPhases = (
+				1AC5CA1E8195B54D1A227DBBA9E8AEF6 /* Sources */,
+				428A433BD7455F29F5C675BE96F9DF6A /* Frameworks */,
+				AE756A0865275A5B235A0FE69560C2AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KGToggleButton;
+			productName = KGToggleButton;
+			productReference = 3184DDD197EDAD43D69BE47F8F1F0B6B /* KGToggleButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DBD647DCBF67E2010B680AA0125F356F /* KGRadioButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4BAEAE8014FDF400841E006FA6271A /* Build configuration list for PBXNativeTarget "KGRadioButton" */;
+			buildPhases = (
+				85B041F8F55BA463553B64AFAD5219D4 /* Sources */,
+				E358E99DC014852E0B7FDDFAC2B5154F /* Frameworks */,
+				67ED6972C4CF2F3F5DE7D7E3260E3644 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KGRadioButton;
+			productName = KGRadioButton;
+			productReference = ED5010AA9AE9FC9398B7E38F490EC229 /* KGRadioButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAA6EE4B26875C65F0A59C003DD3C5AA /* Pods-PressureUlcerSurvey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87167DDD783CD778583CAACED137F470 /* Build configuration list for PBXNativeTarget "Pods-PressureUlcerSurvey" */;
+			buildPhases = (
+				FBC09774766D599DB783896818CD37B0 /* Sources */,
+				9B1FF5EC9A256A5E177C22BFED94F955 /* Frameworks */,
+				401463A4A3209F905FF4F1B784B58C4E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D0EEBF24B0D920D7DC884EE8B19ADC3 /* PBXTargetDependency */,
+				5E55BCFD4670BA588591C24CA3A6E702 /* PBXTargetDependency */,
+				9357D1386977F35AB4889B5870AF4D26 /* PBXTargetDependency */,
+				57F45C5B3843834B9E11CA02F4C4BF72 /* PBXTargetDependency */,
+				3F6744DF5450751F83C39DFCF15DDA51 /* PBXTargetDependency */,
+				2C90D8D1932DD7A070FA27931879240D /* PBXTargetDependency */,
+			);
+			name = "Pods-PressureUlcerSurvey";
+			productName = "Pods-PressureUlcerSurvey";
+			productReference = E6B50EE34ECCF09B2DAB5D11B3C61342 /* Pods_PressureUlcerSurvey.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F57195828F75EE8C1C1D740A8B1B6C3A /* KGHighLightedButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F0BD22AB12AF6FBA88D5D8CD5F378A6 /* Build configuration list for PBXNativeTarget "KGHighLightedButton" */;
+			buildPhases = (
+				7469B4AA5AE9EC00759956B864B5DAC8 /* Sources */,
+				144C000FDE5571BFFB2C1CC436E2D475 /* Frameworks */,
+				69839B248248811069B68D8832ABFFEA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KGHighLightedButton;
+			productName = KGHighLightedButton;
+			productReference = 35E5E10944488847E7127236A2546120 /* KGHighLightedButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EB17028D26FFE7D2F5CF82DD167BEFA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
+				F57195828F75EE8C1C1D740A8B1B6C3A /* KGHighLightedButton */,
+				45126F75617442FAA7727FD4E22AFDD8 /* KGPressableButton */,
+				DBD647DCBF67E2010B680AA0125F356F /* KGRadioButton */,
+				AF589450E0A920A26F1D7D563C39FFFA /* KGToggleButton */,
+				EAA6EE4B26875C65F0A59C003DD3C5AA /* Pods-PressureUlcerSurvey */,
+				0F953BE1D49FFE5D9A9943EC33A873D2 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AC5CA1E8195B54D1A227DBBA9E8AEF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F83BB42C15B7C9480BB82E8929B5538B /* KGToggleButton-dummy.m in Sources */,
+				AC25636F8EE47ED63A4799F3B8560510 /* KGToggleButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B9974868188C4803318E36329C87FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */,
+				A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */,
+				F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */,
+				61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */,
+				B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */,
+				A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */,
+				EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */,
+				BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */,
+				5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */,
+				CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */,
+				F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */,
+				7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */,
+				62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */,
+				7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */,
+				AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */,
+				3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */,
+				10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */,
+				BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7469B4AA5AE9EC00759956B864B5DAC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7ED5119AE92FB0BB4F1B0B5BE6EEE36 /* KGEnum.swift in Sources */,
+				9D1F0BE54CA456B957D34F577DE88B59 /* KGHighLightedButton-dummy.m in Sources */,
+				3239595CBD23ED563D25A29623075F28 /* KGHighLightedButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85B041F8F55BA463553B64AFAD5219D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A19CFA6FCE11EBF67E287599337AF99A /* KGRadioButton-dummy.m in Sources */,
+				5D105CED2C4BB8A4D1300DCD87465532 /* KGRadioButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9558D879F10A3F63BF9BBC797A8B0C48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0767FD146DE61F78CFF10EAC2F0B48 /* SwiftyJSON-dummy.m in Sources */,
+				25B0746FE08E16DEA539E629D7682CAC /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BF7FAF8D2EFAD5884311C50B280E16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6361065DABAF2BD7BBEA19EC33C5C492 /* KGPressableButton-dummy.m in Sources */,
+				A87F8FECC3B255FF8F42EDC42C9AB6A5 /* KGPressableButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC09774766D599DB783896818CD37B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7212B9A6E29B6A7BB4AFCC03A203465 /* Pods-PressureUlcerSurvey-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C90D8D1932DD7A070FA27931879240D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 0F953BE1D49FFE5D9A9943EC33A873D2 /* SwiftyJSON */;
+			targetProxy = 55C2D19E308EC8598198022190C75D4C /* PBXContainerItemProxy */;
+		};
+		3F6744DF5450751F83C39DFCF15DDA51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KGToggleButton;
+			target = AF589450E0A920A26F1D7D563C39FFFA /* KGToggleButton */;
+			targetProxy = 3C6ED9D81AB1D7D9AB273215FF3B7A1C /* PBXContainerItemProxy */;
+		};
+		4D0EEBF24B0D920D7DC884EE8B19ADC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = 284D22C8428C4767CAA2EB995568CAA7 /* PBXContainerItemProxy */;
+		};
+		57F45C5B3843834B9E11CA02F4C4BF72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KGRadioButton;
+			target = DBD647DCBF67E2010B680AA0125F356F /* KGRadioButton */;
+			targetProxy = DEB5359B900EA23B156CD760E73E40DB /* PBXContainerItemProxy */;
+		};
+		5E55BCFD4670BA588591C24CA3A6E702 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KGHighLightedButton;
+			target = F57195828F75EE8C1C1D740A8B1B6C3A /* KGHighLightedButton */;
+			targetProxy = 8E24774D9E5FFECF76D9856486386C58 /* PBXContainerItemProxy */;
+		};
+		9357D1386977F35AB4889B5870AF4D26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KGPressableButton;
+			target = 45126F75617442FAA7727FD4E22AFDD8 /* KGPressableButton */;
+			targetProxy = 250C986B77B3CA7E18C7A4382A31C604 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		077C4BB7DBEAA715DED46C057DC8051C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098D2AD2E2DC9B4D47908EF2978D7F2A /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		119209027E575FAF2E711040879B46E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7599E7A061F3BD85C24F46B0274C9C5B /* KGHighLightedButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KGHighLightedButton/KGHighLightedButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KGHighLightedButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KGHighLightedButton/KGHighLightedButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KGHighLightedButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2720975D558FBFECE6329781DA803F29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4A4BEE121AA65B22B971EAF81ED254 /* KGToggleButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KGToggleButton/KGToggleButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KGToggleButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KGToggleButton/KGToggleButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KGToggleButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3269F7AF7B65CB741FD68094CE7E3F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81CEA745FE0ADE6D20743A4238EFD312 /* KGRadioButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KGRadioButton/KGRadioButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KGRadioButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KGRadioButton/KGRadioButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KGRadioButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		46267D7035D8DF0CA885E9725B743BA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09CB8ADCCADD276F46C70476F3AE0C5F /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4AC1736EB27C5AE49A13846FC2D492CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19B7D6FA2095A46EE54F10AC27111605 /* Pods-PressureUlcerSurvey.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PressureUlcerSurvey/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PressureUlcerSurvey/Pods-PressureUlcerSurvey.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PressureUlcerSurvey;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D650FE500BFC4220848CE3142E7A779 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4A4BEE121AA65B22B971EAF81ED254 /* KGToggleButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KGToggleButton/KGToggleButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KGToggleButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KGToggleButton/KGToggleButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KGToggleButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEAC9C363C9136F967F0FFF09755F9E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F0FA857E6A4FBE6FC061B9DF2A311CF /* KGPressableButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KGPressableButton/KGPressableButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KGPressableButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KGPressableButton/KGPressableButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KGPressableButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD90596C556EE8FD72353C0DF9D1D752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81CEA745FE0ADE6D20743A4238EFD312 /* KGRadioButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KGRadioButton/KGRadioButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KGRadioButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KGRadioButton/KGRadioButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KGRadioButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C8C26992CEA3C6D75C4A69CA0ECC4038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F0FA857E6A4FBE6FC061B9DF2A311CF /* KGPressableButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KGPressableButton/KGPressableButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KGPressableButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KGPressableButton/KGPressableButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KGPressableButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CCBB630E57B54FA270A660EF34B993D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09CB8ADCCADD276F46C70476F3AE0C5F /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D60F8C4DE6B0D221A33959774DA3DAFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098D2AD2E2DC9B4D47908EF2978D7F2A /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF26A3C5B6EDA309192C6025F703DE0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F745438281431589AD64B3C179FD23D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09303A32D0FCF6143D0ADE9F463DA8AE /* Pods-PressureUlcerSurvey.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PressureUlcerSurvey/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PressureUlcerSurvey/Pods-PressureUlcerSurvey.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PressureUlcerSurvey;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FEEE24FFF33B3041D8C1C00DE65E5F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7599E7A061F3BD85C24F46B0274C9C5B /* KGHighLightedButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KGHighLightedButton/KGHighLightedButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KGHighLightedButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KGHighLightedButton/KGHighLightedButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KGHighLightedButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EE38377F3FED0D295807D3AD5C715A6 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCBB630E57B54FA270A660EF34B993D4 /* Debug */,
+				46267D7035D8DF0CA885E9725B743BA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F0BD22AB12AF6FBA88D5D8CD5F378A6 /* Build configuration list for PBXNativeTarget "KGHighLightedButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119209027E575FAF2E711040879B46E0 /* Debug */,
+				FEEE24FFF33B3041D8C1C00DE65E5F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B1C0AD8E893548D0510F55CD7034DFA /* Build configuration list for PBXNativeTarget "KGPressableButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8C26992CEA3C6D75C4A69CA0ECC4038 /* Debug */,
+				AEAC9C363C9136F967F0FFF09755F9E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF26A3C5B6EDA309192C6025F703DE0A /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C4BAEAE8014FDF400841E006FA6271A /* Build configuration list for PBXNativeTarget "KGRadioButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3269F7AF7B65CB741FD68094CE7E3F15 /* Debug */,
+				BD90596C556EE8FD72353C0DF9D1D752 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60F8C4DE6B0D221A33959774DA3DAFF /* Debug */,
+				077C4BB7DBEAA715DED46C057DC8051C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72CB07CFAB583C8A989E2B89C4A57A90 /* Build configuration list for PBXNativeTarget "KGToggleButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2720975D558FBFECE6329781DA803F29 /* Debug */,
+				6D650FE500BFC4220848CE3142E7A779 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87167DDD783CD778583CAACED137F470 /* Build configuration list for PBXNativeTarget "Pods-PressureUlcerSurvey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AC1736EB27C5AE49A13846FC2D492CE /* Debug */,
+				F745438281431589AD64B3C179FD23D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

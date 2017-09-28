@@ -1,0 +1,134 @@
+API examples
+All Calls are httpGet unless otherwise specified.
+
+~/api/Patient/unlock/{Survey_ID:int}
+~/api/Patient/lock/{Survey_ID:int
+ 
+These are 2 calls that unlock/lock a patient.
+ 
+
+
+Call: /api/units/20173 – Gets a list of Units
+Returns
+[
+{"Unit_data_ID":3,"Unit_Name":"1JPE"},
+{"Unit_data_ID":4,"Unit_Name":"1JPW"},
+{"Unit_data_ID":5,"Unit_Name":"2JPE"},
+{"Unit_data_ID":6,"Unit_Name":"2JPW"},
+{"Unit_data_ID":7,"Unit_Name":"3RCE"},
+{"Unit_data_ID":8,"Unit_Name":"3RCW"},
+{"Unit_data_ID":9,"Unit_Name":"4JPE"},
+{"Unit_data_ID":10,"Unit_Name":"4JPW"},
+{"Unit_data_ID":11,"Unit_Name":"4RCE1"},
+{"Unit_data_ID":12,"Unit_Name":"4RCW"},
+{"Unit_data_ID":13,"Unit_Name":"6JCE"},
+{"Unit_data_ID":14,"Unit_Name":"6JCW"},
+{"Unit_data_ID":15,"Unit_Name":"6RCE"},
+{"Unit_data_ID":16,"Unit_Name":"6RCW"},
+{"Unit_data_ID":17,"Unit_Name":"7RCS"},
+{"Unit_data_ID":18,"Unit_Name":"8JC"},
+{"Unit_data_ID":19,"Unit_Name":"CVICU"},
+{"Unit_data_ID":20,"Unit_Name":"MICU"},
+{"Unit_data_ID":21,"Unit_Name":"SIC1"},
+{"Unit_data_ID":22,"Unit_Name":"SIC2"},
+{"Unit_data_ID":23,"Unit_Name":"SIC3"},
+{"Unit_data_ID":24,"Unit_Name":"NIC1"},
+{"Unit_data_ID":25,"Unit_Name":"2BTEP"},
+{"Unit_data_ID":26,"Unit_Name":"7JCP"},
+{"Unit_data_ID":27,"Unit_Name":"2RCW2"},
+{"Unit_data_ID":28,"Unit_Name":"3BT2"},
+{"Unit_data_ID":29,"Unit_Name":"5 South"},
+{"Unit_data_ID":30,"Unit_Name":"RADIRPROC"},
+{"Unit_data_ID":31,"Unit_Name":"SFCH PICU"},
+{"Unit_data_ID":32,"Unit_Name":"SFCH NIC2"},
+{"Unit_data_ID":33,"Unit_Name":"SFCH09"},
+{"Unit_data_ID":34,"Unit_Name":"SFCH10"},
+{"Unit_data_ID":35,"Unit_Name":"SFCH11"}]
+
+ 
+
+Call: ~/api/Patient_Summary/5
+Gets the details of all patients given a Unit_Data_ID
+Returns: 
+
+[{"Survey_ID":217,"MRN":"62210837","Pat_Name":"Will, Willard W Jr.","Age_Sex":"78 y.o. / M","Room_Bed":"2731 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false},
+{"Survey_ID":219,"MRN":"94148637", "Pat_Name":"Fetters, Larry E","Age_Sex":"72 y.o. / M","Room_Bed":"2733 1","Survey_Status":"Complete, 1+  Pressure Injuries  Present","IsBeingEdited":true},
+{"Survey_ID":215,"MRN":"54063386","Pat_Name":"Eakes, Wade E","Age_Sex":"63 y.o. / M","Room_Bed":"2735 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false},
+{"Survey_ID":222,"MRN":"03216822","Pat_Name":"Krabacher, Linda L","Age_Sex":"64 y.o. / F","Room_Bed":"2737 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false},
+{"Survey_ID":226,"MRN":"04578363","Pat_Name":"Dermody, John P","Age_Sex":"67 y.o. / M","Room_Bed":"2739 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false},
+{"Survey_ID":218,"MRN":"84244430","Pat_Name":"Nerness, Mary E","Age_Sex":"61 y.o. / F","Room_Bed":"2741 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false},
+{"Survey_ID":221,"MRN":"74005275","Pat_Name":"Sedrel, Randal B","Age_Sex":"61 y.o. / M","Room_Bed":"2744 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false},
+{"Survey_ID":223,"MRN":"10136946","Pat_Name":"Lang, Evelyn F","Age_Sex":"78 y.o. / F","Room_Bed":"2745 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false},
+{"Survey_ID":227,"MRN":"10845300","Pat_Name":"Wing, Darlene","Age_Sex":"81 y.o. / F","Room_Bed":"2745 2","Survey_Status":"Not yet surveyed","IsBeingEdited":false},
+{"Survey_ID":220,"MRN":"81139830","Pat_Name":"Johnson, Linda S","Age_Sex":"64 y.o. / F","Room_Bed":"2746 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false},
+{"Survey_ID":216,"MRN":"11031005","Pat_Name":"Stang, Judith A","Age_Sex":"72 y.o. / F","Room_Bed":"2746 2","Survey_Status":"Not yet surveyed","IsBeingEdited":false},
+{"Survey_ID":225,"MRN":"74201623","Pat_Name":"Shannon, Sterling E","Age_Sex":"64 y.o. / M","Room_Bed":"2747 1","Survey_Status":"Not yet surveyed","IsBeingEdited":false},
+{"Survey_ID":224,"MRN":"10534496","Pat_Name":"Chandler, Gary","Age_Sex":"65 y.o. / M","Room_Bed":"2747 2","Survey_Status":"Not yet surveyed","IsBeingEdited":false}]
+ 
+
+
+Call: ~/api/Patient_detail/219
+Geta details of a particular patient, specified by Survey ID
+Returns:
+{"Survey_ID":219,"Unit_Data_ID":0,"MRN":"94148637","Pat_Name":"Fetters, Larry E","Age_Sex":"72 y.o. / M","Room_Bed":"2733 1","Visited_OR_this_Admission":true,"Survey_Status_Code":"C","IsBeingEdited":true,
+"Ulcer_Info":[{"Ulcer_Record_ID":40,"survey_ID":219,"Location":"ELB","Ulcer_Laterality":"R","Present_on_Admission":true,
+"Present_on_Unit_Arrival":true,"Hospital_Location_Acquired":""},
+{"Ulcer_Record_ID":40,"survey_ID":219,"Location":"ELB","Ulcer_Laterality":"R","Present_on_Admission":true,
+"Present_on_Unit_Arrival":true,"Hospital_Location_Acquired":""}]}
+
+Call: ~/api/Ulcers/add (This is an HTTPPost)
+Adds an Ulcer Record – Survey ID field in the JSON specifies the patient to which an Ulcer record is added.
+Sample Input data: (assigned to a variable)
+{
+     "Ulcer_Record_ID": null,
+     "survey_ID": 3,
+     "Location": "CHE",
+     "Ulcer_Laterality": "R",
+     "Present_on_Admission": true,
+     "Present_on_Unit_Arrival": true,
+     "Hospital_Location_Acquired": "Main OR"
+ }
+ REturns: An Ulcer_record_ID, which is the auto-generated primary key of an ulcer record. If there is an error - e.g., the combination of survey_ID, Location and Laterality already exists, returns -1.
+ 
+Call: ~/api/Ulcers/update (This is an HTTPPost)
+Sample Input data: (assigned to a variable)
+var data = {
+     "Ulcer_Record_ID": 32,
+      "Location": "ANT",
+     "Ulcer_Laterality": "R",
+     "Present_on_Admission": true,
+     "Present_on_Unit_Arrival": true,
+     "Hospital_Location_Acquired": ""
+ }
+Note: For an update, the Ulcer_Record_ID of the ulcer record to be updated is passed in, along with other contents.
+Returns: True if successful, FAlse if there was an error - e.g., invalid Ulcer_Record_ID, Invalid location or Laterality.
+
+Call: ~/api/Ulcers/delete/32 
+Ulcer_Record_ID to be deleted is passed in - if accidentally created)  Returns true if successfully deleted, False if error (invalid Record ID)
+Call:~/api/Unit_staff/5|tpapke 
+(Adds tpapke - healthcare ID - to surveyors for Unit_data_ID 5 (2JPE)
+Returns: 
+True if success, false if User is already in the surveyors list (false can be ignored)
+
+Call: ~/api/Unit_staff/delete/5|tpapke
+
+Removes user from the surveyors list of a unit. (Should rarely be needed). 
+Returns: true if user removed from list: would be false if user not in surveyors list or invalid Unit_data_ID
+
+Call: ~/api/Patient/update  (this is an HTTPPut) –
+ the only fields that can be updated are:Visited_OR_this_Admission and  Survey_Status_Code. The full list of survey status codes is in the table Survey_Status_Codes.
+example data:
+{"Survey_ID": 219, "Visited_OR_this_Admission": false, "Survey_Status_Code": "C"}
+
+Returns: true if success, false if an error, such as invalid survey ID or invalid code
+
+Call: ~/api/user_verify/tpapke---xxyyyyxxzzz 
+(supply the user’s healthcare password, separated by 3 hyphens from Healthcare ID)
+
+returns user name and optionally, designation , e.g., "Todd Papke (UI Healthcare)" 
+returns empty string if failed to validate
+
+~/api/user_get/tpapke
+Simply fetches a user name, given a healthcare ID, and stores the user in the database. the idea is that only one user in a team has to log in, others just supply healthcare ID to get authenticated.
+
+returns user name and optionally, designation , e.g., "Todd Papke (UI Healthcare)" if successful, returns empty string if invalid healthcare ID supplied.

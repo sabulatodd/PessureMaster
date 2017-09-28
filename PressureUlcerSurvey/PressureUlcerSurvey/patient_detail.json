@@ -1,0 +1,5 @@
+{"Survey_ID":219,"Unit_Data_ID":0,"MRN":"94148637","Pat_Name":"Fetters, Larry E","Age_Sex":"72 y.o. / M","Room_Bed":"2733 1","Visited_OR_this_Admission":true,"Survey_Status_Code":"C","IsBeingEdited":true,
+    "Ulcer_Info":[{"Ulcer_Record_ID":40,"survey_ID":219,"Location":"ELB","Ulcer_Laterality":"R","Present_on_Admission":true,
+                  "Present_on_Unit_Arrival":true,"Hospital_Location_Acquired":""},
+                  {"Ulcer_Record_ID":40,"survey_ID":219,"Location":"ELB","Ulcer_Laterality":"R","Present_on_Admission":true,
+                  "Present_on_Unit_Arrival":true,"Hospital_Location_Acquired":""}]}
