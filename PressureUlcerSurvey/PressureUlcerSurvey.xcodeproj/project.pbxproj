@@ -426,7 +426,7 @@
 				TargetAttributes = {
 					DD56C0721ECF8FE0005B1C3A = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 9XWB995P9M;
+						DevelopmentTeam = 49RN3EBXGB;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -696,7 +696,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 9XWB995P9M;
+				DEVELOPMENT_TEAM = 49RN3EBXGB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
@@ -722,7 +722,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 9XWB995P9M;
+				DEVELOPMENT_TEAM = 49RN3EBXGB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
