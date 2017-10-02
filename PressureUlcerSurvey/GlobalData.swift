@@ -25,9 +25,9 @@ final class GlobalData {
     var ISThereAPriorSetIndexRow : Bool = false
     var myUnitindexPathSection: Int? = 1
     
-    var uRlPrefixString = "https://wsint-test.healthcare.uiowa.edu/pusurvey/api/"
+    var uRlPrefixString = "https://wsint-test.healthcare.uiowa.edu/pusurvey/apiz/"
     /////////////////////////////////////////////////////////////////////
-    var uNitsPrefixString = "https://wsint-test.healthcare.uiowa.edu/pusurvey/api/units/"
+    var uNitsPrefixString = "https://wsint-test.healthcare.uiowa.edu/pusurvey/api/unitsz/"
     
     var currentJason : [String]?
     var emptyStringArray : [String:AnyObject]?
@@ -44,11 +44,11 @@ final class GlobalData {
     var myJson : [Any] = []
     var myRawDictionary: [String : Any] = [:]
     
-    var theUnitInPlay : String! = ""
+    var theUnitInPlay : String! = String()
      var thePatientInPlay : String! = "Hit"
     var unitListTuples : [String:String] = [:]
     // var currentUnitID : Int?
-    var currentUnitID : String? = nil
+    var currentUnitID : String! = String()
     var myUnitList : [String] = []
     var patientsForUnit: [String] = []
 

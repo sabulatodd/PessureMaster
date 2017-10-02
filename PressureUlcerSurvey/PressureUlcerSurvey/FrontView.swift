@@ -24,9 +24,10 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     }
     
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FrontViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FrontViewCell", for: indexPath) as! FrontViewCell
+    
         let text = data[indexPath.row]
-        cell.textLabel?.text = text
+        cell.frontViewCellLabel?.text = text
     return cell
     }
 

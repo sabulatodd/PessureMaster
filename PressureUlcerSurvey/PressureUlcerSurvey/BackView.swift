@@ -25,31 +25,40 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
    // @IBOutlet weak var pji9h: BackViewCell!
     
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        tableView.register(UITableViewCell.classForKeyedArchiver(), forCellReuseIdentifier: "BackViewCell")
+      //  tableView.register(UITableViewCell.classForKeyedArchiver(), forCellReuseIdentifier: "BackViewCell")
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BackViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BackViewCell", for: indexPath) as! BackViewCell
         let text = data[indexPath.row]
-        cell.textLabel?.text = text
+        cell.BackViewList?.text = text
     return cell
     }
 
-    
-   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-    tableView.register(UITableViewCell.classForKeyedArchiver(), forCellReuseIdentifier: "BackHeaderCell")
-
-    let HeaderView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "BackHeaderCell")
-    let title = "ZZzzOIPOJFE"
-   
-    //HeaderView.BackHeaderLabel.text = title
-    
-    return HeaderView
+     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Section \(section)   " + GlobalData.shared.theUnitInPlay
     }
-    
-     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 45.0
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let vw = BackHeaderCell()
+        vw.BackViewTableHeader?.text = "Hi Todd"
+        
+        return vw
     }
+//
+//     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 45.0
+//    }
     
-    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+         // let headerView: UITableViewHeaderFooterView  = view as! UITableViewHeaderFooterView
+       // let view = headerView
+     //   let cell = tableView.dequeueReusableCell(withIdentifier: "BackHeaderCell", for: indexPath) as! BackHeaderCell
+        
+        //headerView.BackHeaderLabel.text = "QWow!!"
+        //   let myView = view.backViewCellLabel = "todd"
+       // headerView == BackHeaderCell()
+        
+        print ("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        
+    }
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //let sectionInfo = fetchedResultsController.sections![section]
         //        print ("myUnitListCount \(GlobalData.shared.myUnitList.count)")
@@ -62,17 +71,16 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         // return fetchedResultsController.sections?.count ?? 0
     }
 
-     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        
     
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         for i in 0...1000 {
             data.append("\(i)")
         }
-        let nib = UINib(nibName: "BackCell", bundle: nil)
-        BackTable.register(nib, forCellReuseIdentifier: "BackCell")
+        let BackViewNib = UINib(nibName: "BackHeaderCell", bundle: nil)
+        BackTable.register(BackViewNib, forCellReuseIdentifier: "BackHeaderCell")
+        let BackViewHeaderNib = UINib(nibName: "BackViewCell", bundle: nil)
+        BackTable.register(BackViewHeaderNib, forCellReuseIdentifier: "BackCell")
         self.BackTable.delegate = self
         self.BackTable.dataSource = self
         

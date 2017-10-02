@@ -10,7 +10,8 @@ import UIKit
 
 class BackViewCell: UITableViewCell {
 
-  
+    @IBOutlet weak var BackViewList: UILabel!
+    
     // @IBOutlet weak var BackViewCellLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
