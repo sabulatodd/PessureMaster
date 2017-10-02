@@ -8,16 +8,18 @@
 
 import UIKit
 
-class BackHeaderCell: UITableViewHeaderFooterView {
+class BackHeaderCell: UITableViewCell {
+ //  class BackHeaderCell: UITableViewHeaderFooterView {
  //   class BackHeaderCell: UIView {
     @IBOutlet weak var BackViewTableHeader: UILabel!
     
   
-          override func awakeFromNib() {
-             super.awakeFromNib()
-        super.awakeFromNib()
-        // Initialization code
-    }
+//          override func awakeFromNib() {
+//             super.awakeFromNib()
+//
+//        super.awakeFromNib()
+//        // Initialization code
+//    }
 
     
 

@@ -33,21 +33,41 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     return cell
     }
 
-     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Section \(section)   " + GlobalData.shared.theUnitInPlay
-    }
+//     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return "Section \(section)   " + GlobalData.shared.theUnitInPlay
+//    }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let vw = BackHeaderCell()
-        vw.BackViewTableHeader?.text = "Hi Todd"
+      
+     //let header = tableView.dequeueReusableCell(withIdentifier: "BackHeader") as! UITableViewCell
+        let header = tableView.dequeueReusableCell(withIdentifier: "BackHeader") as! UITableViewCell
+      
+        header.textLabel?.text = "Hey Todd!"
+        // header.textLabel?.text = "Hey Todd!"
+         header.textLabel?.textAlignment = .center
+        header.textLabel?.textColor = UIColor.black
+     header.textLabel?.textColor = UIColor.white
+      header.textLabel?.backgroundColor = UIColor.black
         
-        return vw
+        return header
     }
+    
+//    func tableView(_ tableView: UITableView,
+//                   titleForHeaderInSection section: Int) -> String?
 //
-//     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 45.0
+//    {
+//         return "Bubba"
 //    }
     
+//
+     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 45.0//
+    }
+    
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        
+//        let header = tableView.dequeueReusableCell(withIdentifier: "BackHeader") as! BackHeaderCell
+//
+//        header.BackViewTableHeader?.text = "Hey Todd!"
          // let headerView: UITableViewHeaderFooterView  = view as! UITableViewHeaderFooterView
        // let view = headerView
      //   let cell = tableView.dequeueReusableCell(withIdentifier: "BackHeaderCell", for: indexPath) as! BackHeaderCell
@@ -77,10 +97,10 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         for i in 0...1000 {
             data.append("\(i)")
         }
-        let BackViewNib = UINib(nibName: "BackHeaderCell", bundle: nil)
-        BackTable.register(BackViewNib, forCellReuseIdentifier: "BackHeaderCell")
-        let BackViewHeaderNib = UINib(nibName: "BackViewCell", bundle: nil)
-        BackTable.register(BackViewHeaderNib, forCellReuseIdentifier: "BackCell")
+//        let BackViewNib = UINib(nibName: "BackHeaderCell", bundle: nil)
+//        BackTable.register(BackViewNib, forHeaderFooterViewReuseIdentifier: "BackHeaderCell")
+//        let BackViewHeaderNib = UINib(nibName: "BackViewCell", bundle: nil)
+//        BackTable.register(BackViewHeaderNib, forCellReuseIdentifier: "BackCell")
         self.BackTable.delegate = self
         self.BackTable.dataSource = self
         
