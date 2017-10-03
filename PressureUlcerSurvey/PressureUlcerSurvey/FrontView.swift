@@ -54,7 +54,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
        
         header.FrontViewTableHeader?.textColor = UIColor.white
         header.FrontViewTableHeader?.backgroundColor = UIColor.black
-         header.FrontViewTableHeader?.textAlignment = .center
+        // header.FrontViewTableHeader?.textAlignment = .center
         
         //        header.textLabel?.text = "Hey Todd!"
         //        // header.textLabel?.text = "Hey Todd!"
