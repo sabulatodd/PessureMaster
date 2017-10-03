@@ -269,8 +269,8 @@ class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetche
                 if let indexPath = self.tableView.indexPathForSelectedRow {
                     //  let object = self.fetchedResultsController.object(at: indexPath) //as NSManagedObject
                     ///    let controller = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController
-                    let controller = (segue.destination as! UINavigationController).topViewController as! GoToLogin
-                    controller.GoingLogin = "GoingToLogin"
+                 //   let controller = (segue.destination as! UINavigationController).topViewController as! GoToLogin
+                   // controller.GoingLogin = "GoingToLogin"
                     // controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                     // controller.navigationItem.leftItemsSupplementBackButton = true
                 }
