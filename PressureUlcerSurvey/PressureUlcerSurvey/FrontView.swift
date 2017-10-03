@@ -105,7 +105,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         //let sectionInfo = fetchedResultsController.sections![section]
         //        print ("myUnitListCount \(GlobalData.shared.myUnitList.count)")
         
-        return 10
+        return 13
         //return sectionInfo.numberOfObjects
     }
     func numberOfSections(in tableView: UITableView) -> Int {
