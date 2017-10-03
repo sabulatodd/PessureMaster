@@ -246,8 +246,8 @@ class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetche
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 //  let object = self.fetchedResultsController.object(at: indexPath) //as NSManagedObject
                 ///    let controller = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController
-                let controller = (segue.destination as! UINavigationController).topViewController as! GoToUnits
-                controller.ComingFromMVC = "Unit Picking"
+              //  let controller = (segue.destination as! UINavigationController).topViewController as! GoToUnits
+               // controller.ComingFromMVC = "Unit Picking"
                 // controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 // controller.navigationItem.leftItemsSupplementBackButton = true
             }

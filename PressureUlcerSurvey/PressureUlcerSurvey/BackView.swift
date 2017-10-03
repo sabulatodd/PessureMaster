@@ -50,19 +50,20 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         let header = tableView.dequeueReusableCell(withIdentifier: "BackHeader") as! BackHeaderCell
         
         header.BackViewTableHeader?.text = GlobalData.shared.theUnitInPlay
-        header.BackViewTableHeader?.textAlignment = .center
-                header.BackViewTableHeader?.textColor = UIColor.black
+        
+        
              header.BackViewTableHeader?.textColor = UIColor.white
               header.BackViewTableHeader?.backgroundColor = UIColor.black
+        header.BackViewTableHeader?.textAlignment = .center
         
 //        header.textLabel?.text = "Hey Todd!"
 //        // header.textLabel?.text = "Hey Todd!"
 //         header.textLabel?.textAlignment = .center
-//        header.textLabel?.textColor = UIColor.black
+//
 //     header.textLabel?.textColor = UIColor.white
 //      header.textLabel?.backgroundColor = UIColor.black
         
-        return header.contentView
+        return header
         
     }
     

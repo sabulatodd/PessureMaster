@@ -370,7 +370,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="402" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88V-xJ-X5z">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88V-xJ-X5z">
                                                     <rect key="frame" x="8" y="11" width="386" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -379,11 +379,14 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="88V-xJ-X5z" firstAttribute="leading" secondItem="G1g-ua-pal" secondAttribute="leadingMargin" id="2eA-Op-bcz"/>
-                                                <constraint firstItem="88V-xJ-X5z" firstAttribute="centerY" secondItem="G1g-ua-pal" secondAttribute="centerY" id="YgT-Be-xNa"/>
-                                                <constraint firstItem="88V-xJ-X5z" firstAttribute="trailing" secondItem="G1g-ua-pal" secondAttribute="trailingMargin" id="htn-Bq-Gld"/>
+                                                <constraint firstItem="88V-xJ-X5z" firstAttribute="centerY" secondItem="G1g-ua-pal" secondAttribute="centerY" id="C2i-gf-2UD"/>
+                                                <constraint firstItem="88V-xJ-X5z" firstAttribute="trailing" secondItem="G1g-ua-pal" secondAttribute="trailingMargin" id="c4E-of-gsx"/>
+                                                <constraint firstItem="88V-xJ-X5z" firstAttribute="leading" secondItem="G1g-ua-pal" secondAttribute="leadingMargin" id="vzZ-Vn-dT7"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES" header="YES"/>
+                                        </accessibility>
                                         <connections>
                                             <outlet property="BackViewTableHeader" destination="88V-xJ-X5z" id="Zye-cD-KHK"/>
                                         </connections>
@@ -395,9 +398,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="402" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BackPUList" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBo-CT-l3Q">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BackPUList" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBo-CT-l3Q">
                                                     <rect key="frame" x="8" y="11" width="394" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                     </accessibility>
@@ -406,6 +408,11 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="lBo-CT-l3Q" secondAttribute="trailing" id="5vw-DF-Xoi"/>
+                                                <constraint firstItem="lBo-CT-l3Q" firstAttribute="leading" secondItem="dQ1-W3-oSs" secondAttribute="leadingMargin" id="7qL-bA-4hZ"/>
+                                                <constraint firstItem="lBo-CT-l3Q" firstAttribute="centerY" secondItem="dQ1-W3-oSs" secondAttribute="centerY" id="hRE-Xu-ZRK"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="BackViewList" destination="lBo-CT-l3Q" id="3ut-4S-S1Z"/>
@@ -420,6 +427,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="SQq-B3-f3j" firstAttribute="leading" secondItem="cZi-M3-N1u" secondAttribute="leadingMargin" constant="-21" id="9Bz-GB-Mni"/>
                             <constraint firstItem="SQq-B3-f3j" firstAttribute="top" secondItem="TJo-Pe-x1e" secondAttribute="bottom" constant="15" id="NLR-qs-Q59"/>
                             <constraint firstItem="xp5-DO-FjG" firstAttribute="centerY" secondItem="SQq-B3-f3j" secondAttribute="centerY" constant="3" id="UY0-ft-TiX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xp5-DO-FjG" secondAttribute="trailing" constant="90" id="ffg-y4-d3i"/>
@@ -428,7 +436,6 @@
                             <constraint firstItem="34R-bZ-hmP" firstAttribute="top" secondItem="TJo-Pe-x1e" secondAttribute="bottom" constant="671" id="qrl-jQ-Leg"/>
                             <constraint firstItem="b6u-d4-6hc" firstAttribute="top" secondItem="SQq-B3-f3j" secondAttribute="bottom" constant="28" id="yc9-dv-1yE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="34R-bZ-hmP" secondAttribute="trailing" constant="5" id="zNr-mM-rfW"/>
-                            <constraint firstItem="SQq-B3-f3j" firstAttribute="leading" secondItem="cZi-M3-N1u" secondAttribute="leading" constant="-1" id="zpa-BX-YDC"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Back View" image="BMBack.png" id="yXs-c7-bBB" colorLabel="IBBuiltInLabel-Blue"/>
@@ -482,20 +489,23 @@
                                             <rect key="frame" x="0.0" y="0.0" width="402" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fornt View Table Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gN-JG-0cB">
-                                                    <rect key="frame" x="8" y="11" width="389" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fornt View Table Header" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gN-JG-0cB">
+                                                    <rect key="frame" x="5" y="11" width="389" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="3gN-JG-0cB" firstAttribute="leading" secondItem="mru-XQ-HEc" secondAttribute="leadingMargin" id="LZN-Ka-jaG"/>
-                                                <constraint firstItem="3gN-JG-0cB" firstAttribute="centerY" secondItem="mru-XQ-HEc" secondAttribute="centerY" id="O00-d0-dE3"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="3gN-JG-0cB" secondAttribute="trailing" constant="-3" id="xGf-0H-SiK"/>
+                                                <constraint firstItem="3gN-JG-0cB" firstAttribute="centerY" secondItem="mru-XQ-HEc" secondAttribute="centerY" id="evq-1h-nFx"/>
+                                                <constraint firstItem="3gN-JG-0cB" firstAttribute="trailing" secondItem="mru-XQ-HEc" secondAttribute="trailingMargin" id="hVw-3I-LJx"/>
+                                                <constraint firstItem="3gN-JG-0cB" firstAttribute="leading" secondItem="mru-XQ-HEc" secondAttribute="leadingMargin" constant="-3" id="zSR-2K-Nw1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES" header="YES"/>
+                                        </accessibility>
                                         <connections>
                                             <outlet property="FrontViewTableHeader" destination="3gN-JG-0cB" id="JVS-va-fok"/>
                                         </connections>

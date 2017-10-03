@@ -50,10 +50,11 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         let header = tableView.dequeueReusableCell(withIdentifier: "FrontHeader") as! FrontHeaderCell
         
         header.FrontViewTableHeader?.text = GlobalData.shared.theUnitInPlay
-        header.FrontViewTableHeader?.textAlignment = .center
-        header.FrontViewTableHeader?.textColor = UIColor.black
+       
+       
         header.FrontViewTableHeader?.textColor = UIColor.white
         header.FrontViewTableHeader?.backgroundColor = UIColor.black
+         header.FrontViewTableHeader?.textAlignment = .center
         
         //        header.textLabel?.text = "Hey Todd!"
         //        // header.textLabel?.text = "Hey Todd!"
@@ -62,7 +63,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         //     header.textLabel?.textColor = UIColor.white
         //      header.textLabel?.FrontgroundColor = UIColor.black
         
-        return header.contentView
+        return header //
         
     }
     
