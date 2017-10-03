@@ -330,7 +330,6 @@
 			children = (
 				DD3B57A61F6ADD0800AD8245 /* FrontView.swift */,
 				DDABC9EA1F71838400C46144 /* FrontHeaderCell.swift */,
-				DD9759571F7556F800A1D7CD /* BackHeaderCell.swift */,
 				DDABC9ED1F71840100C46144 /* FrontViewCell.swift */,
 			);
 			name = Front;
@@ -374,6 +373,7 @@
 		DDCC9C421F73656B00597763 /* Back */ = {
 			isa = PBXGroup;
 			children = (
+				DD9759571F7556F800A1D7CD /* BackHeaderCell.swift */,
 				DD9759551F75567700A1D7CD /* BackView.swift */,
 				DD9759591F75570D00A1D7CD /* BackViewCell.swift */,
 			);
