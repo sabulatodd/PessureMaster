@@ -371,7 +371,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88V-xJ-X5z">
-                                                    <rect key="frame" x="8" y="11" width="386" height="21"/>
+                                                    <rect key="frame" x="0.0" y="-0.5" width="402" height="43.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -379,9 +379,10 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="88V-xJ-X5z" firstAttribute="centerY" secondItem="G1g-ua-pal" secondAttribute="centerY" id="C2i-gf-2UD"/>
-                                                <constraint firstItem="88V-xJ-X5z" firstAttribute="trailing" secondItem="G1g-ua-pal" secondAttribute="trailingMargin" id="c4E-of-gsx"/>
-                                                <constraint firstItem="88V-xJ-X5z" firstAttribute="leading" secondItem="G1g-ua-pal" secondAttribute="leadingMargin" id="vzZ-Vn-dT7"/>
+                                                <constraint firstAttribute="height" secondItem="88V-xJ-X5z" secondAttribute="height" id="CMm-jv-9Ki"/>
+                                                <constraint firstItem="88V-xJ-X5z" firstAttribute="centerY" secondItem="G1g-ua-pal" secondAttribute="centerY" id="heZ-I5-q6l"/>
+                                                <constraint firstAttribute="width" secondItem="88V-xJ-X5z" secondAttribute="width" id="oZK-0G-5TA"/>
+                                                <constraint firstItem="88V-xJ-X5z" firstAttribute="centerX" secondItem="G1g-ua-pal" secondAttribute="centerX" id="vUp-yW-zve"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration">
@@ -398,8 +399,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="402" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BackPUList" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBo-CT-l3Q">
-                                                    <rect key="frame" x="8" y="11" width="394" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BackPUList" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBo-CT-l3Q">
+                                                    <rect key="frame" x="8" y="11" width="88" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                     </accessibility>
@@ -408,11 +410,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="lBo-CT-l3Q" secondAttribute="trailing" id="5vw-DF-Xoi"/>
-                                                <constraint firstItem="lBo-CT-l3Q" firstAttribute="leading" secondItem="dQ1-W3-oSs" secondAttribute="leadingMargin" id="7qL-bA-4hZ"/>
-                                                <constraint firstItem="lBo-CT-l3Q" firstAttribute="centerY" secondItem="dQ1-W3-oSs" secondAttribute="centerY" id="hRE-Xu-ZRK"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="BackViewList" destination="lBo-CT-l3Q" id="3ut-4S-S1Z"/>
@@ -490,16 +487,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fornt View Table Header" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gN-JG-0cB">
-                                                    <rect key="frame" x="5" y="11" width="389" height="21"/>
+                                                    <rect key="frame" x="0.0" y="-0.5" width="402" height="44"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="3gN-JG-0cB" firstAttribute="centerY" secondItem="mru-XQ-HEc" secondAttribute="centerY" id="evq-1h-nFx"/>
-                                                <constraint firstItem="3gN-JG-0cB" firstAttribute="trailing" secondItem="mru-XQ-HEc" secondAttribute="trailingMargin" id="hVw-3I-LJx"/>
-                                                <constraint firstItem="3gN-JG-0cB" firstAttribute="leading" secondItem="mru-XQ-HEc" secondAttribute="leadingMargin" constant="-3" id="zSR-2K-Nw1"/>
+                                                <constraint firstAttribute="width" secondItem="3gN-JG-0cB" secondAttribute="width" id="2uF-aE-uy0"/>
+                                                <constraint firstItem="3gN-JG-0cB" firstAttribute="centerY" secondItem="mru-XQ-HEc" secondAttribute="centerY" id="FCs-I8-NZT"/>
+                                                <constraint firstAttribute="height" secondItem="3gN-JG-0cB" secondAttribute="height" id="SyY-lr-BcW"/>
+                                                <constraint firstItem="3gN-JG-0cB" firstAttribute="centerX" secondItem="mru-XQ-HEc" secondAttribute="centerX" id="aEo-fj-zu8"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
