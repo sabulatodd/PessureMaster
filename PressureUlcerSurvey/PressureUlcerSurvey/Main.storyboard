@@ -361,7 +361,6 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="402" id="9Lg-Wd-vlL"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="Ida-tZ-nCv"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BackHeader" id="9QT-R1-wco" customClass="BackHeaderCell" customModule="PressureUlcerSurvey" customModuleProvider="target">
@@ -466,20 +465,41 @@
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-fv-IWy">
-                                <rect key="frame" x="509" y="87" width="405" height="579"/>
+                                <rect key="frame" x="512" y="87" width="402" height="579"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="405" id="2VQ-cX-PIv"/>
+                                    <constraint firstAttribute="width" constant="402" id="2VQ-cX-PIv"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FrontViewCell" id="X3N-Q6-kA0" customClass="FrontViewCell" customModule="PressureUlcerSurvey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="405" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FrontHeader" id="bnV-Ff-tcq" customClass="FrontHeaderCell" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="402" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FrontCell" tableViewCell="X3N-Q6-kA0" id="ZWC-FU-rK4" customClass="FrontViewCell" customModule="PressureUlcerSurvey" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="405" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bnV-Ff-tcq" id="mru-XQ-HEc" customClass="UITableViewCell">
+                                            <rect key="frame" x="0.0" y="0.0" width="402" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tyj" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDM-4b-cwv">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fornt View Table Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gN-JG-0cB">
+                                                    <rect key="frame" x="8" y="11" width="389" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="FrontViewTableHeader" destination="3gN-JG-0cB" id="JVS-va-fok"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FrontViewCell" id="X3N-Q6-kA0" customClass="FrontViewCell" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="402" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FrontCell" tableViewCell="X3N-Q6-kA0" id="ZWC-FU-rK4" customClass="UITableViewCell">
+                                            <rect key="frame" x="0.0" y="0.0" width="402" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FrontTableList" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDM-4b-cwv">
                                                     <rect key="frame" x="8" y="8" width="389" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -489,7 +509,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="frontViewCellLabel" destination="DDM-4b-cwv" id="Gx1-eV-oad"/>
+                                            <outlet property="FrontViewList" destination="DDM-4b-cwv" id="vTk-zh-kaJ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -498,26 +518,6 @@
                                     <outlet property="delegate" destination="toz-er-Ujq" id="97N-6w-spg"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRl-qZ-Qhc" customClass="HeaderViewCellMaster" customModule="PressureUlcerSurvey" customModuleProvider="target">
-                                <rect key="frame" x="509" y="51" width="405" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbh-2j-QRz" userLabel="FrontHeader Label">
-                                        <rect key="frame" x="4" y="12" width="397" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
-                                        </accessibility>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="HeaderLabel" destination="Lbh-2j-QRz" id="Uba-RX-IQo"/>
-                                </connections>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -534,7 +534,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Front View" image="BMFront.png" id="Brb-IC-zrc"/>
                     <connections>
-                        <outlet property="FrontHeaderCell" destination="RRl-qZ-Qhc" id="ulA-Ja-1uW"/>
                         <outlet property="FrontTable" destination="GJd-fv-IWy" id="1Iy-1P-xDG"/>
                     </connections>
                 </viewController>
