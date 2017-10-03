@@ -10,6 +10,8 @@ import UIKit
 
 class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
   {
+    
+    var delegate : BackHeaderTableViewCellDelegate?
     //weak var dataSource: UITableViewDataSource? { get set })
     //UIViewController, UITableViewDataSource, UITableViewDelegate {
     private var data: [String] = []
@@ -24,6 +26,12 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     }
    // @IBOutlet weak var pji9h: BackViewCell!
     
+   
+        
+        // Configure the view for the selected state
+    
+    
+
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       //  tableView.register(UITableViewCell.classForKeyedArchiver(), forCellReuseIdentifier: "BackViewCell")
 
@@ -39,16 +47,23 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
       
      //let header = tableView.dequeueReusableCell(withIdentifier: "BackHeader") as! UITableViewCell
-        let header = tableView.dequeueReusableCell(withIdentifier: "BackHeader") as! UITableViewCell
-      
-        header.textLabel?.text = "Hey Todd!"
-        // header.textLabel?.text = "Hey Todd!"
-         header.textLabel?.textAlignment = .center
-        header.textLabel?.textColor = UIColor.black
-     header.textLabel?.textColor = UIColor.white
-      header.textLabel?.backgroundColor = UIColor.black
+        let header = tableView.dequeueReusableCell(withIdentifier: "BackHeader") as! BackHeaderCell
         
-        return header
+        header.BackViewTableHeader?.text = GlobalData.shared.theUnitInPlay
+        header.BackViewTableHeader?.textAlignment = .center
+                header.BackViewTableHeader?.textColor = UIColor.black
+             header.BackViewTableHeader?.textColor = UIColor.white
+              header.BackViewTableHeader?.backgroundColor = UIColor.black
+        
+//        header.textLabel?.text = "Hey Todd!"
+//        // header.textLabel?.text = "Hey Todd!"
+//         header.textLabel?.textAlignment = .center
+//        header.textLabel?.textColor = UIColor.black
+//     header.textLabel?.textColor = UIColor.white
+//      header.textLabel?.backgroundColor = UIColor.black
+        
+        return header.contentView
+        
     }
     
 //    func tableView(_ tableView: UITableView,
@@ -59,10 +74,17 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
 //    }
     
 //
-     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 45.0//
-    }
+//     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        
+//        return 60.0
+//    }
     
+    
+//    private func tableView(_ tableView: UITableView, widthForHeaderInSection section: Int) -> CGFloat {
+//        return tableView.frame.width
+//    }
+   // tableView.frame.width
+//
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         
 //        let header = tableView.dequeueReusableCell(withIdentifier: "BackHeader") as! BackHeaderCell
@@ -97,7 +119,12 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         for i in 0...1000 {
             data.append("\(i)")
         }
-//        let BackViewNib = UINib(nibName: "BackHeaderCell", bundle: nil)
+        
+//        let HEADER_HEIGHT = 100
+//        _; tableView?.frame.size = CGSize(width: tableView.frame.width, height: CGFloat(HEADER_HEIGHT))
+
+
+        //        let BackViewNib = UINib(nibName: "BackHeaderCell", bundle: nil)
 //        BackTable.register(BackViewNib, forHeaderFooterViewReuseIdentifier: "BackHeaderCell")
 //        let BackViewHeaderNib = UINib(nibName: "BackViewCell", bundle: nil)
 //        BackTable.register(BackViewHeaderNib, forCellReuseIdentifier: "BackCell")
