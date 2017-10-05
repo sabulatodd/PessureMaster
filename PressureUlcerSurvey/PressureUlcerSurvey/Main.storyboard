@@ -552,6 +552,62 @@
                                 <rect key="frame" x="120" y="141" width="16" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0T-P3-jY9" userLabel="Armpit" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                <rect key="frame" x="255" y="184" width="16" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHt-6a-hro" userLabel="Bicep" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                <rect key="frame" x="272" y="222" width="16" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnj-sK-hkg" userLabel="Forearm" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                <rect key="frame" x="291" y="285" width="16" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIk-Kd-gcB" userLabel="Navel" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                <rect key="frame" x="186" y="311" width="16" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mru-El-c0X" userLabel="Wrist" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                <rect key="frame" x="71" y="326" width="16" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZD-cw-QNE" userLabel="Hand" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                <rect key="frame" x="62" y="354" width="16" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iif-2V-B0k" userLabel="Groin" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                <rect key="frame" x="163" y="369" width="16" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZP-rI-3wV" userLabel="Thigh" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                <rect key="frame" x="220" y="416" width="16" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWk-Hq-f7C" userLabel="Knee" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                <rect key="frame" x="154" y="479" width="16" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYx-R2-nuO" userLabel="Leg" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                <rect key="frame" x="214" y="541" width="16" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3h-TW-zkx" userLabel="Ankle" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                <rect key="frame" x="163" y="595" width="16" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOX-tb-f4W" userLabel="Foot" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                <rect key="frame" x="209" y="627" width="16" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6U-4j-GO3" userLabel="Toes" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                <rect key="frame" x="149" y="666" width="16" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQj-Vb-AFX" userLabel="Fingers" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                <rect key="frame" x="321" y="386" width="16" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
