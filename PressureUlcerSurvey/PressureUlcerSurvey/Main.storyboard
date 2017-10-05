@@ -524,14 +524,14 @@
                                     <outlet property="delegate" destination="toz-er-Ujq" id="97N-6w-spg"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8C-JW-H3q" userLabel="Ear" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8C-JW-H3q" userLabel="Forehead" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
                                 <rect key="frame" x="184" y="38" width="16" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="Forehead:" destination="toz-er-Ujq" eventType="touchUpInside" id="aai-Cw-yRe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNa-yY-PDw" userLabel="Forehead" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNa-yY-PDw" userLabel="Ear" customClass="ISRadioButton" customModule="PressureUlcerSurvey" customModuleProvider="target">
                                 <rect key="frame" x="137" y="75" width="16" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -677,7 +677,27 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Front View" image="BMFront.png" id="Brb-IC-zrc"/>
                     <connections>
+                        <outlet property="Ankle" destination="b3h-TW-zkx" id="rel-Vq-iJU"/>
+                        <outlet property="Armpit" destination="M0T-P3-jY9" id="Dgg-5M-nug"/>
+                        <outlet property="Bicep" destination="LHt-6a-hro" id="nH0-QQ-hA7"/>
+                        <outlet property="Chest" destination="fzG-WC-D1m" id="SfA-cg-JeU"/>
+                        <outlet property="Chin" destination="OdN-Nh-XMu" id="N3s-n2-u3V"/>
+                        <outlet property="Ear" destination="eNa-yY-PDw" id="oaE-4L-tON"/>
+                        <outlet property="Fingers" destination="MQj-Vb-AFX" id="F8D-Jq-GRr"/>
+                        <outlet property="Foot" destination="QOX-tb-f4W" id="MgY-Ol-pxn"/>
+                        <outlet property="Forearm" destination="Bnj-sK-hkg" id="FHJ-AX-P0L"/>
+                        <outlet property="Forehead" destination="X8C-JW-H3q" id="xIk-KL-Dfb"/>
                         <outlet property="FrontTable" destination="GJd-fv-IWy" id="1Iy-1P-xDG"/>
+                        <outlet property="Groin" destination="iif-2V-B0k" id="lJy-29-HZV"/>
+                        <outlet property="Hand" destination="wZD-cw-QNE" id="7G7-Am-JvS"/>
+                        <outlet property="Knee" destination="pWk-Hq-f7C" id="g8b-Fs-Acg"/>
+                        <outlet property="Leg" destination="LYx-R2-nuO" id="LX3-Mj-ffY"/>
+                        <outlet property="Navel" destination="aIk-Kd-gcB" id="jQI-4q-lSp"/>
+                        <outlet property="Neck" destination="fxl-Bk-CXw" id="qpJ-g9-6OL"/>
+                        <outlet property="Nose" destination="7OO-Ib-tWM" id="ixz-Ic-6R3"/>
+                        <outlet property="Shoulder" destination="gLD-yZ-ywF" id="wVC-Gm-uYZ"/>
+                        <outlet property="Thigh" destination="HZP-rI-3wV" id="Ef7-Hi-hSe"/>
+                        <outlet property="Toes" destination="K6U-4j-GO3" id="ajw-bw-WQD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVo-hl-8o3" userLabel="First Responder" sceneMemberID="firstResponder"/>

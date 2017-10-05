@@ -16,7 +16,27 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     //UIViewController, UITableViewDataSource, UITableViewDelegate {
     private var data: [String] = []
     @IBOutlet weak var FrontTable: UITableView!
-    
+    @IBOutlet var Forehead:ISRadioButton!
+    @IBOutlet var Nose:ISRadioButton!
+    @IBOutlet var Chin:ISRadioButton!
+    @IBOutlet var Ear:ISRadioButton!
+    @IBOutlet var Neck:ISRadioButton!
+    @IBOutlet var Shoulder:ISRadioButton!
+    @IBOutlet var Chest:ISRadioButton!
+    @IBOutlet var Armpit:ISRadioButton!
+    @IBOutlet var Bicep:ISRadioButton!
+    @IBOutlet var Navel:ISRadioButton!
+    @IBOutlet var Hand:ISRadioButton!
+    @IBOutlet var Fingers:ISRadioButton!
+    @IBOutlet var Groin:ISRadioButton!
+    @IBOutlet var Thigh:ISRadioButton!
+    @IBOutlet var Knee:ISRadioButton!
+    @IBOutlet var Leg:ISRadioButton!
+    @IBOutlet var Ankle:ISRadioButton!
+    @IBOutlet var Foot:ISRadioButton!
+    @IBOutlet var Toes:ISRadioButton!
+    @IBOutlet var Forearm:ISRadioButton!
+
     @IBAction func Forehead(_ isRadioButton:ISRadioButton){
           isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
     }
