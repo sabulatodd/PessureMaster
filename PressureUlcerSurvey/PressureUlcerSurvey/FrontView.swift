@@ -17,6 +17,83 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     private var data: [String] = []
     @IBOutlet weak var FrontTable: UITableView!
     
+    @IBAction func Forehead(_ isRadioButton:ISRadioButton){
+          isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    
+    @IBAction func Nose(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    
+    @IBAction func Chin(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    
+    @IBAction func Ear(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    
+    @IBAction func Neck(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    
+    @IBAction func Shoulder(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    
+    @IBAction func Chest(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    
+    @IBAction func Armpit(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    
+    @IBAction func Bicep(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    @IBAction func Navel(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    @IBAction func Wrist(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    
+    @IBAction func Hand(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    @IBAction func Fingers(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    @IBAction func Groin(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    
+    @IBAction func Thigh(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    @IBAction func Knee(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    @IBAction func Leg(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    
+    @IBAction func Ankle(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    @IBAction func Foot(__ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    
+    @IBAction func Toes(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    @IBAction func Forearm(_ isRadioButton:ISRadioButton){
+        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+    }
+    
+    //  @IBOutlet weak var FrontHeader: FrontHeaderCell
     //  @IBOutlet weak var FrontHeader: FrontHeaderCell!
     
     @IBAction func DismissFront(_ sender: Any) {
