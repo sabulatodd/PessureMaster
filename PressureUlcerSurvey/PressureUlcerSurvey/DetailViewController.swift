@@ -17,7 +17,7 @@ class DetailViewController: UIViewController {
         
         
         
-      isRadioButton.isSelected == isRadioButton.isSelected ? true : false
+      isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
 //
 //        if (!isRadioButton.isSelected ){
 //            isRadioButton.isSelected == true} else{
