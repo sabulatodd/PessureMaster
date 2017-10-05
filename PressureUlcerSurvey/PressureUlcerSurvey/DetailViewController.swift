@@ -12,6 +12,30 @@ import DLRadioButton
 
 class DetailViewController: UIViewController {
     //
+    @IBAction func ButtonSelected(_ isRadioButton:ISRadioButton){
+        print ("SBIS \(isRadioButton.isSelected)")
+        
+        
+        
+      isRadioButton.isSelected == isRadioButton.isSelected ? true : false
+//
+//        if (!isRadioButton.isSelected ){
+//            isRadioButton.isSelected == true} else{
+//            isRadioButton.isSelected == false
+//
+//        }
+    
+    }
+    @IBAction func SecondRadioButtonIsSelected(_ isRadioButton:ISRadioButton){
+        
+        print ("SSRBIS \(isRadioButton.isSelected)")
+        isRadioButton.isSelected == isRadioButton.isSelected ? true : false
+        
+    }
+    @IBOutlet weak var SecondRadioButtno: ISRadioButton!
+    @IBAction func DoWhatISDone(_ sender: Any) {
+    }
+    @IBOutlet weak var Button: ISRadioButton!
     @IBOutlet weak var PatientIInfo: UILabel!
     // @IBOutlet weak var detailDescriptionLabel: UILabel!
     func gotoModalGuy(_ sender: Any) {
@@ -47,6 +71,8 @@ class DetailViewController: UIViewController {
 //    }
     
     func configureView() {
+        
+        self.Button.isSelected = true
         print("Configuring DetailView")
 
         print("dtiD3escrip[tion = \(String(describing: detailItem?.description))")

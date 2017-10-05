@@ -13,6 +13,7 @@
 		DD0198311F67730E00967BB6 /* Ulcer_info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD01982E1F67730E00967BB6 /* Ulcer_info.swift */; };
 		DD10E9631F60548F0016BCC4 /* wound location.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DD10E9621F60548F0016BCC4 /* wound location.JPG */; };
 		DD132EC61F86A5040014DC25 /* Radio Buttons in Resources */ = {isa = PBXBuildFile; fileRef = DD132EC51F86A5040014DC25 /* Radio Buttons */; };
+		DD132EC81F86ACED0014DC25 /* ISRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD132EC71F86ACED0014DC25 /* ISRadioButton.swift */; };
 		DD1F17A61F63234700DB4818 /* PUAPIs.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DD1F17A51F63234700DB4818 /* PUAPIs.rtf */; };
 		DD2D51E11EDFC7CA00111839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D51E01EDFC7CA00111839 /* AppDelegate.swift */; };
 		DD2D51E71EDFC7DF00111839 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D51E21EDFC7DF00111839 /* DetailViewController.swift */; };
@@ -90,6 +91,8 @@
 		DD01982E1F67730E00967BB6 /* Ulcer_info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ulcer_info.swift; sourceTree = "<group>"; };
 		DD10E9621F60548F0016BCC4 /* wound location.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "wound location.JPG"; path = "PressureUlcerSurvey/wound location.JPG"; sourceTree = "<group>"; };
 		DD132EC51F86A5040014DC25 /* Radio Buttons */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Radio Buttons"; sourceTree = "<group>"; };
+		DD132EC71F86ACED0014DC25 /* ISRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISRadioButton.swift; sourceTree = "<group>"; };
+		DD132EC91F86AE300014DC25 /* ISRadioButton-master.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "ISRadioButton-master.zip"; sourceTree = "<group>"; };
 		DD1F17A51F63234700DB4818 /* PUAPIs.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = PUAPIs.rtf; sourceTree = "<group>"; };
 		DD2D51E01EDFC7CA00111839 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD2D51E21EDFC7DF00111839 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -243,7 +246,6 @@
 			children = (
 				DD2D51E51EDFC7DF00111839 /* Main.storyboard */,
 				DDEDBF671F8692C5008741B4 /* AlternativeBackButtonViewController.swift */,
-				DD132EC51F86A5040014DC25 /* Radio Buttons */,
 				DD9A2BCB1F140C570063EB3C /* MainViews */,
 				DD9A2BCC1F140C640063EB3C /* Login */,
 				DD54755C1F01D0E40091C63F /* UnitSelection */,
@@ -389,9 +391,12 @@
 		DDF59D7F1F61832E003D44DF /* RadioButtons */ = {
 			isa = PBXGroup;
 			children = (
+				DD132EC71F86ACED0014DC25 /* ISRadioButton.swift */,
 				DDF59D761F618135003D44DF /* PressureUlcerSurvey-Bridging-Header.h */,
+				DD132EC91F86AE300014DC25 /* ISRadioButton-master.zip */,
 				DDF59D771F618136003D44DF /* DLAppDelegate.h */,
 				DDF59D781F618136003D44DF /* DLAppDelegate.m */,
+				DD132EC51F86A5040014DC25 /* Radio Buttons */,
 			);
 			name = RadioButtons;
 			sourceTree = "<group>";
@@ -570,6 +575,7 @@
 				DDF59D791F618136003D44DF /* DLAppDelegate.m in Sources */,
 				DD2D51E81EDFC7DF00111839 /* GoToUnits.swift in Sources */,
 				DD2D51E71EDFC7DF00111839 /* DetailViewController.swift in Sources */,
+				DD132EC81F86ACED0014DC25 /* ISRadioButton.swift in Sources */,
 				DD2D51E11EDFC7CA00111839 /* AppDelegate.swift in Sources */,
 				DD9A2BC31F13E8670063EB3C /* GlobalData.swift in Sources */,
 				DDEDBF681F8692C5008741B4 /* AlternativeBackButtonViewController.swift in Sources */,
