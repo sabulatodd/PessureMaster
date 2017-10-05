@@ -1,0 +1,98 @@
+@property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *ButtonArray;
+
+- (IBAction)btnTapped:(id)sender {
+
+    for ( int i=0; i < [self.ButtonArray count]; i++) {
+    [[self.ButtonArray objectAtIndex:i] setImage:[UIImage
+                                                   imageNamed:@"radio-off.png"]
+                                         forState:UIControlStateNormal];
+
+    [sender setImage:[UIImage imageNamed:@"radio-on.png"]
+            forState:UIControlStateNormal];
+
+   }
+}
+
+{
+
+-----------------------------------------------------
+ischecked =!ischecked;
+UIButton *check = (UIButton*)sender;
+if(ischecked == NO)
+    [check setImage:[UIImage imageNamed:@"checkbox1.png"] forState:UIControlStateNormal];
+else 
+    [check setImage:[UIImage imageNamed:@"checkbox-pressed.png"] forState:UIControlStateNormal];
+    
+    -------------------------------------------------
+    
+    [_mrRadio setSelected:YES];
+        [_mrRadio setTag:1];
+        [_msRadio setTag:1];
+        [_mrRadio setBackgroundImage:[UIImage imageNamed:@"radiodselect_white.png"] forState:UIControlStateNormal];
+        [_mrRadio setBackgroundImage:[UIImage imageNamed:@"radioselect_white.png"] forState:UIControlStateSelected];
+        [_mrRadio addTarget:self action:@selector(radioButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+
+        [_msRadio setBackgroundImage:[UIImage imageNamed:@"radiodselect_white.png"] forState:UIControlStateNormal];
+        [_msRadio setBackgroundImage:[UIImage imageNamed:@"radioselect_white.png"] forState:UIControlStateSelected];
+        [_msRadio addTarget:self action:@selector(radioButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+        
+        -(void)radioButtonSelected:(id)sender
+{
+    switch ([sender tag ]) {
+        case 1:
+            if ([_mrRadio isSelected]==YES) {
+              //  [_mrRadio setSelected:NO];
+               // [_msRadio setSelected:YES];
+               genderType = @"1";
+            }
+            else
+            {
+                [_mrRadio setSelected:YES];
+                [_msRadio setSelected:NO];
+                genderType = @"1";
+            }
+            break;
+        case 2:
+            if ([_msRadio isSelected]==YES) {
+               // [_msRadio setSelected:NO];
+               // [_mrRadio setSelected:YES];
+                genderType = @"2";
+            }
+            else
+            {
+                [_msRadio setSelected:YES];
+                [_mrRadio setSelected:NO];
+                 genderType = @"2";
+            }
+            break;
+        default:
+            break;
+    }
+}
+===================================================================
+func manualAction (sender: KGRadioButton) {
+  sender.isSelected = !sender.isSelected
+  button2.isSelected = false
+  if sender.isSelected {
+  label2.text = “Selected”
+ } else{
+  label2.text = “Not Selected”
+ }
+}
+@IBAction func didPressButton(_ sender: KGRadioButton) {
+sender.isSelected = !sender.isSelected
+    button.isSelected = false
+    if sender.isSelected {
+        label.text = "Selected"
+    } else{
+        label.text = "Not Selected"
+    }
+}
+sender.isSelected = !sender.isSelected
+    button.isSelected = false
+    if sender.isSelected {
+        label.text = "Selected"
+    } else{
+        label.text = "Not Selected"
+    }
+}

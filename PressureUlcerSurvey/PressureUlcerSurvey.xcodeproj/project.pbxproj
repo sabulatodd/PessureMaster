@@ -12,6 +12,7 @@
 		DD0198301F67730E00967BB6 /* Patient_Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD01982D1F67730E00967BB6 /* Patient_Detail.swift */; };
 		DD0198311F67730E00967BB6 /* Ulcer_info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD01982E1F67730E00967BB6 /* Ulcer_info.swift */; };
 		DD10E9631F60548F0016BCC4 /* wound location.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DD10E9621F60548F0016BCC4 /* wound location.JPG */; };
+		DD132EC61F86A5040014DC25 /* Radio Buttons in Resources */ = {isa = PBXBuildFile; fileRef = DD132EC51F86A5040014DC25 /* Radio Buttons */; };
 		DD1F17A61F63234700DB4818 /* PUAPIs.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DD1F17A51F63234700DB4818 /* PUAPIs.rtf */; };
 		DD2D51E11EDFC7CA00111839 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D51E01EDFC7CA00111839 /* AppDelegate.swift */; };
 		DD2D51E71EDFC7DF00111839 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2D51E21EDFC7DF00111839 /* DetailViewController.swift */; };
@@ -88,6 +89,7 @@
 		DD01982D1F67730E00967BB6 /* Patient_Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient_Detail.swift; sourceTree = "<group>"; };
 		DD01982E1F67730E00967BB6 /* Ulcer_info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ulcer_info.swift; sourceTree = "<group>"; };
 		DD10E9621F60548F0016BCC4 /* wound location.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "wound location.JPG"; path = "PressureUlcerSurvey/wound location.JPG"; sourceTree = "<group>"; };
+		DD132EC51F86A5040014DC25 /* Radio Buttons */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Radio Buttons"; sourceTree = "<group>"; };
 		DD1F17A51F63234700DB4818 /* PUAPIs.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = PUAPIs.rtf; sourceTree = "<group>"; };
 		DD2D51E01EDFC7CA00111839 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD2D51E21EDFC7DF00111839 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			children = (
 				DD2D51E51EDFC7DF00111839 /* Main.storyboard */,
 				DDEDBF671F8692C5008741B4 /* AlternativeBackButtonViewController.swift */,
+				DD132EC51F86A5040014DC25 /* Radio Buttons */,
 				DD9A2BCB1F140C570063EB3C /* MainViews */,
 				DD9A2BCC1F140C640063EB3C /* Login */,
 				DD54755C1F01D0E40091C63F /* UnitSelection */,
@@ -475,6 +478,7 @@
 				DD2D51EA1EDFC7DF00111839 /* Main.storyboard in Resources */,
 				DDB493551F6D820D0054441B /* peopleBack@2x.png in Resources */,
 				DDCD817E1F60394900AF63EB /* JSONCalls.txt in Resources */,
+				DD132EC61F86A5040014DC25 /* Radio Buttons in Resources */,
 				DD9A2BC81F140A960063EB3C /* patient_summary.json in Resources */,
 				DD56C0831ECF8FE0005B1C3A /* Assets.xcassets in Resources */,
 				DD1F17A61F63234700DB4818 /* PUAPIs.rtf in Resources */,
