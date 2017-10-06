@@ -694,7 +694,6 @@
                         <outlet property="Leg" destination="LYx-R2-nuO" id="LX3-Mj-ffY"/>
                         <outlet property="Navel" destination="aIk-Kd-gcB" id="jQI-4q-lSp"/>
                         <outlet property="Neck" destination="fxl-Bk-CXw" id="qpJ-g9-6OL"/>
-                        <outlet property="Nose" destination="7OO-Ib-tWM" id="ixz-Ic-6R3"/>
                         <outlet property="Shoulder" destination="gLD-yZ-ywF" id="wVC-Gm-uYZ"/>
                         <outlet property="Thigh" destination="HZP-rI-3wV" id="Ef7-Hi-hSe"/>
                         <outlet property="Toes" destination="K6U-4j-GO3" id="ajw-bw-WQD"/>
@@ -722,7 +721,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ln3-sU-iOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1753" y="820"/>
+            <point key="canvasLocation" x="-2135" y="485"/>
         </scene>
         <!--Item-->
         <scene sceneID="sIa-0w-t3H">

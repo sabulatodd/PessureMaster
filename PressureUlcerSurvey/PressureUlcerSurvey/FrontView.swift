@@ -16,8 +16,10 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     //UIViewController, UITableViewDataSource, UITableViewDelegate {
     private var data: [String] = []
     @IBOutlet weak var FrontTable: UITableView!
-    @IBOutlet var Forehead:ISRadioButton!
-    @IBOutlet var Nose:ISRadioButton!
+//    @IBOutlet var Forehead:ISRadioButton!
+     @IBOutlet var Forehead:ISRadioButton!
+   @IBOutlet var Nose:ISRadioButton?
+    //  var Nose:ISRadioButton!
     @IBOutlet var Chin:ISRadioButton!
     @IBOutlet var Ear:ISRadioButton!
     @IBOutlet var Neck:ISRadioButton!
@@ -51,15 +53,17 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
   //  self.btn1.isSelected = true
     @IBAction func Nose(_ isRadioButton:ISRadioButton){
         print ("SBIS \(isRadioButton.isSelected)")
-        Nose.isSelected == !isRadioButton.isSelected ? false : true
+       // Nose.isSelected == !isRadioButton.isSelected ? false : true
 
-        print ("SBIS \(isRadioButton.isSelected)")
-        if (!isRadioButton.isSelected ){
-                        isRadioButton.isSelected == true} else{
-                        isRadioButton.isSelected == false
+        print ("SBIS \(self.Nose?.isSelected)")
+        if (!isRadioButton.isSelected == true){
+                        isRadioButton.isSelected == false} else{
+                        isRadioButton.isSelected == true
 
                     }
-        print ("SBIS \(isRadioButton.isSelected)")
+         isRadioButton.isSelected == false
+        Nose?.isSelected == false
+        print ("SBIS \(Nose?.isSelected)")
     }
     
     @IBAction func Chin(_ isRadioButton:ISRadioButton){
@@ -280,6 +284,8 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         
         
         // Do any additional setup after loading the view.
+        Nose?.isSelected = false
+        print ("VDA \(Nose?.isSelected)")
     }
     override func viewWillAppear(_ animated: Bool) {
         
