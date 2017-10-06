@@ -698,6 +698,7 @@
                         <outlet property="Shoulder" destination="gLD-yZ-ywF" id="wVC-Gm-uYZ"/>
                         <outlet property="Thigh" destination="HZP-rI-3wV" id="Ef7-Hi-hSe"/>
                         <outlet property="Toes" destination="K6U-4j-GO3" id="ajw-bw-WQD"/>
+                        <outlet property="Wrist" destination="mru-El-c0X" id="O9P-KL-ujZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVo-hl-8o3" userLabel="First Responder" sceneMemberID="firstResponder"/>

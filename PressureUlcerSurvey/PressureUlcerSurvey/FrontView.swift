@@ -36,81 +36,88 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     @IBOutlet var Foot:ISRadioButton!
     @IBOutlet var Toes:ISRadioButton!
     @IBOutlet var Forearm:ISRadioButton!
+      @IBOutlet var Wrist:ISRadioButton!
 
     @IBAction func Forehead(_ isRadioButton:ISRadioButton){
-          isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          //isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+
+//        if isRadioButton.isSelected {
+//            return self
+//        }
     }
-    
+  //  self.btn1.isSelected = true
     @IBAction func Nose(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+        Nose.isSelected = !isRadioButton.isSelected ? false : true
     }
     
     @IBAction func Chin(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+        Chin.isSelected = !isRadioButton.isSelected ? false : true
     }
     
     @IBAction func Ear(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          Ear.isSelected = !isRadioButton.isSelected ? false : true
     }
     
     @IBAction func Neck(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          Neck.isSelected = !isRadioButton.isSelected ? false : true
     }
     
     @IBAction func Shoulder(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          Shoulder.isSelected = !isRadioButton.isSelected ? false : true
     }
     
     @IBAction func Chest(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          Chest.isSelected = !isRadioButton.isSelected ? false : true
     }
     
     @IBAction func Armpit(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          Armpit.isSelected = !isRadioButton.isSelected ? false : true
     }
     
     @IBAction func Bicep(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          Bicep.isSelected = !isRadioButton.isSelected ? false : true
     }
     @IBAction func Navel(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          Navel.isSelected = !isRadioButton.isSelected ? false : true
     }
     @IBAction func Wrist(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          Wrist.isSelected = !isRadioButton.isSelected ? false : true
     }
     
     @IBAction func Hand(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          Hand.isSelected = !isRadioButton.isSelected ? false : true
     }
     @IBAction func Fingers(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          Hand.isSelected = !isRadioButton.isSelected ? false : true
     }
     @IBAction func Groin(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+         Groin.isSelected = !isRadioButton.isSelected ? false : true
     }
     
     @IBAction func Thigh(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          Thigh.isSelected = !isRadioButton.isSelected ? false : true
     }
     @IBAction func Knee(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          Knee.isSelected = !isRadioButton.isSelected ? false : true
     }
     @IBAction func Leg(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          Leg.isSelected = !isRadioButton.isSelected ? false : true
     }
     
     @IBAction func Ankle(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          Ankle.isSelected = !isRadioButton.isSelected ? false : true
     }
     @IBAction func Foot(__ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+          Foot.isSelected = !isRadioButton.isSelected ? false : true
     }
     
     @IBAction func Toes(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+         Toes.isSelected = !isRadioButton.isSelected ? false : true
     }
     @IBAction func Forearm(_ isRadioButton:ISRadioButton){
-        isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
+
+          Forearm.isSelected = !isRadioButton.isSelected ? false : true
+//         Chin.isSelected = !isRadioButton.isSelected ? false : true
     }
     
     //  @IBOutlet weak var FrontHeader: FrontHeaderCell
@@ -183,6 +190,36 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     //    }
     // tableView.frame.width
     //
+//    public func selectedButton() -> ISRadioButton!{
+//        if !self.multipleSelectionEnabled {
+//            if self.isSelected {
+//                return self
+//            }
+//        }else{
+//            for isRadioButton in self.otherButtons!  {
+//                if isRadioButton.isSelected {
+//                    return isRadioButton
+//                }
+//            }
+//        }
+//        return nil
+//    }
+//
+//    //    @return Selected buttons in same group, use it only if multiple selection is enabled.
+//
+//    public func selectedButtons() -> NSMutableArray{
+//
+//        let selectedButtons:NSMutableArray = NSMutableArray ()
+//        if self.isSelected {
+//            selectedButtons.add(self)
+//        }
+//        for radioButton in self.otherButtons!  {
+//            if radioButton.isSelected {
+//                selectedButtons .add(self)
+//            }
+//        }
+//        return selectedButtons;
+//    }
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         
         //        let header = tableView.dequeueReusableCell(withIdentifier: "FrontHeader") as! FrontHeaderCell
