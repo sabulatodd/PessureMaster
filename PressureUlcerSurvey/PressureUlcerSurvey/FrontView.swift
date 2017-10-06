@@ -36,9 +36,12 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     @IBOutlet var Foot:ISRadioButton!
     @IBOutlet var Toes:ISRadioButton!
     @IBOutlet var Forearm:ISRadioButton!
-      @IBOutlet var Wrist:ISRadioButton!
+  @IBOutlet var Wrist:ISRadioButton!
 
     @IBAction func Forehead(_ isRadioButton:ISRadioButton){
+
+         Forehead.isSelected == !isRadioButton.isSelected ? false : true
+        // Forehead.isSelected = !isRadioButton.isSelected ? false : true
           //isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
 
 //        if isRadioButton.isSelected {
@@ -47,7 +50,16 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     }
   //  self.btn1.isSelected = true
     @IBAction func Nose(_ isRadioButton:ISRadioButton){
-        Nose.isSelected = !isRadioButton.isSelected ? false : true
+        print ("SBIS \(isRadioButton.isSelected)")
+        Nose.isSelected == !isRadioButton.isSelected ? false : true
+
+        print ("SBIS \(isRadioButton.isSelected)")
+        if (!isRadioButton.isSelected ){
+                        isRadioButton.isSelected == true} else{
+                        isRadioButton.isSelected == false
+
+                    }
+        print ("SBIS \(isRadioButton.isSelected)")
     }
     
     @IBAction func Chin(_ isRadioButton:ISRadioButton){

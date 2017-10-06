@@ -6,125 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PressureUlcerSurvey/BackHeaderCell.swift"
-            timestampString = "528753249.170345"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "BackHeaderCell"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PressureUlcerSurvey.BackHeaderCell.__deallocating_deinit"
-                  moduleName = "PressureUlcerSurvey"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tpapke/Desktop/PRessureOCtober/PressureUlcerSurvey/PressureUlcerSurvey/BackHeaderCell.swift"
-                  timestampString = "528674106.567608"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PressureUlcerSurvey.BackHeaderCell.__allocating_init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; PressureUlcerSurvey.BackHeaderCell"
-                  moduleName = "PressureUlcerSurvey"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tpapke/Desktop/PRessureOCtober/PressureUlcerSurvey/PressureUlcerSurvey/BackHeaderCell.swift"
-                  timestampString = "528674106.569918"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "13">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PressureUlcerSurvey.BackHeaderCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; PressureUlcerSurvey.BackHeaderCell"
-                  moduleName = "PressureUlcerSurvey"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tpapke/Desktop/PRessureOCtober/PressureUlcerSurvey/PressureUlcerSurvey/BackHeaderCell.swift"
-                  timestampString = "528674106.572341"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PressureUlcerSurvey.BackHeaderCell.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;PressureUlcerSurvey.BackHeaderCell&gt;"
-                  moduleName = "PressureUlcerSurvey"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tpapke/Desktop/PRessureOCtober/PressureUlcerSurvey/PressureUlcerSurvey/BackHeaderCell.swift"
-                  timestampString = "528674106.574665"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PressureUlcerSurvey.BackHeaderCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;PressureUlcerSurvey.BackHeaderCell&gt;"
-                  moduleName = "PressureUlcerSurvey"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tpapke/Desktop/PRessureOCtober/PressureUlcerSurvey/PressureUlcerSurvey/BackHeaderCell.swift"
-                  timestampString = "528674106.576793"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "46">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PressureUlcerSurvey/BackView.swift"
-            timestampString = "528926404.227745"
+            filePath = "PressureUlcerSurvey/FrontView.swift"
+            timestampString = "528942924.100963"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "tableView(_:viewForHeaderInSection:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PressureUlcerSurvey/DetailViewController.swift"
-            timestampString = "528941627.238652"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "SecondRadioButtonIsSelected(_:)"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "Nose(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
