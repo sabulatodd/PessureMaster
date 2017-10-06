@@ -41,6 +41,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     @IBOutlet var Wrist:KGRadioButton!
     func SetNoseHead(WhatToCallMe: String){
         Nose.myName = WhatToCallMe
+      //  Nose.isSelected = !Nose.isSelected
        // print (" 0 \(Nose.myName) <---")
     }
     @IBAction func Forehead(_ sender: KGRadioButton) {

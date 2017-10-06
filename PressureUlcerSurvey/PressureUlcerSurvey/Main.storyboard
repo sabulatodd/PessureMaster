@@ -39,7 +39,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PatientName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qU8-pO-eFX">
-                                <rect key="frame" x="102" y="84" width="528.5" height="21"/>
+                                <rect key="frame" x="102" y="64" width="528.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -383,9 +383,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34R-bZ-hmP">
-                                <rect key="frame" x="924" y="691" width="75" height="20"/>
+                                <rect key="frame" x="916" y="686" width="75" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Done Back"/>
+                                <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="DismissBack:" destination="y07-Uf-tWh" eventType="touchUpInside" id="uwq-Dl-IG5"/>
                                 </connections>
@@ -476,9 +476,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vu1-Lc-7E5">
-                                <rect key="frame" x="921" y="691" width="83" height="20"/>
+                                <rect key="frame" x="912" y="686" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Done Front"/>
+                                <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="DismissFront:" destination="toz-er-Ujq" eventType="touchUpInside" id="JvV-qG-V5K"/>
                                 </connections>
@@ -487,16 +487,16 @@
                                 <rect key="frame" x="0.0" y="34" width="400" height="657"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-fv-IWy">
+                            <tableView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-fv-IWy">
                                 <rect key="frame" x="512" y="87" width="402" height="557"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FrontHeader" id="bnV-Ff-tcq" customClass="FrontHeaderCell" customModule="PressureUlcerSurvey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="402" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="402" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bnV-Ff-tcq" id="mru-XQ-HEc" customClass="UITableViewCell">
-                                            <rect key="frame" x="0.0" y="0.0" width="402" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="402" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Front View Table Header" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gN-JG-0cB">
@@ -517,10 +517,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FrontViewCell" id="X3N-Q6-kA0" customClass="FrontViewCell" customModule="PressureUlcerSurvey" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="402" height="44"/>
+                                        <rect key="frame" x="0.0" y="78" width="402" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FrontCell" tableViewCell="X3N-Q6-kA0" id="ZWC-FU-rK4" customClass="UITableViewCell">
-                                            <rect key="frame" x="0.0" y="0.0" width="402" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="402" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FrontTableList" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDM-4b-cwv">
