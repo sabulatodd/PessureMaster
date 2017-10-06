@@ -39,17 +39,23 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     @IBOutlet var Toes:KGRadioButton!
     @IBOutlet var Forearm:KGRadioButton!
     @IBOutlet var Wrist:KGRadioButton!
-
+    func SetNoseHead(WhatToCallMe: String){
+        Nose.myName = WhatToCallMe
+       // print (" 0 \(Nose.myName) <---")
+    }
     @IBAction func Forehead(_ sender: KGRadioButton) {
         sender.isSelected = !sender.isSelected
-        sender.myName = "Bubba"
-        print ("doublewow  \(sender.myName)")
+         print (" 1 OriginalName ->>> \(sender.myName)")
+        sender.myName = "FOreHead Changed his Name"
+        print (" 2 Changed ForeHead Name To->>> \(sender.myName)")
+        SetNoseHead(WhatToCallMe: "blown Nose")
     }
   //  self.btn1.isSelected = true
     @IBAction func Nose(_ sender: KGRadioButton) {
         sender.isSelected = !sender.isSelected
-        sender.myName = "Nose"
-        print ("doublewow  \(sender.myName)")
+       // sender.myName = "Unblown Nose"
+        print ("My Name -->   \(sender.myName)")
+        
     }
     
     @IBAction func Chin(_ sender: KGRadioButton) {
