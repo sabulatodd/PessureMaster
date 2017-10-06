@@ -24,7 +24,7 @@ final class GlobalData {
     var myUnitindexPathRow: Int! = 0
     var ISThereAPriorSetIndexRow : Bool = false
     var myUnitindexPathSection: Int? = 1
-    
+    var FrontUlcerNames : [String] = ["ForeHead", "Nose", "Ear", "Chin", "Neck", "Shoulder", "Chest", "Armpit","Bicep", "Fingers", "Navel","Wrist", "Hand", "Groin", "Knee", "Leg", "Shin", "Ankle", "Foot", "Toes"]
     var uRlPrefixString = "https://wsint-test.healthcare.uiowa.edu/pusurvey/apiz/"
     /////////////////////////////////////////////////////////////////////
     var uNitsPrefixString = "https://wsint-test.healthcare.uiowa.edu/pusurvey/api/unitsz/"

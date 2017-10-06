@@ -16,7 +16,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     var delegate : FrontHeaderTableViewCellDelegate?
     //weak var dataSource: UITableViewDataSource? { get set })
     //UIViewController, UITableViewDataSource, UITableViewDelegate {
-    private var data: [String] = []
+    var data: [String] = GlobalData.shared.FrontUlcerNames
     @IBOutlet weak var FrontTable: UITableView!
     @IBOutlet var Forehead:KGRadioButton!
     @IBOutlet var Nose:KGRadioButton!
