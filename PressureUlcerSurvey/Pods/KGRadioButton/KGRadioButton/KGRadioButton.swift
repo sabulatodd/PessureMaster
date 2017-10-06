@@ -15,6 +15,14 @@ public class KGRadioButton: UIButton {
     internal var outerCircleLayer = CAShapeLayer()
     internal var innerCircleLayer = CAShapeLayer()
     
+    internal var JustMyName = String()
+   
+    @IBInspectable public var myName: String = String(){
+        didSet {
+            JustMyName = myName
+              print ("Wow getting set \(JustMyName)")
+        }
+    }
     
     @IBInspectable public var outerCircleColor: UIColor = UIColor.green {
         didSet {
