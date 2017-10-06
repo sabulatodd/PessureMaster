@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import DLRadioButton
+import KGRadioButton
 
 class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
@@ -16,128 +18,102 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     //UIViewController, UITableViewDataSource, UITableViewDelegate {
     private var data: [String] = []
     @IBOutlet weak var FrontTable: UITableView!
-//    @IBOutlet var Forehead:ISRadioButton!
-     @IBOutlet var Forehead:ISRadioButton!
-   @IBOutlet var Nose:ISRadioButton?
-    //  var Nose:ISRadioButton!
-    @IBOutlet var Chin:ISRadioButton!
-    @IBOutlet var Ear:ISRadioButton!
-    @IBOutlet var Neck:ISRadioButton!
-    @IBOutlet var Shoulder:ISRadioButton!
-    @IBOutlet var Chest:ISRadioButton!
-    @IBOutlet var Armpit:ISRadioButton!
-    @IBOutlet var Bicep:ISRadioButton!
-    @IBOutlet var Navel:ISRadioButton!
-    @IBOutlet var Hand:ISRadioButton!
-    @IBOutlet var Fingers:ISRadioButton!
-    @IBOutlet var Groin:ISRadioButton!
-    @IBOutlet var Thigh:ISRadioButton!
-    @IBOutlet var Knee:ISRadioButton!
-    @IBOutlet var Leg:ISRadioButton!
-    @IBOutlet var Ankle:ISRadioButton!
-    @IBOutlet var Foot:ISRadioButton!
-    @IBOutlet var Toes:ISRadioButton!
-    @IBOutlet var Forearm:ISRadioButton!
-  @IBOutlet var Wrist:ISRadioButton!
+    @IBOutlet var Forehead:KGRadioButton!
+    @IBOutlet var Nose:KGRadioButton!
+    @IBOutlet var Chin:KGRadioButton!
+    @IBOutlet var Ear:KGRadioButton!
+    @IBOutlet var Neck:KGRadioButton!
+    @IBOutlet var Shoulder:KGRadioButton!
+    @IBOutlet var Chest:KGRadioButton!
+    @IBOutlet var Armpit:KGRadioButton!
+    @IBOutlet var Bicep:KGRadioButton!
+    @IBOutlet var Navel:KGRadioButton!
+    @IBOutlet var Hand:KGRadioButton!
+    @IBOutlet var Fingers:KGRadioButton!
+    @IBOutlet var Groin:KGRadioButton!
+    @IBOutlet var Thigh:KGRadioButton!
+    @IBOutlet var Knee:KGRadioButton!
+    @IBOutlet var Leg:KGRadioButton!
+    @IBOutlet var Ankle:KGRadioButton!
+    @IBOutlet var Foot:KGRadioButton!
+    @IBOutlet var Toes:KGRadioButton!
+    @IBOutlet var Forearm:KGRadioButton!
+  @IBOutlet var Wrist:KGRadioButton!
 
-    @IBAction func Forehead(_ isRadioButton:ISRadioButton){
-
-         Forehead.isSelected == !isRadioButton.isSelected ? false : true
-        // Forehead.isSelected = !isRadioButton.isSelected ? false : true
-          //isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
-
-//        if isRadioButton.isSelected {
-//            return self
-//        }
+    @IBAction func Forehead(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
   //  self.btn1.isSelected = true
-    @IBAction func Nose(_ isRadioButton:ISRadioButton){
-        print ("SBIS \(isRadioButton.isSelected)")
-       // Nose.isSelected == !isRadioButton.isSelected ? false : true
-
-        print ("SBIS \(self.Nose?.isSelected)")
-        if (!isRadioButton.isSelected == true){
-                        isRadioButton.isSelected == false} else{
-                        isRadioButton.isSelected == true
-
-                    }
-         isRadioButton.isSelected == false
-        Nose?.isSelected == false
-        print ("SBIS \(Nose?.isSelected)")
+    @IBAction func Nose(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
     
-    @IBAction func Chin(_ isRadioButton:ISRadioButton){
-        Chin.isSelected = !isRadioButton.isSelected ? false : true
+    @IBAction func Chin(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
     
-    @IBAction func Ear(_ isRadioButton:ISRadioButton){
-          Ear.isSelected = !isRadioButton.isSelected ? false : true
+    @IBAction func Ear(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
     
-    @IBAction func Neck(_ isRadioButton:ISRadioButton){
-          Neck.isSelected = !isRadioButton.isSelected ? false : true
+    @IBAction func Neck(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
+    }
+    @IBAction func Shoulder(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
     
-    @IBAction func Shoulder(_ isRadioButton:ISRadioButton){
-          Shoulder.isSelected = !isRadioButton.isSelected ? false : true
+    @IBAction func Chest(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
     
-    @IBAction func Chest(_ isRadioButton:ISRadioButton){
-          Chest.isSelected = !isRadioButton.isSelected ? false : true
+    @IBAction func Armpit(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
     
-    @IBAction func Armpit(_ isRadioButton:ISRadioButton){
-          Armpit.isSelected = !isRadioButton.isSelected ? false : true
+    @IBAction func Bicep(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
+    }
+    @IBAction func Navel(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
+    }
+    @IBAction func Wrist(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
     
-    @IBAction func Bicep(_ isRadioButton:ISRadioButton){
-          Bicep.isSelected = !isRadioButton.isSelected ? false : true
+    @IBAction func Hand(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
-    @IBAction func Navel(_ isRadioButton:ISRadioButton){
-          Navel.isSelected = !isRadioButton.isSelected ? false : true
+    @IBAction func Fingers(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
-    @IBAction func Wrist(_ isRadioButton:ISRadioButton){
-          Wrist.isSelected = !isRadioButton.isSelected ? false : true
-    }
-    
-    @IBAction func Hand(_ isRadioButton:ISRadioButton){
-          Hand.isSelected = !isRadioButton.isSelected ? false : true
-    }
-    @IBAction func Fingers(_ isRadioButton:ISRadioButton){
-          Hand.isSelected = !isRadioButton.isSelected ? false : true
-    }
-    @IBAction func Groin(_ isRadioButton:ISRadioButton){
-         Groin.isSelected = !isRadioButton.isSelected ? false : true
+    @IBAction func Groin(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
     
-    @IBAction func Thigh(_ isRadioButton:ISRadioButton){
-          Thigh.isSelected = !isRadioButton.isSelected ? false : true
+    @IBAction func Thigh(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
-    @IBAction func Knee(_ isRadioButton:ISRadioButton){
-          Knee.isSelected = !isRadioButton.isSelected ? false : true
+    @IBAction func Knee(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
-    @IBAction func Leg(_ isRadioButton:ISRadioButton){
-          Leg.isSelected = !isRadioButton.isSelected ? false : true
-    }
-    
-    @IBAction func Ankle(_ isRadioButton:ISRadioButton){
-          Ankle.isSelected = !isRadioButton.isSelected ? false : true
-    }
-    @IBAction func Foot(__ isRadioButton:ISRadioButton){
-          Foot.isSelected = !isRadioButton.isSelected ? false : true
+    @IBAction func Leg(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
     
-    @IBAction func Toes(_ isRadioButton:ISRadioButton){
-         Toes.isSelected = !isRadioButton.isSelected ? false : true
+    @IBAction func Ankle(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
-    @IBAction func Forearm(_ isRadioButton:ISRadioButton){
-
-          Forearm.isSelected = !isRadioButton.isSelected ? false : true
-//         Chin.isSelected = !isRadioButton.isSelected ? false : true
+    @IBAction func Foot(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
     }
     
-    //  @IBOutlet weak var FrontHeader: FrontHeaderCell
-    //  @IBOutlet weak var FrontHeader: FrontHeaderCell!
+    @IBAction func Toes(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
+    }
+    @IBAction func Forearm(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
+    }
     
     @IBAction func DismissFront(_ sender: Any) {
         self.dismiss(animated: true, completion: {
@@ -284,8 +260,6 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         
         
         // Do any additional setup after loading the view.
-        Nose?.isSelected = false
-        print ("VDA \(Nose?.isSelected)")
     }
     override func viewWillAppear(_ animated: Bool) {
         

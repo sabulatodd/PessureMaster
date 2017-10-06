@@ -9,16 +9,16 @@
 //https://wsint-test.healthcare.uiowa.edu/pusurvey/api//Patient_Summary/3
 import UIKit
 import DLRadioButton
+import KGRadioButton
+//import ISRadioButton
+
 
 class DetailViewController: UIViewController {
     //
+    @IBOutlet weak var KGSenderTest: KGRadioButton!
     @IBAction func ButtonSelected(_ isRadioButton:ISRadioButton){
         print ("SBIS \(isRadioButton.isSelected)")
-        
-        
-        
-      isRadioButton.isSelected == !isRadioButton.isSelected ? false : true
-//
+        isRadioButton.isSelected = !isRadioButton.isSelected
 //        if (!isRadioButton.isSelected ){
 //            isRadioButton.isSelected == true} else{
 //            isRadioButton.isSelected == false
@@ -31,6 +31,14 @@ class DetailViewController: UIViewController {
         print ("SSRBIS \(isRadioButton.isSelected)")
         isRadioButton.isSelected == isRadioButton.isSelected ? true : false
         
+    }
+    
+    @IBAction func burp(_ sender: KGRadioButton) {
+         sender.isSelected = !sender.isSelected
+    }
+    @IBAction func setDefaultLabelText(_ sender: ISRadioButton) {
+        
+        print ("I tickleed hte button")
     }
     @IBOutlet weak var SecondRadioButtno: ISRadioButton!
     @IBAction func DoWhatISDone(_ sender: Any) {
