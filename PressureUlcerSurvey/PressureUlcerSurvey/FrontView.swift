@@ -151,6 +151,13 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     //     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     //        return "Section \(section)   " + GlobalData.shared.theUnitInPlay
     //    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print ("You selected cell number: \(data[indexPath.row])")
+        //self.performSegueWithIdentifier("yourIdentifier", sender: self)
+    }
+
+
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         //let header = tableView.dequeueReusableCell(withIdentifier: "FrontHeader") as! UITableViewCell
@@ -254,9 +261,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        for i in 0...1000 {
-            data.append("\(i)")
-        }
+
         
         //        let HEADER_HEIGHT = 100
         //        _; tableView?.frame.size = CGSize(width: tableView.frame.width, height: CGFloat(HEADER_HEIGHT))

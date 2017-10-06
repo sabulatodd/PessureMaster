@@ -80,8 +80,7 @@ class DetailViewController: UIViewController {
     
     func configureView() {
         
-        self.Button.isSelected = true
-        print("Configuring DetailView")
+        
 
         print("dtiD3escrip[tion = \(String(describing: detailItem?.description))")
         //Update the user interface for the detail item.
