@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PressureUlcerSurvey/FrontView.swift"
-            timestampString = "528994994.596279"
+            timestampString = "528995689.97233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
             endingLineNumber = "47"
-            landmarkName = "FrontView"
-            landmarkType = "3">
+            landmarkName = "Nose(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
