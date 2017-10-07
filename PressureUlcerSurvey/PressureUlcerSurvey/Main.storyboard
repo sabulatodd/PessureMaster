@@ -882,6 +882,9 @@
                                         <integer key="value" value="13"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnAndOff:" destination="toz-er-Ujq" eventType="touchUpInside" id="8v9-Xy-gku"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iif-2V-B0k" userLabel="Groin" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="163" y="369" width="16" height="17"/>

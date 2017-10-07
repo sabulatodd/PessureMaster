@@ -19,8 +19,12 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     private var data: [Int:String] = GlobalData.shared.FrontUlcerKeysAndNames
     @IBOutlet weak var FrontTable: UITableView!
 
+    @IBAction func OnAndOff(_ sender: KGRadioButton) {
+        sender.isSelected = !sender.isSelected
+                 print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
+    }
 
-  //  @IBAction func OnAndOff(_ sender: KGRadioButton) {
+//    @IBAction func OnAndOff(_ sender: KGRadioButton) {
 //        sender.isSelected = !sender.isSelected
 //         print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
 //    }
