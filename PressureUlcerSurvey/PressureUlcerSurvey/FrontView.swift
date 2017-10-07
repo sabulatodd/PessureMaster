@@ -24,7 +24,12 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
                             print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
 
     }
-    
+
+    @IBAction func DismissFront(_ sender: Any) {
+        self.dismiss(animated: true, completion: {
+
+        })
+    }
 
 //    @IBAction func OnAndOff(_ sender: KGRadioButton) {
 //        sender.isSelected = !sender.isSelected
