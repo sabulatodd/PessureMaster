@@ -17,7 +17,7 @@ public class KGRadioButton: UIButton {
     
     internal var JustMyName = String()
     internal var RadioSetValue = Int()
-   
+   //sefsg
     @IBInspectable public var myName: String = String(){
         didSet {
             JustMyName = myName
