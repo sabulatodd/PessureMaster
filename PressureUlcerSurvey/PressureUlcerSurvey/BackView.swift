@@ -7,6 +7,24 @@
 //
 
 import UIKit
+import KGRadioButton
+
+//internal var JustMyName = String()
+//internal var RadioSetValue = Int()
+//
+//@IBInspectable public var myName: String = String(){
+//    didSet {
+//        JustMyName = myName
+//        // print ("Wow getting set \(JustMyName)")
+//    }
+//}
+//@IBInspectable public var mySetKey: Int = Int(){
+//    didSet {
+//        RadioSetValue = mySetKey
+//        // print ("Wow getting set \(JustMyName)")
+//    }
+//}
+
 
 class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
   {
@@ -14,7 +32,7 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     var delegate : BackHeaderTableViewCellDelegate?
     //weak var dataSource: UITableViewDataSource? { get set })
     //UIViewController, UITableViewDataSource, UITableViewDelegate {
-    private var data: [String] = []
+    private var data: [Int:String] = GlobalData.shared.BackUlcerKeysAndNames
     @IBOutlet weak var BackTable: UITableView!
 
     //  @IBOutlet weak var BackHeader: BackHeaderCell!
@@ -30,8 +48,13 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         
         // Configure the view for the selected state
     
+    @IBOutlet var MyButtons: [KGRadioButton]!
     
-
+    @IBAction func OnAndOff(_ sender:  KGRadioButton) {
+        sender.isSelected = !sender.isSelected
+        print ("you selected -> \(sender.myName)")
+    }
+    
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       //  tableView.register(UITableViewCell.classForKeyedArchiver(), forCellReuseIdentifier: "BackViewCell")
 
@@ -117,9 +140,19 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        for i in 0...1000 {
-            data.append("\(i)")
+        for (buttonKey, buttonName) in self.data {
+            for (Button) in MyButtons{
+                print ("\(MyButtons.myName)")
+                if Button.mySetKey == buttonKey{
+                    Button.myName = buttonName
+                }
+            }
+            print ("\(buttonKey)  \(buttonName)")
         }
+        
+//        for i in 0...1000 {
+//            data.append("\(i)")
+//        }
         
 //        let HEADER_HEIGHT = 100
 //        _; tableView?.frame.size = CGSize(width: tableView.frame.width, height: CGFloat(HEADER_HEIGHT))
