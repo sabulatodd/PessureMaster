@@ -425,9 +425,9 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="myName" value="Thigh"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="myName" value="Head"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="mySetKey">
-                                        <integer key="value" value="1"/>
+                                        <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -450,9 +450,9 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="myName" value="Bubba"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="myName" value="Neck"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="mySetKey">
-                                        <integer key="value" value="2"/>
+                                        <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -475,9 +475,9 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="myName" value="Ralph"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="myName" value="Shoulder"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="mySetKey">
-                                        <integer key="value" value="3"/>
+                                        <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -500,12 +500,9 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="innerCircleGap">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="myName" value="Ralph"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="MySetKey">
-                                        <integer key="value" value="0"/>
-                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="myName" value="zz"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="mySetKey">
-                                        <integer key="value" value="4"/>
+                                        <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>

@@ -52,7 +52,7 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     @IBAction func OnAndOff(_ sender:  KGRadioButton) {
         sender.isSelected = !sender.isSelected
-        print ("you selected -> \(sender.myName)")
+        print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
     }
     
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -140,14 +140,19 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var count = 0
         for (buttonKey, buttonName) in self.data {
             for (Button) in MyButtons{
-                print ("\(MyButtons.myName)")
+                
+                print ("before assignment-->  \(Button.mySetKey)  ,\(Button.myName)")
                 if Button.mySetKey == buttonKey{
                     Button.myName = buttonName
+                    print ("after assignment-->  \(Button.mySetKey)  ,\(Button.myName)")
                 }
+                
             }
-            print ("\(buttonKey)  \(buttonName)")
+            count = count + 1
+            print ("count is \(count)")
         }
         
 //        for i in 0...1000 {
