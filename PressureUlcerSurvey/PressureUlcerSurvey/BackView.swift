@@ -142,17 +142,17 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         super.viewDidLoad()
         var outloopcount = 0
         var innerloopcount = 0
-        print ("\(data)")
+    //    print ("\(data)")
         for (buttonKey, buttonName) in data {
-            print ("outerloop buttonKey is \(buttonKey) \n")
+          //  print ("outerloop buttonKey is \(buttonKey) \n")
             for (Button) in MyButtons{
                  innerloopcount = innerloopcount + 1
-                 print ("innerloopcount is \(innerloopcount)\n")
-                print ("Button.mySetKey before if comparison-->   \(Button.mySetKey)  ,\(Button.myName)\n")
+               //  print ("innerloopcount is \(innerloopcount)\n")
+              //  print ("Button.mySetKey before if comparison-->   \(Button.mySetKey)  ,\(Button.myName)\n")
                 if Button.mySetKey == buttonKey{
-                      print ("Button.mySetKey Button.mySetKey before assignment-->  \(Button.mySetKey)  ,\(Button.myName)\n")
+                   //   print ("Button.mySetKey Button.mySetKey before assignment-->  \(Button.mySetKey)  ,\(Button.myName)\n")
                     Button.myName = buttonName
-                    print ("Button.mySetKey Button.mySetKey after assignment-->  \(Button.mySetKey)  ,\(Button.myName)\n")
+                  //  print ("Button.mySetKey Button.mySetKey after assignment-->  \(Button.mySetKey)  ,\(Button.myName)\n")
                 }
                 
             }

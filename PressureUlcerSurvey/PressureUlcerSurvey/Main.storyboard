@@ -506,7 +506,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="OnAndOff:" destination="y07-Uf-tWh" eventType="touchUpInside" id="eqw-rt-kg5"/>
+                                    <action selector="OnAndOff:" destination="y07-Uf-tWh" eventType="touchUpInside" id="zVm-lX-sov"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -516,9 +516,9 @@
                     <connections>
                         <outlet property="BackTable" destination="xp5-DO-FjG" id="hNV-ks-VyK"/>
                         <outletCollection property="MyButtons" destination="fZ9-MY-rd8" collectionClass="NSMutableArray" id="LdA-Df-CIv"/>
-                        <outletCollection property="MyButtons" destination="fZ9-MY-rd8" collectionClass="NSMutableArray" id="McW-Xd-j92"/>
                         <outletCollection property="MyButtons" destination="1lA-6t-W7T" collectionClass="NSMutableArray" id="E8L-Gm-yyb"/>
                         <outletCollection property="MyButtons" destination="YGY-f8-YEK" collectionClass="NSMutableArray" id="Edz-xh-HSC"/>
+                        <outletCollection property="MyButtons" destination="Edu-hu-oPS" collectionClass="NSMutableArray" id="MV2-hK-1f7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uZP-7S-Haa" userLabel="First Responder" sceneMemberID="firstResponder"/>
