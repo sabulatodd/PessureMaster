@@ -26,24 +26,13 @@ class DetailViewController: UIViewController {
 //        }
     
     }
-    @IBAction func SecondRadioButtonIsSelected(_ isRadioButton:ISRadioButton){
-        
-        print ("SSRBIS \(isRadioButton.isSelected)")
-        isRadioButton.isSelected == isRadioButton.isSelected ? true : false
-        
-    }
+
     
-    @IBAction func burp(_ sender: KGRadioButton) {
-         sender.isSelected = !sender.isSelected
-    }
-    @IBAction func setDefaultLabelText(_ sender: ISRadioButton) {
-        
-        print ("I tickleed hte button")
-    }
-    @IBOutlet weak var SecondRadioButtno: ISRadioButton!
-    @IBAction func DoWhatISDone(_ sender: Any) {
-    }
-    @IBOutlet weak var Button: ISRadioButton!
+
+
+
+   
+
     @IBOutlet weak var PatientIInfo: UILabel!
     // @IBOutlet weak var detailDescriptionLabel: UILabel!
     func gotoModalGuy(_ sender: Any) {

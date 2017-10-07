@@ -16,11 +16,18 @@ public class KGRadioButton: UIButton {
     internal var innerCircleLayer = CAShapeLayer()
     
     internal var JustMyName = String()
-   
+    internal var RadioSetValue = Int()
+   //sefsg
     @IBInspectable public var myName: String = String(){
         didSet {
             JustMyName = myName
-              print ("Wow getting set \(JustMyName)")
+             // print ("Wow getting set \(JustMyName)")
+        }
+    }
+    @IBInspectable public var mySetKey: Int = Int(){
+        didSet {
+            RadioSetValue = mySetKey
+            // print ("Wow getting set \(JustMyName)")
         }
     }
     
