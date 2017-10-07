@@ -14,15 +14,17 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
     
     var delegate : FrontHeaderTableViewCellDelegate?
-    //weak var dataSource: UITableViewDataSource? { get set })
-    //UIViewController, UITableViewDataSource, UITableViewDelegate {
-    private var data: [Int:String] = GlobalData.shared.FrontUlcerKeysAndNames
-    @IBOutlet weak var FrontTable: UITableView!
 
-    @IBAction func OnAndOff(_ sender: KGRadioButton) {
+    @IBOutlet weak var FrontTable: UITableView!
+    @IBOutlet var MyButtons: [KGRadioButton]!
+    private var data: [Int:String] = GlobalData.shared.FrontUlcerKeysAndNames
+
+    @IBAction func OnOffSwitch(_ sender: KGRadioButton) {
         sender.isSelected = !sender.isSelected
-                 print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
+                            print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
+
     }
+    
 
 //    @IBAction func OnAndOff(_ sender: KGRadioButton) {
 //        sender.isSelected = !sender.isSelected
@@ -175,7 +177,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         super.viewDidLoad()
         for (buttonKey, buttonName) in data {
             //  print ("outerloop buttonKey is \(buttonKey) \n")
-            for (Button) in myButtons{
+            for (Button) in MyButtons{
                // innerloopcount = innerloopcount + 1
                 //  print ("innerloopcount is \(innerloopcount)\n")
                 //  print ("Button.mySetKey before if comparison-->   \(Button.mySetKey)  ,\(Button.myName)\n")

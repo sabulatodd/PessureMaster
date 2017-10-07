@@ -626,6 +626,9 @@
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="YmH-mL-nl2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNa-yY-PDw" userLabel="Ear" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="137" y="75" width="16" height="17"/>
@@ -647,6 +650,9 @@
                                         <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="CNx-Wr-egf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OO-Ib-tWM" userLabel="Nose" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="184" y="74" width="16" height="17"/>
@@ -669,6 +675,9 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="HWq-dO-r1X"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdN-Nh-XMu" userLabel="Chin" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="184" y="101" width="16" height="17"/>
@@ -690,6 +699,9 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="qHd-hf-V8U"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxl-Bk-CXw" userLabel="Neck" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="184" y="126" width="16" height="17"/>
@@ -711,6 +723,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="YHn-eS-NMk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzG-WC-D1m" userLabel="Chest" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="184" y="184" width="16" height="17"/>
@@ -732,6 +747,9 @@
                                         <integer key="value" value="7"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="RaY-sc-gd7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLD-yZ-ywF" userLabel="Shoulder" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="120" y="141" width="16" height="17"/>
@@ -753,6 +771,9 @@
                                         <integer key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="wHX-Sg-cMu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0T-P3-jY9" userLabel="Armpit" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="255" y="184" width="16" height="17"/>
@@ -774,6 +795,9 @@
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="Ldq-hz-hNV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHt-6a-hro" userLabel="Bicep" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="272" y="222" width="16" height="17"/>
@@ -795,6 +819,9 @@
                                         <integer key="value" value="9"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="4C4-F6-WQr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnj-sK-hkg" userLabel="Forearm" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="291" y="285" width="16" height="17"/>
@@ -817,7 +844,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="OnAndOff:" destination="toz-er-Ujq" eventType="touchUpInside" id="OUT-4p-tCJ"/>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="Yyq-uC-wFS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIk-Kd-gcB" userLabel="Navel" customClass="KGRadioButton" customModule="KGRadioButton">
@@ -840,6 +867,9 @@
                                         <integer key="value" value="11"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="Fvu-Js-dBT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mru-El-c0X" userLabel="Wrist" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="71" y="326" width="16" height="17"/>
@@ -861,6 +891,9 @@
                                         <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="rbX-eS-4Ya"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZD-cw-QNE" userLabel="Hand" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="62" y="354" width="16" height="17"/>
@@ -883,7 +916,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="OnAndOff:" destination="toz-er-Ujq" eventType="touchUpInside" id="8v9-Xy-gku"/>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="5H1-Ff-WNu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iif-2V-B0k" userLabel="Groin" customClass="KGRadioButton" customModule="KGRadioButton">
@@ -906,6 +939,9 @@
                                         <integer key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="uE3-PW-jBz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZP-rI-3wV" userLabel="Thigh" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="220" y="416" width="16" height="17"/>
@@ -927,6 +963,9 @@
                                         <integer key="value" value="22"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="88e-h9-wEJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWk-Hq-f7C" userLabel="Knee" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="154" y="479" width="16" height="17"/>
@@ -948,6 +987,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="QeI-HQ-TSH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYx-R2-nuO" userLabel="Leg" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="214" y="541" width="16" height="17"/>
@@ -969,6 +1011,9 @@
                                         <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="2Us-6C-ImG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3h-TW-zkx" userLabel="Ankle" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="163" y="595" width="16" height="17"/>
@@ -990,6 +1035,9 @@
                                         <integer key="value" value="18"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="gY7-wW-a6t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOX-tb-f4W" userLabel="Foot" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="209" y="627" width="16" height="17"/>
@@ -1011,6 +1059,9 @@
                                         <integer key="value" value="23"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="dJg-cC-I5L"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6U-4j-GO3" userLabel="Toes" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="139" y="673" width="16" height="17"/>
@@ -1032,6 +1083,9 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="gI9-2v-TMV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQj-Vb-AFX" userLabel="Fingers" customClass="KGRadioButton" customModule="KGRadioButton">
                                 <rect key="frame" x="321" y="393" width="16" height="17"/>
@@ -1053,14 +1107,37 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OnOffSwitch:" destination="toz-er-Ujq" eventType="touchUpInside" id="g1c-b6-aVm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Front View" image="BMFront.png" id="Brb-IC-zrc"/>
                     <connections>
-                        <outlet property="FrontTable" destination="GJd-fv-IWy" id="1Iy-1P-xDG"/>
-                        <outlet property="myButtons" destination="aIk-Kd-gcB" id="xHo-aB-gI6"/>
+                        <outlet property="FrontTable" destination="GJd-fv-IWy" id="QcT-FN-MnG"/>
+                        <outletCollection property="MyButtons" destination="QOX-tb-f4W" collectionClass="NSMutableArray" id="lyJ-mT-zWM"/>
+                        <outletCollection property="MyButtons" destination="X8C-JW-H3q" collectionClass="NSMutableArray" id="iMS-61-DMU"/>
+                        <outletCollection property="MyButtons" destination="eNa-yY-PDw" collectionClass="NSMutableArray" id="K0c-b7-2Mi"/>
+                        <outletCollection property="MyButtons" destination="7OO-Ib-tWM" collectionClass="NSMutableArray" id="2QL-NF-RJh"/>
+                        <outletCollection property="MyButtons" destination="OdN-Nh-XMu" collectionClass="NSMutableArray" id="mMU-1W-mCu"/>
+                        <outletCollection property="MyButtons" destination="fxl-Bk-CXw" collectionClass="NSMutableArray" id="wao-Qg-U9K"/>
+                        <outletCollection property="MyButtons" destination="fzG-WC-D1m" collectionClass="NSMutableArray" id="lNf-YB-L04"/>
+                        <outletCollection property="MyButtons" destination="gLD-yZ-ywF" collectionClass="NSMutableArray" id="IcC-sr-NKT"/>
+                        <outletCollection property="MyButtons" destination="M0T-P3-jY9" collectionClass="NSMutableArray" id="wGa-99-xDZ"/>
+                        <outletCollection property="MyButtons" destination="LHt-6a-hro" collectionClass="NSMutableArray" id="yqY-ja-qX5"/>
+                        <outletCollection property="MyButtons" destination="Bnj-sK-hkg" collectionClass="NSMutableArray" id="4tg-Yv-MNw"/>
+                        <outletCollection property="MyButtons" destination="aIk-Kd-gcB" collectionClass="NSMutableArray" id="qGY-o6-0wg"/>
+                        <outletCollection property="MyButtons" destination="mru-El-c0X" collectionClass="NSMutableArray" id="NMd-b8-pi9"/>
+                        <outletCollection property="MyButtons" destination="wZD-cw-QNE" collectionClass="NSMutableArray" id="uLi-J4-ybS"/>
+                        <outletCollection property="MyButtons" destination="iif-2V-B0k" collectionClass="NSMutableArray" id="apb-fR-ZCr"/>
+                        <outletCollection property="MyButtons" destination="HZP-rI-3wV" collectionClass="NSMutableArray" id="Xmt-7R-OK5"/>
+                        <outletCollection property="MyButtons" destination="pWk-Hq-f7C" collectionClass="NSMutableArray" id="L0J-TO-ykY"/>
+                        <outletCollection property="MyButtons" destination="LYx-R2-nuO" collectionClass="NSMutableArray" id="8f3-fZ-JQj"/>
+                        <outletCollection property="MyButtons" destination="b3h-TW-zkx" collectionClass="NSMutableArray" id="nYB-8a-M8i"/>
+                        <outletCollection property="MyButtons" destination="K6U-4j-GO3" collectionClass="NSMutableArray" id="R55-Wd-yGH"/>
+                        <outletCollection property="MyButtons" destination="MQj-Vb-AFX" collectionClass="NSMutableArray" id="N1K-pX-ZBf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVo-hl-8o3" userLabel="First Responder" sceneMemberID="firstResponder"/>
