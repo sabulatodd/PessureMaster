@@ -62,6 +62,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         //  tableView.register(UITableViewCell.classForKeyedArchiver(), forCellReuseIdentifier: "FrontViewCell")
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "FrontViewCell", for: indexPath) as! FrontViewCell
+        print ("indexPath \( indexPath.row)  data \(data[indexPath.row])")
         let text = data[indexPath.row]
         cell.FrontViewList?.text = text
         return cell
@@ -169,7 +170,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         //let sectionInfo = fetchedResultsController.sections![section]
         //        print ("myUnitListCount \(GlobalData.shared.myUnitList.count)")
         
-        return 13
+        return data.count
         //return sectionInfo.numberOfObjects
     }
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -181,31 +182,17 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         for (buttonKey, buttonName) in data {
-            //  print ("outerloop buttonKey is \(buttonKey) \n")
             for (Button) in MyButtons{
-               // innerloopcount = innerloopcount + 1
-                //  print ("innerloopcount is \(innerloopcount)\n")
-                //  print ("Button.mySetKey before if comparison-->   \(Button.mySetKey)  ,\(Button.myName)\n")
                 if Button.mySetKey == buttonKey{
-                    //   print ("Button.mySetKey Button.mySetKey before assignment-->  \(Button.mySetKey)  ,\(Button.myName)\n")
                     Button.myName = buttonName
-                    //  print ("Button.mySetKey Button.mySetKey after assignment-->  \(Button.mySetKey)  ,\(Button.myName)\n")
                 }
 
             }
-           // outloopcount = outloopcount + 1
-           // print ("outloopcount is \(outloopcount)")
+
         }
 
         
-        //        let HEADER_HEIGHT = 100
-        //        _; tableView?.frame.size = CGSize(width: tableView.frame.width, height: CGFloat(HEADER_HEIGHT))
-        
-        
-        //        let FrontViewNib = UINib(nibName: "FrontHeaderCell", bundle: nil)
-        //        FrontTable.register(FrontViewNib, forHeaderFooterViewReuseIdentifier: "FrontHeaderCell")
-        //        let FrontViewHeaderNib = UINib(nibName: "FrontViewCell", bundle: nil)
-        //        FrontTable.register(FrontViewHeaderNib, forCellReuseIdentifier: "FrontCell")
+
         self.FrontTable.delegate = self
         self.FrontTable.dataSource = self
         
@@ -221,11 +208,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         //   FrontHeaderCell.HeaderLabel.text = GlobalData.shared.theUnitInPlay
         
     }
-    //    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-    //
-    //
-    //    }
-    //
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

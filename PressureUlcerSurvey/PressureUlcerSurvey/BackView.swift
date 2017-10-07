@@ -129,7 +129,7 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         //let sectionInfo = fetchedResultsController.sections![section]
         //        print ("myUnitListCount \(GlobalData.shared.myUnitList.count)")
         
-        return 13
+        return data.count
         //return sectionInfo.numberOfObjects
     }
     func numberOfSections(in tableView: UITableView) -> Int {
