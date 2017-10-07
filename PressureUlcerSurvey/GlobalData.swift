@@ -24,7 +24,7 @@ final class GlobalData {
     var myUnitindexPathRow: Int! = 0
     var ISThereAPriorSetIndexRow : Bool = false
     var myUnitindexPathSection: Int? = 1
-    var FrontUlcerKeysAndNames : [Int:String] = [1:"ForeHead", 2:"Nose", 3:"Ear", 4:"Chin", 5:"Neck", 6:"Shoulder", 7:"Chest", 8:"Armpit", 9:"Bicep", 10:"Fingers", 11:"Navel", 12:"Wrist", 13:"Hand", 14:"Groin", 15:"Knee", 16:"Leg", 17:"Shin", 18:"Ankle", 19:"Foot", 20:"Toes"]
+    var FrontUlcerKeysAndNames : [Int:String] = [1:"ForeHead", 2:"Nose", 3:"Ear", 4:"Chin", 5:"Neck", 6:"Shoulder", 7:"Chest", 8:"Armpit", 9:"Bicep", 10:"Fingers", 11:"Navel", 12:"Wrist", 13:"Hand", 14:"Groin", 15:"Knee", 16:"Leg", 17:"Shin", 18:"Ankle", 19:"Foot", 20:"Toes", 21:"ForeArm", 22:"Thigh", 23:"Foot"]
     
     var BackUlcerKeysAndNames : [Int:String] = [1:"high",2:"higher",3:"highest", 4:"bottom"]
     var uRlPrefixString = "https://wsint-test.healthcare.uiowa.edu/pusurvey/apiz/"

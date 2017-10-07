@@ -49,12 +49,12 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         // Configure the view for the selected state
     
     @IBOutlet var MyButtons: [KGRadioButton]!
-    
+
     @IBAction func OnAndOff(_ sender:  KGRadioButton) {
         sender.isSelected = !sender.isSelected
         print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
     }
-    
+
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       //  tableView.register(UITableViewCell.classForKeyedArchiver(), forCellReuseIdentifier: "BackViewCell")
 
@@ -140,13 +140,13 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var outloopcount = 0
-        var innerloopcount = 0
+       // var outloopcount = 0
+      //  var innerloopcount = 0
     //    print ("\(data)")
         for (buttonKey, buttonName) in data {
           //  print ("outerloop buttonKey is \(buttonKey) \n")
             for (Button) in MyButtons{
-                 innerloopcount = innerloopcount + 1
+             //    innerloopcount = innerloopcount + 1
                //  print ("innerloopcount is \(innerloopcount)\n")
               //  print ("Button.mySetKey before if comparison-->   \(Button.mySetKey)  ,\(Button.myName)\n")
                 if Button.mySetKey == buttonKey{
@@ -156,8 +156,8 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
                 }
                 
             }
-            outloopcount = outloopcount + 1
-            print ("outloopcount is \(outloopcount)")
+            //outloopcount = outloopcount + 1
+           // print ("outloopcount is \(outloopcount)")
         }
         
 //        for i in 0...1000 {

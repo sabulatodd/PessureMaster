@@ -18,119 +18,27 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     //UIViewController, UITableViewDataSource, UITableViewDelegate {
     private var data: [Int:String] = GlobalData.shared.FrontUlcerKeysAndNames
     @IBOutlet weak var FrontTable: UITableView!
-    @IBOutlet var Forehead:KGRadioButton!
-    @IBOutlet var Nose:KGRadioButton!
-    @IBOutlet var Chin:KGRadioButton!
-    @IBOutlet var Ear:KGRadioButton!
-    @IBOutlet var Neck:KGRadioButton!
-    @IBOutlet var Shoulder:KGRadioButton!
-    @IBOutlet var Chest:KGRadioButton!
-    @IBOutlet var Armpit:KGRadioButton!
-    @IBOutlet var Bicep:KGRadioButton!
-    @IBOutlet var Navel:KGRadioButton!
-    @IBOutlet var Hand:KGRadioButton!
-    @IBOutlet var Fingers:KGRadioButton!
-    @IBOutlet var Groin:KGRadioButton!
-    @IBOutlet var Thigh:KGRadioButton!
-    @IBOutlet var Knee:KGRadioButton!
-    @IBOutlet var Leg:KGRadioButton!
-    @IBOutlet var Ankle:KGRadioButton!
-    @IBOutlet var Foot:KGRadioButton!
-    @IBOutlet var Toes:KGRadioButton!
-    @IBOutlet var Forearm:KGRadioButton!
-    @IBOutlet var Wrist:KGRadioButton!
-    func SetNoseHead(WhatToCallMe: String){
-        Nose.myName = WhatToCallMe
-      //  Nose.isSelected = !Nose.isSelected
-       // print (" 0 \(Nose.myName) <---")
-    }
-    @IBAction func Forehead(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-         print (" 1 OriginalName ->>> \(sender.myName)")
-        sender.myName = "FOreHead Changed his Name"
-        print (" 2 Changed ForeHead Name To->>> \(sender.myName)")
-        SetNoseHead(WhatToCallMe: "blown Nose")
-    }
-  //  self.btn1.isSelected = true
-    @IBAction func Nose(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-       // sender.myName = "Unblown Nose"
-        print ("My Name -->   \(sender.myName)")
-        
-    }
-    
-    @IBAction func Chin(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    
-    @IBAction func Ear(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    
-    @IBAction func Neck(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    @IBAction func Shoulder(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    
-    @IBAction func Chest(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    
-    @IBAction func Armpit(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    
-    @IBAction func Bicep(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    @IBAction func Navel(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    @IBAction func Wrist(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    
-    @IBAction func Hand(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    @IBAction func Fingers(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    @IBAction func Groin(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    
-    @IBAction func Thigh(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    @IBAction func Knee(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    @IBAction func Leg(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    
-    @IBAction func Ankle(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    @IBAction func Foot(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    
-    @IBAction func Toes(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    @IBAction func Forearm(_ sender: KGRadioButton) {
-        sender.isSelected = !sender.isSelected
-    }
-    
-    @IBAction func DismissFront(_ sender: Any) {
-        self.dismiss(animated: true, completion: {
-            
-        })
-    }
+
+
+  //  @IBAction func OnAndOff(_ sender: KGRadioButton) {
+//        sender.isSelected = !sender.isSelected
+//         print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
+//    }
+    //    @IBOutlet var MyButtons: [KGRadioButton]!
+
+//        @IBAction func OnAndOff(_ sender: KGRadioButton) {
+//            //        sender.isSelected = !sender.isSelected
+//            //        print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
+//            //
+//
+//        }
+  //  @IBOutlet   var myButtons: [KGRadioButton]!
+    // @IBOutlet var MyButtons: [KGRadioButton]!
+
+//    @IBAction func OnAndOff(_ sender:  KGRadioButton) {
+//        sender.isSelected = !sender.isSelected
+//        print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
+//    }
     // @IBOutlet weak var pji9h: FrontViewCell!
     
     
@@ -153,7 +61,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     //    }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print ("You selected cell number: \(data[indexPath.row])")
+       // print ("You selected cell number: \(data[indexPath.row])")
         //self.performSegueWithIdentifier("yourIdentifier", sender: self)
     }
 
@@ -261,6 +169,22 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        for (buttonKey, buttonName) in data {
+            //  print ("outerloop buttonKey is \(buttonKey) \n")
+            for (Button) in myButtons{
+               // innerloopcount = innerloopcount + 1
+                //  print ("innerloopcount is \(innerloopcount)\n")
+                //  print ("Button.mySetKey before if comparison-->   \(Button.mySetKey)  ,\(Button.myName)\n")
+                if Button.mySetKey == buttonKey{
+                    //   print ("Button.mySetKey Button.mySetKey before assignment-->  \(Button.mySetKey)  ,\(Button.myName)\n")
+                    Button.myName = buttonName
+                    //  print ("Button.mySetKey Button.mySetKey after assignment-->  \(Button.mySetKey)  ,\(Button.myName)\n")
+                }
+
+            }
+           // outloopcount = outloopcount + 1
+           // print ("outloopcount is \(outloopcount)")
+        }
 
         
         //        let HEADER_HEIGHT = 100
