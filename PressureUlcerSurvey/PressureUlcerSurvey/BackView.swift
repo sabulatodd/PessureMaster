@@ -136,7 +136,30 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         return 1
         // return fetchedResultsController.sections?.count ?? 0
     }
-
+    func selectTheButtonFromTheField(SelectFieldRow: Int)
+    {
+        for (Button) in MyButtons{
+            if Button.mySetKey == SelectFieldRow {
+                Button.isSelected = true
+            }
+        }
+    }
+    func deSelectTheButtonFromTheField(SelectFieldRow: Int)
+    {
+        for (Button) in MyButtons{
+            if Button.mySetKey == SelectFieldRow {
+                Button.isSelected = false
+            }
+        }
+    }
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        deSelectTheButtonFromTheField(SelectFieldRow:indexPath.row)
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectTheButtonFromTheField(SelectFieldRow:indexPath.row)
+        // print ("You selected cell number: \(data[indexPath.row])")
+        //self.performSegueWithIdentifier("yourIdentifier", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

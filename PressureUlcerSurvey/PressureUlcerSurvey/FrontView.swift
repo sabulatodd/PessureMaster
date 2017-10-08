@@ -53,7 +53,12 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         deSelectTheButtonFromTheField(SelectFieldRow:indexPath.row)
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectTheButtonFromTheField(SelectFieldRow:indexPath.row)
+        // print ("You selected cell number: \(data[indexPath.row])")
+        //self.performSegueWithIdentifier("yourIdentifier", sender: self)
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //  tableView.register(UITableViewCell.classForKeyedArchiver(), forCellReuseIdentifier: "FrontViewCell")
         
@@ -65,11 +70,6 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     }
     
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectTheButtonFromTheField(SelectFieldRow:indexPath.row)
-       // print ("You selected cell number: \(data[indexPath.row])")
-        //self.performSegueWithIdentifier("yourIdentifier", sender: self)
-    }
 
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
