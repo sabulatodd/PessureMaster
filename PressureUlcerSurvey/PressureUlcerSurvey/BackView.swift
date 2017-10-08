@@ -39,11 +39,11 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     @IBAction func OnAndOff(_ sender:  KGRadioButton) {if (sender.isSelected == true)
         {
         deSelectTheFieldFromTheButton(SelectButtonRow: sender.mySetKey)
-            sender.outerCircleColor = UIColor.blue
+            sender.outerCircleColor = GlobalData.shared.offColor
         }else
         {
         selectTheFieldFromTheButton(SelectButtonRow: sender.mySetKey)
-            sender.outerCircleColor = UIColor.red
+            sender.outerCircleColor = GlobalData.shared.onColor
 
         }
         sender.isSelected = !sender.isSelected
@@ -69,7 +69,7 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     {
         for (Button) in MyButtons{
             if Button.mySetKey == SelectFieldRow {
-                Button.outerCircleColor = UIColor.red
+                Button.outerCircleColor = GlobalData.shared.onColor
                 Button.isSelected = true
             }
         }
@@ -78,7 +78,7 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     {
         for (Button) in MyButtons{
             if Button.mySetKey == SelectFieldRow {
-                Button.outerCircleColor = UIColor.blue
+                Button.outerCircleColor = GlobalData.shared.offColor
 
                 Button.isSelected = false
             }

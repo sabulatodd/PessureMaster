@@ -18,7 +18,8 @@ final class GlobalData {
     
     //AxzAZ
     static var shared = GlobalData()
-
+    var onColor : UIColor = UIColor.red
+     var offColor : UIColor = UIColor.blue
         private init() { }
     var isInternet:Bool = true
     var myUnitindexPathRow: Int! = 0
