@@ -9,21 +9,7 @@
 import UIKit
 import KGRadioButton
 
-//internal var JustMyName = String()
-//internal var RadioSetValue = Int()
-//
-//@IBInspectable public var myName: String = String(){
-//    didSet {
-//        JustMyName = myName
-//        // print ("Wow getting set \(JustMyName)")
-//    }
-//}
-//@IBInspectable public var mySetKey: Int = Int(){
-//    didSet {
-//        RadioSetValue = mySetKey
-//        // print ("Wow getting set \(JustMyName)")
-//    }
-//}
+
 
 
 class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
@@ -90,41 +76,9 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         
     }
     
-//    func tableView(_ tableView: UITableView,
-//                   titleForHeaderInSection section: Int) -> String?
-//
-//    {
-//         return "Bubba"
-//    }
-    
-//
-//     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//
-//        return 60.0
-//    }
-    
-    
-//    private func tableView(_ tableView: UITableView, widthForHeaderInSection section: Int) -> CGFloat {
-//        return tableView.frame.width
-//    }
-   // tableView.frame.width
-//
-    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        
-//        let header = tableView.dequeueReusableCell(withIdentifier: "BackHeader") as! BackHeaderCell
-//
-//        header.BackViewTableHeader?.text = "Hey Todd!"
-         // let headerView: UITableViewHeaderFooterView  = view as! UITableViewHeaderFooterView
-       // let view = headerView
-     //   let cell = tableView.dequeueReusableCell(withIdentifier: "BackHeaderCell", for: indexPath) as! BackHeaderCell
-        
-        //headerView.BackHeaderLabel.text = "QWow!!"
-        //   let myView = view.backViewCellLabel = "todd"
-       // headerView == BackHeaderCell()
-        
-        print ("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-        
-    }
+
+
+
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //let sectionInfo = fetchedResultsController.sections![section]
         //        print ("myUnitListCount \(GlobalData.shared.myUnitList.count)")
@@ -157,44 +111,23 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectTheButtonFromTheField(SelectFieldRow:indexPath.row)
-        // print ("You selected cell number: \(data[indexPath.row])")
-        //self.performSegueWithIdentifier("yourIdentifier", sender: self)
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // var outloopcount = 0
-      //  var innerloopcount = 0
-    //    print ("\(data)")
+
         for (buttonKey, buttonName) in data {
-          //  print ("outerloop buttonKey is \(buttonKey) \n")
             for (Button) in MyButtons{
-             //    innerloopcount = innerloopcount + 1
-               //  print ("innerloopcount is \(innerloopcount)\n")
-              //  print ("Button.mySetKey before if comparison-->   \(Button.mySetKey)  ,\(Button.myName)\n")
+
                 if Button.mySetKey == buttonKey{
-                   //   print ("Button.mySetKey Button.mySetKey before assignment-->  \(Button.mySetKey)  ,\(Button.myName)\n")
                     Button.myName = buttonName
-                  //  print ("Button.mySetKey Button.mySetKey after assignment-->  \(Button.mySetKey)  ,\(Button.myName)\n")
                 }
                 
             }
-            //outloopcount = outloopcount + 1
-           // print ("outloopcount is \(outloopcount)")
+
         }
         
-//        for i in 0...1000 {
-//            data.append("\(i)")
-//        }
-        
-//        let HEADER_HEIGHT = 100
-//        _; tableView?.frame.size = CGSize(width: tableView.frame.width, height: CGFloat(HEADER_HEIGHT))
-
-
-        //        let BackViewNib = UINib(nibName: "BackHeaderCell", bundle: nil)
-//        BackTable.register(BackViewNib, forHeaderFooterViewReuseIdentifier: "BackHeaderCell")
-//        let BackViewHeaderNib = UINib(nibName: "BackViewCell", bundle: nil)
-//        BackTable.register(BackViewHeaderNib, forCellReuseIdentifier: "BackCell")
         self.BackTable.delegate = self
         self.BackTable.dataSource = self
         
