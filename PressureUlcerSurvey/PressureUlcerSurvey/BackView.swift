@@ -36,11 +36,48 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     @IBOutlet var MyButtons: [KGRadioButton]!
 
-    @IBAction func OnAndOff(_ sender:  KGRadioButton) {
+    @IBAction func OnAndOff(_ sender:  KGRadioButton) {if (sender.isSelected == true)
+        {
+        deSelectTheFieldFromTheButton(SelectButtonRow: sender.mySetKey)
+        }else
+        {
+        selectTheFieldFromTheButton(SelectButtonRow: sender.mySetKey)
+        }
         sender.isSelected = !sender.isSelected
-        print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
     }
-
+    func selectTheFieldFromTheButton(SelectButtonRow: Int)
+    {
+        let tempindexpath = IndexPath(row:SelectButtonRow, section: 0)
+        
+       BackTable.selectRow(at: tempindexpath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
+        
+        //        for (Button) in MyButtons{
+        //            if Button.mySetKey == SelectFieldRow {
+        //                Button.isSelected = true
+        //            }
+        //        }
+    }
+    func deSelectTheFieldFromTheButton(SelectButtonRow: Int)
+    {
+        let tempindexpath = IndexPath(row:SelectButtonRow, section: 0)
+        BackTable.deselectRow(at: tempindexpath, animated: true)
+    }
+    func selectTheButtonFromTheField(SelectFieldRow: Int)
+    {
+        for (Button) in MyButtons{
+            if Button.mySetKey == SelectFieldRow {
+                Button.isSelected = true
+            }
+        }
+    }
+    func deSelectTheButtonFromTheField(SelectFieldRow: Int)
+    {
+        for (Button) in MyButtons{
+            if Button.mySetKey == SelectFieldRow {
+                Button.isSelected = false
+            }
+        }
+    }
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       //  tableView.register(UITableViewCell.classForKeyedArchiver(), forCellReuseIdentifier: "BackViewCell")
 
@@ -90,22 +127,7 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         return 1
         // return fetchedResultsController.sections?.count ?? 0
     }
-    func selectTheButtonFromTheField(SelectFieldRow: Int)
-    {
-        for (Button) in MyButtons{
-            if Button.mySetKey == SelectFieldRow {
-                Button.isSelected = true
-            }
-        }
-    }
-    func deSelectTheButtonFromTheField(SelectFieldRow: Int)
-    {
-        for (Button) in MyButtons{
-            if Button.mySetKey == SelectFieldRow {
-                Button.isSelected = false
-            }
-        }
-    }
+ 
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         deSelectTheButtonFromTheField(SelectFieldRow:indexPath.row)
     }

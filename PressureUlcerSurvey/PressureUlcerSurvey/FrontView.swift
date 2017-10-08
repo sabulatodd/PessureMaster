@@ -20,6 +20,15 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     private var data: [Int:String] = GlobalData.shared.FrontUlcerKeysAndNames
 
     @IBAction func OnOffSwitch(_ sender: KGRadioButton) {
+        if (sender.isSelected == true)
+        {
+        deSelectTheFieldFromTheButton(SelectButtonRow: sender.mySetKey)
+            
+        }else
+        {
+        selectTheFieldFromTheButton(SelectButtonRow: sender.mySetKey)
+            
+        }
         sender.isSelected = !sender.isSelected
         
 
@@ -33,8 +42,24 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         })
     }
 
-
-    func selectTheButtonFromTheField(SelectFieldRow: Int)
+    func selectTheFieldFromTheButton(SelectButtonRow: Int)
+    {
+        let tempindexpath = IndexPath(row:SelectButtonRow, section: 0)
+        
+        FrontTable.selectRow(at: tempindexpath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
+        
+//        for (Button) in MyButtons{
+//            if Button.mySetKey == SelectFieldRow {
+//                Button.isSelected = true
+//            }
+//        }
+    }
+    private func deSelectTheFieldFromTheButton(SelectButtonRow: Int)
+    {
+        let tempindexpath = IndexPath(row:SelectButtonRow, section: 0)
+         FrontTable.deselectRow(at: tempindexpath, animated: true)
+    }
+   func selectTheButtonFromTheField(SelectFieldRow: Int)
     {
         for (Button) in MyButtons{
             if Button.mySetKey == SelectFieldRow {
@@ -42,7 +67,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
             }
             }
     }
-    func deSelectTheButtonFromTheField(SelectFieldRow: Int)
+ func deSelectTheButtonFromTheField(SelectFieldRow: Int)
     {
         for (Button) in MyButtons{
             if Button.mySetKey == SelectFieldRow {
