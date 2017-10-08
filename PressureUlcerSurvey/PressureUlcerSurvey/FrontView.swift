@@ -23,10 +23,11 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         if (sender.isSelected == true)
         {
         deSelectTheFieldFromTheButton(SelectButtonRow: sender.mySetKey)
-            
+               sender.outerCircleColor = UIColor.blue
         }else
         {
         selectTheFieldFromTheButton(SelectButtonRow: sender.mySetKey)
+            sender.outerCircleColor = UIColor.red
             
         }
         sender.isSelected = !sender.isSelected
@@ -63,6 +64,8 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     {
         for (Button) in MyButtons{
             if Button.mySetKey == SelectFieldRow {
+                Button.outerCircleColor = UIColor.red
+
                 Button.isSelected = true
             }
             }
@@ -71,6 +74,8 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     {
         for (Button) in MyButtons{
             if Button.mySetKey == SelectFieldRow {
+                Button.outerCircleColor = UIColor.blue
+
                 Button.isSelected = false
             }
         }
