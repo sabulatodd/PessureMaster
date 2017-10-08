@@ -53,7 +53,9 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         let tempindexpath = IndexPath(row:SelectButtonRow, section: 0)
         
        BackTable.selectRow(at: tempindexpath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
-        
+        if let cell = BackTable.cellForRow(at: tempindexpath) {
+            cell.accessoryType = .checkmark
+        }
         //        for (Button) in MyButtons{
         //            if Button.mySetKey == SelectFieldRow {
         //                Button.isSelected = true
@@ -64,6 +66,9 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     {
         let tempindexpath = IndexPath(row:SelectButtonRow, section: 0)
         BackTable.deselectRow(at: tempindexpath, animated: true)
+        if let cell = BackTable.cellForRow(at: tempindexpath) {
+            cell.accessoryType = .none
+        }
     }
     func selectTheButtonFromTheField(SelectFieldRow: Int)
     {
@@ -136,10 +141,15 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
  
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         deSelectTheButtonFromTheField(SelectFieldRow:indexPath.row)
+        if let cell = tableView.cellForRow(at: indexPath) {
+            cell.accessoryType = .none
+        }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectTheButtonFromTheField(SelectFieldRow:indexPath.row)
-
+        if let cell = tableView.cellForRow(at: indexPath) {
+            cell.accessoryType = .checkmark
+        }
     }
     
     override func viewDidLoad() {
