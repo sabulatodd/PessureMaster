@@ -1,6 +1,6 @@
 //
 //  BackView.swift
-//  
+//
 //
 //  Created by Todd Papke on 9/14/17.
 //
@@ -13,46 +13,133 @@ import KGRadioButton
 
 
 class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
-  {
-    
+{
+
     var delegate : BackHeaderTableViewCellDelegate?
     //weak var dataSource: UITableViewDataSource? { get set })
     //UIViewController, UITableViewDataSource, UITableViewDelegate {
     private var data: [Int:String] = GlobalData.shared.BackUlcerKeysAndNames
+
+    private var sortedData: [(Int,String)] = [(0,"Hi Todd")]
+
     @IBOutlet weak var BackTable: UITableView!
 
     //  @IBOutlet weak var BackHeader: BackHeaderCell!
-  
+
     @IBAction func DismissBack(_ sender: Any) {
         self.dismiss(animated: true, completion: {
-            
+
         })
     }
-   // @IBOutlet weak var pji9h: BackViewCell!
-    
-   
-        
-        // Configure the view for the selected state
-    
+    // @IBOutlet weak var pji9h: BackViewCell!
+
+
+
+    // Configure the view for the selected state
+
     @IBOutlet var MyButtons: [KGRadioButton]!
 
-    @IBAction func OnAndOff(_ sender:  KGRadioButton) {if (sender.isSelected == true)
+    @IBAction func OnAndOff(_ sender:  KGRadioButton){
+        if (sender.isSelected == true)
         {
-        deSelectTheFieldFromTheButton(SelectButtonRow: sender.mySetKey)
+            deSelectTheField(whichField: sender.mySetKey)
             sender.outerCircleColor = GlobalData.shared.offColor
         }else
         {
-        selectTheFieldFromTheButton(SelectButtonRow: sender.mySetKey)
+            selectTheField(whichField: sender.mySetKey)
+            //sender.outerCircleColor = UIColor.red
             sender.outerCircleColor = GlobalData.shared.onColor
-
         }
         sender.isSelected = !sender.isSelected
+
+
+        print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
+    }
+    func selectTheField(whichField: Int)
+    {
+
+        // selectTheField(whichField: sender.mySetKey)
+        //        if let i = sortedData.index(of: sortedData.0) {
+        //            students[i] = "Max"
+        //        }
+        //  let totalListItems in sortedData.count
+        var count = 0
+        for _ in sortedData{
+
+            if sortedData[count].0 == whichField{
+                print("sortedData[count].0 \(sortedData[count].0)  whichField \(whichField)")
+                let tempindexpath = IndexPath(row:count, section: 0)
+                BackTable.selectRow(at: tempindexpath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
+                if let cell = BackTable.cellForRow(at: tempindexpath) {
+                    cell.accessoryType = .checkmark
+                }
+            }
+
+            count = count + 1
+        }
+
+
+        //
+
+
+    }
+
+    private func deSelectTheField(whichField: Int)
+    {
+
+
+        var count = 0
+        for _ in sortedData{
+
+            if sortedData[count].0 == whichField{
+                print("sortedData[count].0 \(sortedData[count].0)  whichField \(whichField)")
+                let tempindexpath = IndexPath(row:count, section: 0)
+
+                BackTable.deselectRow(at: tempindexpath, animated: true)
+                if let cell = BackTable.cellForRow(at: tempindexpath) {
+                    cell.accessoryType = .none
+                }
+            }
+
+            count = count + 1
+        }
+
+
+
+
+
+    }
+    func selectTheButton(whichButton: Int)
+    {
+        let temp = whichButton
+        print ("in button is selectedtemp = \(temp)")
+        for (Button) in MyButtons{
+            if Button.mySetKey == whichButton {
+                print ("yes \(Button.mySetKey) = whichButton \(whichButton)")
+                //                Button.outerCircleColor = UIColor.red
+                Button.outerCircleColor = GlobalData.shared.onColor
+                //  GlobalData.shared.onColor
+
+                Button.isSelected = true
+            }
+        }
+    }
+    func deSelectTheButton(whichButton: Int)
+    {
+        for (Button) in MyButtons{
+            if Button.mySetKey == whichButton {
+                Button.outerCircleColor = GlobalData.shared.offColor
+
+
+                Button.isSelected = false
+            }
+        }
     }
     func selectTheFieldFromTheButton(SelectButtonRow: Int)
     {
         let tempindexpath = IndexPath(row:SelectButtonRow, section: 0)
-        
-       BackTable.selectRow(at: tempindexpath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
+
+        BackTable.selectRow(at: tempindexpath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
         if let cell = BackTable.cellForRow(at: tempindexpath) {
             cell.accessoryType = .checkmark
         }
@@ -89,48 +176,50 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
             }
         }
     }
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      //  tableView.register(UITableViewCell.classForKeyedArchiver(), forCellReuseIdentifier: "BackViewCell")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //  tableView.register(UITableViewCell.classForKeyedArchiver(), forCellReuseIdentifier: "FrontViewCell")
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "BackViewCell", for: indexPath) as! BackViewCell
-        let text = data[indexPath.row]
+        print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].1)")
+
+        let text = sortedData[indexPath.row].1
         cell.BackViewList?.text = text
-    return cell
+        return cell
     }
 
-//     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return "Section \(section)   " + GlobalData.shared.theUnitInPlay
-//    }
+    //     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    //        return "Section \(section)   " + GlobalData.shared.theUnitInPlay
+    //    }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-      
-     //let header = tableView.dequeueReusableCell(withIdentifier: "BackHeader") as! UITableViewCell
+
+        //let header = tableView.dequeueReusableCell(withIdentifier: "BackHeader") as! UITableViewCell
         let header = tableView.dequeueReusableCell(withIdentifier: "BackHeader") as! BackHeaderCell
-        
+
         header.BackViewTableHeader?.text = GlobalData.shared.theUnitInPlay
-        
-        
-             header.BackViewTableHeader?.textColor = UIColor.white
-              header.BackViewTableHeader?.backgroundColor = UIColor.black
+
+
+        header.BackViewTableHeader?.textColor = UIColor.white
+        header.BackViewTableHeader?.backgroundColor = UIColor.black
         header.BackViewTableHeader?.textAlignment = .center
-        
-//        header.textLabel?.text = "Hey Todd!"
-//        // header.textLabel?.text = "Hey Todd!"
-//         header.textLabel?.textAlignment = .center
-//
-//     header.textLabel?.textColor = UIColor.white
-//      header.textLabel?.backgroundColor = UIColor.black
-        
+
+        //        header.textLabel?.text = "Hey Todd!"
+        //        // header.textLabel?.text = "Hey Todd!"
+        //         header.textLabel?.textAlignment = .center
+        //
+        //     header.textLabel?.textColor = UIColor.white
+        //      header.textLabel?.backgroundColor = UIColor.black
+
         return header
-        
+
     }
-    
 
 
 
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //let sectionInfo = fetchedResultsController.sections![section]
         //        print ("myUnitListCount \(GlobalData.shared.myUnitList.count)")
-        
+
         return data.count
         //return sectionInfo.numberOfObjects
     }
@@ -138,20 +227,29 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         return 1
         // return fetchedResultsController.sections?.count ?? 0
     }
- 
+
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        deSelectTheButtonFromTheField(SelectFieldRow:indexPath.row)
+        deSelectTheButton(whichButton: sortedData[indexPath.row].0)
+        //    MyButtons[sortedData[indexPath.row].0].isSelected = false
+        //   MyButtons[sortedData[indexPath.row].0].outerCircleColor = GlobalData.shared.offColor
         if let cell = tableView.cellForRow(at: indexPath) {
             cell.accessoryType = .none
+
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectTheButtonFromTheField(SelectFieldRow:indexPath.row)
+
+        selectTheButton(whichButton: sortedData[indexPath.row].0)
+        //  MyButtons[sortedData[indexPath.row].0].isSelected = true
+        // print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].0)")
         if let cell = tableView.cellForRow(at: indexPath) {
             cell.accessoryType = .checkmark
+
         }
+        // print ("You selected cell number: \(data[indexPath.row])")
+        //self.performSegueWithIdentifier("yourIdentifier", sender: self)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -161,46 +259,48 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
                 if Button.mySetKey == buttonKey{
                     Button.myName = buttonName
                 }
-                
+
             }
 
         }
-        
+        let myStuffsorted = data.sorted (by: {$0.value  < $1.value})
+        sortedData = myStuffsorted
+        print ("sortedData \(sortedData)")
         self.BackTable.delegate = self
         self.BackTable.dataSource = self
-        
 
-                // Do any additional setup after loading the view.
+
+        // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+
         super.viewWillAppear(animated)
         //PressureUlcerLabel.text = GlobalData.shared.theUnitInPlay
-        
+
         self.BackTable.reloadData()
-     //   BackHeaderCell.HeaderLabel.text = GlobalData.shared.theUnitInPlay
+        //   BackHeaderCell.HeaderLabel.text = GlobalData.shared.theUnitInPlay
 
     }
-//    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-//        
-//    
-//    }
-//    
-     override func didReceiveMemoryWarning() {
+    //    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    //
+    //
+    //    }
+    //
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+
+    /*
+     // MARK: - Navigation
+
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
 
 }
 
