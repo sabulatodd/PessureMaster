@@ -149,7 +149,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         //  tableView.register(UITableViewCell.classForKeyedArchiver(), forCellReuseIdentifier: "FrontViewCell")
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "FrontViewCell", for: indexPath) as! FrontViewCell
-        print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].1)")
+      //  print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].1)")
 
         let text = sortedData[indexPath.row].1
         cell.FrontViewList?.text = text
@@ -208,7 +208,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
 
         let myStuffsorted = data.sorted (by: {$0.value  < $1.value})
         sortedData = myStuffsorted
-    print ("sortedData \(sortedData)")
+    //print ("sortedData \(sortedData)")
 
         self.FrontTable.delegate = self
         self.FrontTable.dataSource = self

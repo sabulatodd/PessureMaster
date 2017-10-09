@@ -92,7 +92,7 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         for _ in sortedData{
 
             if sortedData[count].0 == whichField{
-                print("sortedData[count].0 \(sortedData[count].0)  whichField \(whichField)")
+          //      print("sortedData[count].0 \(sortedData[count].0)  whichField \(whichField)")
                 let tempindexpath = IndexPath(row:count, section: 0)
 
                 BackTable.deselectRow(at: tempindexpath, animated: true)
@@ -111,11 +111,11 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     }
     func selectTheButton(whichButton: Int)
     {
-        let temp = whichButton
-        print ("in button is selectedtemp = \(temp)")
+     //   let temp = whichButton
+     //   print ("in button is selectedtemp = \(temp)")
         for (Button) in MyButtons{
             if Button.mySetKey == whichButton {
-                print ("yes \(Button.mySetKey) = whichButton \(whichButton)")
+           //     print ("yes \(Button.mySetKey) = whichButton \(whichButton)")
                 //                Button.outerCircleColor = UIColor.red
                 Button.outerCircleColor = GlobalData.shared.onColor
                 //  GlobalData.shared.onColor
@@ -182,8 +182,14 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         let cell = tableView.dequeueReusableCell(withIdentifier: "BackViewCell", for: indexPath) as! BackViewCell
         print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].1)")
 
+
+        //cell.layoutIfNeeded()
+
         let text = sortedData[indexPath.row].1
         cell.BackViewList?.text = text
+      
+
+      //    [cell setNeedsLayout]
         return cell
     }
 
@@ -265,7 +271,7 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         }
         let myStuffsorted = data.sorted (by: {$0.value  < $1.value})
         sortedData = myStuffsorted
-        print ("sortedData \(sortedData)")
+ //       print ("sortedData \(sortedData)")
         self.BackTable.delegate = self
         self.BackTable.dataSource = self
 

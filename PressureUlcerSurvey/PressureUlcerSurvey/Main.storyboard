@@ -352,10 +352,11 @@
                                 <rect key="frame" x="-1" y="35" width="378" height="656"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xp5-DO-FjG" userLabel="BackTable">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="black" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xp5-DO-FjG" userLabel="BackTable">
                                 <rect key="frame" x="512" y="87" width="402" height="558"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BackHeader" id="daK-l8-2Xu" customClass="BackHeaderCell" customModule="PressureUlcerSurvey" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="402" height="44"/>
@@ -380,7 +381,7 @@
                                             <outlet property="BackViewTableHeader" destination="CVv-vk-qL7" id="O1j-Au-22u"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BackViewCell" rowHeight="41" id="YU9-Ja-Vr0" customClass="BackViewCell" customModule="PressureUlcerSurvey" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="BackViewCell" rowHeight="41" id="YU9-Ja-Vr0" customClass="BackViewCell" customModule="PressureUlcerSurvey" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="402" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YU9-Ja-Vr0" id="dQ1-W3-oSs" customClass="BackViewCell" customModule="PressureUlcerSurvey" customModuleProvider="target">
@@ -388,11 +389,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BackPUList" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBo-CT-l3Q">
-                                                    <rect key="frame" x="8" y="11" width="88" height="21"/>
+                                                    <rect key="frame" x="8" y="11" width="386" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <accessibility key="accessibilityConfiguration">
-                                                        <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
-                                                    </accessibility>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -410,7 +408,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lA-6t-W7T" userLabel="Thigh" customClass="KGRadioButton" customModule="KGRadioButton">
-                                <rect key="frame" x="188" y="183" width="17" height="17"/>
+                                <rect key="frame" x="260" y="155" width="17" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="myButton"/>
                                 <userDefinedRuntimeAttributes>
@@ -436,7 +434,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZ9-MY-rd8" userLabel="Thigh" customClass="KGRadioButton" customModule="KGRadioButton">
-                                <rect key="frame" x="188" y="143" width="17" height="17"/>
+                                <rect key="frame" x="188" y="48" width="17" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
@@ -461,7 +459,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGY-f8-YEK" userLabel="Thigh" customClass="KGRadioButton" customModule="KGRadioButton">
-                                <rect key="frame" x="188" y="216" width="17" height="17"/>
+                                <rect key="frame" x="148" y="355" width="17" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
@@ -486,7 +484,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edu-hu-oPS" userLabel="Thigh" customClass="KGRadioButton" customModule="KGRadioButton">
-                                <rect key="frame" x="188" y="241" width="17" height="34"/>
+                                <rect key="frame" x="218" y="523" width="17" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="outerCircleColor">
@@ -515,7 +513,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Back View" image="BMBack.png" id="yXs-c7-bBB" colorLabel="IBBuiltInLabel-Blue"/>
                     <connections>
-                        <outlet property="BackTable" destination="xp5-DO-FjG" id="hNV-ks-VyK"/>
+                        <outlet property="BackTable" destination="xp5-DO-FjG" id="1nD-K0-mvn"/>
                         <outletCollection property="MyButtons" destination="fZ9-MY-rd8" collectionClass="NSMutableArray" id="LdA-Df-CIv"/>
                         <outletCollection property="MyButtons" destination="1lA-6t-W7T" collectionClass="NSMutableArray" id="E8L-Gm-yyb"/>
                         <outletCollection property="MyButtons" destination="YGY-f8-YEK" collectionClass="NSMutableArray" id="Edz-xh-HSC"/>
