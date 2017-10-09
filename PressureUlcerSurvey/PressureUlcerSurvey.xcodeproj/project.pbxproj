@@ -55,6 +55,7 @@
 		DDB493651F6D83A80054441B /* BMFront.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB4935F1F6D83A80054441B /* BMFront.png */; };
 		DDB493661F6D83A80054441B /* BMFront@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB493601F6D83A80054441B /* BMFront@2x.png */; };
 		DDB493671F6D83A80054441B /* BMFront@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDB493611F6D83A80054441B /* BMFront@3x.png */; };
+		DDC585DA1F8C34C400837392 /* fixedpatient_summary.json in Resources */ = {isa = PBXBuildFile; fileRef = DDC585D91F8C34C400837392 /* fixedpatient_summary.json */; };
 		DDCD817C1F6030FF00AF63EB /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD817B1F6030FF00AF63EB /* HeaderCell.swift */; };
 		DDCD817E1F60394900AF63EB /* JSONCalls.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDCD817D1F60394900AF63EB /* JSONCalls.txt */; };
 		DDD11D281F0EC7C700086D9F /* GoToLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD11D271F0EC7C700086D9F /* GoToLogin.swift */; };
@@ -141,6 +142,7 @@
 		DDB4935F1F6D83A80054441B /* BMFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMFront.png; sourceTree = "<group>"; };
 		DDB493601F6D83A80054441B /* BMFront@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMFront@2x.png"; sourceTree = "<group>"; };
 		DDB493611F6D83A80054441B /* BMFront@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMFront@3x.png"; sourceTree = "<group>"; };
+		DDC585D91F8C34C400837392 /* fixedpatient_summary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fixedpatient_summary.json; sourceTree = "<group>"; };
 		DDCD817B1F6030FF00AF63EB /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		DDCD817D1F60394900AF63EB /* JSONCalls.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JSONCalls.txt; path = ../JSONCalls.txt; sourceTree = "<group>"; };
 		DDD11D271F0EC7C700086D9F /* GoToLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoToLogin.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 				DDCD817D1F60394900AF63EB /* JSONCalls.txt */,
 				DD9A2BC41F140A960063EB3C /* patient_detail.json */,
 				DD9A2BC51F140A960063EB3C /* patient_summary.json */,
+				DDC585D91F8C34C400837392 /* fixedpatient_summary.json */,
 				DD9A2BC61F140A960063EB3C /* units.json */,
 			);
 			name = "JSON examples";
@@ -472,6 +475,7 @@
 				DDB493661F6D83A80054441B /* BMFront@2x.png in Resources */,
 				DDB493541F6D820D0054441B /* peopleBack.png in Resources */,
 				DD2D51F11EDFCBD700111839 /* SimpleHuman.jpg in Resources */,
+				DDC585DA1F8C34C400837392 /* fixedpatient_summary.json in Resources */,
 				DD5270741F6C699600389A60 /* Do what screen.JPG in Resources */,
 				DD10E9631F60548F0016BCC4 /* wound location.JPG in Resources */,
 				DDB493581F6D820D0054441B /* peopleFront@2x 2.png in Resources */,

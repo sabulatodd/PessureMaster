@@ -6,7 +6,12 @@
 //  Copyright © 2017 Todd Papke. All rights reserved.
 //
 //
-//qweqwe
+/*
+!!Fixed Patient Summary
+
+let properJSONresults = "{\"Patient_Summary\":" +  "\(jsonresults)" + "}"
+ */
+
 import UIKit
 import CoreData
 
