@@ -18,6 +18,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     @IBOutlet weak var FrontTable: UITableView!
     @IBOutlet var MyButtons: [KGRadioButton]!
     private var data: [Int:String] = GlobalData.shared.FrontUlcerKeysAndNames
+    private var sortedData: [(Int,String)] = [(0,"Hi Todd")]
 
     @IBAction func OnOffSwitch(_ sender: KGRadioButton) {
         if (sender.isSelected == true)
@@ -68,8 +69,11 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     }
    func selectTheButtonFromTheField(SelectFieldRow: Int)
     {
+        let temp = SelectFieldRow
+        print ("in button is selectedtemp = \(temp)")
         for (Button) in MyButtons{
-            if Button.mySetKey == SelectFieldRow {
+            if Button.mySetKey == temp {
+                print ("yes \(Button.mySetKey) = temp \(temp)")
 //                Button.outerCircleColor = UIColor.red
                  Button.outerCircleColor = GlobalData.shared.onColor
               //  GlobalData.shared.onColor
@@ -90,14 +94,20 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         }
     }
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        deSelectTheButtonFromTheField(SelectFieldRow:indexPath.row)
+        //deSelectTheButtonFromTheField(SelectFieldRow:indexPath.row)
+        MyButtons[sortedData[indexPath.row].0].isSelected = false
+        MyButtons[sortedData[indexPath.row].0].outerCircleColor = GlobalData.shared.offColor
         if let cell = tableView.cellForRow(at: indexPath) {
             cell.accessoryType = .none
             
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectTheButtonFromTheField(SelectFieldRow:indexPath.row)
+        let temp = sortedData[indexPath.row].0
+        print ("temp = \(temp)")
+        selectTheButtonFromTheField(SelectFieldRow: sortedData[indexPath.row].0)
+        MyButtons[sortedData[indexPath.row].0].isSelected = true
+       // print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].0)")
         if let cell = tableView.cellForRow(at: indexPath) {
             cell.accessoryType = .checkmark
             
@@ -110,8 +120,9 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         //  tableView.register(UITableViewCell.classForKeyedArchiver(), forCellReuseIdentifier: "FrontViewCell")
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "FrontViewCell", for: indexPath) as! FrontViewCell
-        print ("indexPath \( indexPath.row)  data \(data[indexPath.row])")
-        let text = data[indexPath.row]
+        print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].1)")
+
+        let text = sortedData[indexPath.row].1
         cell.FrontViewList?.text = text
         return cell
     }
@@ -166,7 +177,9 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
 
         }
 
-        
+        let myStuffsorted = data.sorted (by: {$0.value  < $1.value})
+        sortedData = myStuffsorted
+    print ("sortedData \(sortedData)")
 
         self.FrontTable.delegate = self
         self.FrontTable.dataSource = self
