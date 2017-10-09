@@ -114,6 +114,8 @@ class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetche
                         
                         let json = JSON(data: data)
                         jsonresults = json
+                        let properJSONresults = "{\"UnitInfo\":" +  "\(jsonresults)" + "}"
+                          print ("PJR \(properJSONresults)")
 
                         //    unitJSONparse(json: json)}
                 }else{
@@ -300,14 +302,14 @@ class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetche
         
          cell.textLabel!.text = "Hi Todd"
         let testVariable = GlobalData.shared.currentUnitID
-        print ("testVariable = \(String(describing: testVariable))")
+      //  print ("testVariable = \(String(describing: testVariable))")
         if GlobalData.shared.currentUnitID != nil
         {
             // unitPatientViewJSONparse()
             //                fuckit()
             
             //let zz = patientJsonResults.arrayValue[0]
-print (" indedxPathItem = \(indexPath.item)")
+//print (" indedxPathItem = \(indexPath.item)")
             let zz = patientJsonResults.arrayValue[indexPath.item]
             //  print("zz = \(zz)")
           let patientName = zz["Pat_Name"].stringValue
@@ -377,6 +379,9 @@ print (" indedxPathItem = \(indexPath.item)")
         // jsonArray["array"][0].double
     
     // Getting an array of string from a JSON Array
+   let properJSONresults = "{UnitInfo\": + jsonArray + \"}"
+        print ("-->\(properJSONresults)")
+        //  print ("PJR \(properJSONresults)")
     let arrayOfString = jsonArray["users"].arrayValue.map({$0["info"]["name"]})
         // print(arrayOfString)
     
