@@ -23,11 +23,11 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     @IBAction func OnOffSwitch(_ sender: KGRadioButton) {
         if (sender.isSelected == true)
         {
-        deSelectTheFieldFromTheButton(SelectButtonRow: sender.mySetKey)
+        deSelectTheField(whichField: sender.mySetKey)
                sender.outerCircleColor = GlobalData.shared.offColor
         }else
         {
-        selectTheFieldFromTheButton(SelectButtonRow: sender.mySetKey)
+        selectTheField(whichField: sender.mySetKey)
             //sender.outerCircleColor = UIColor.red
             sender.outerCircleColor = GlobalData.shared.onColor
         }
@@ -44,36 +44,66 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         })
     }
 
-    func selectTheFieldFromTheButton(SelectButtonRow: Int)
+    func selectTheField(whichField: Int)
     {
-        let tempindexpath = IndexPath(row:SelectButtonRow, section: 0)
         
-        FrontTable.selectRow(at: tempindexpath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
-        if let cell = FrontTable.cellForRow(at: tempindexpath) {
-            cell.accessoryType = .checkmark
+       // selectTheField(whichField: sender.mySetKey)
+//        if let i = sortedData.index(of: sortedData.0) {
+//            students[i] = "Max"
+//        }
+      //  let totalListItems in sortedData.count
+        var count = 0
+        for _ in sortedData{
+            
+            if sortedData[count].0 == whichField{
+                print("sortedData[count].0 \(sortedData[count].0)  whichField \(whichField)")
+                let tempindexpath = IndexPath(row:count, section: 0)
+                           FrontTable.selectRow(at: tempindexpath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
+                            if let cell = FrontTable.cellForRow(at: tempindexpath) {
+                                 cell.accessoryType = .checkmark
+                }
+            }
+            
+        count = count + 1
         }
         
-//        for (Button) in MyButtons{
-//            if Button.mySetKey == SelectFieldRow {
-//                Button.isSelected = true
-//            }
-//        } 
+        
+//
+        
+        
     }
-    private func deSelectTheFieldFromTheButton(SelectButtonRow: Int)
+    private func deSelectTheField(whichField: Int)
     {
-        let tempindexpath = IndexPath(row:SelectButtonRow, section: 0)
-         FrontTable.deselectRow(at: tempindexpath, animated: true)
-        if let cell = FrontTable.cellForRow(at: tempindexpath) {
-            cell.accessoryType = .none
+        
+        
+        var count = 0
+        for _ in sortedData{
+            
+            if sortedData[count].0 == whichField{
+                print("sortedData[count].0 \(sortedData[count].0)  whichField \(whichField)")
+                let tempindexpath = IndexPath(row:count, section: 0)
+                
+                FrontTable.deselectRow(at: tempindexpath, animated: true)
+                if let cell = FrontTable.cellForRow(at: tempindexpath) {
+                    cell.accessoryType = .none
+                }
+            }
+            
+            count = count + 1
         }
+        
+        
+       
+        
+        
     }
-   func selectTheButtonFromTheField(SelectFieldRow: Int)
+   func selectTheButton(whichButton: Int)
     {
-        let temp = SelectFieldRow
+        let temp = whichButton
         print ("in button is selectedtemp = \(temp)")
         for (Button) in MyButtons{
-            if Button.mySetKey == temp {
-                print ("yes \(Button.mySetKey) = temp \(temp)")
+            if Button.mySetKey == whichButton {
+                print ("yes \(Button.mySetKey) = whichButton \(whichButton)")
 //                Button.outerCircleColor = UIColor.red
                  Button.outerCircleColor = GlobalData.shared.onColor
               //  GlobalData.shared.onColor
@@ -82,10 +112,10 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
             }
             }
     }
- func deSelectTheButtonFromTheField(SelectFieldRow: Int)
+ func deSelectTheButton(whichButton: Int)
     {
         for (Button) in MyButtons{
-            if Button.mySetKey == SelectFieldRow {
+            if Button.mySetKey == whichButton {
                 Button.outerCircleColor = GlobalData.shared.offColor
 
 
@@ -94,19 +124,18 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         }
     }
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        //deSelectTheButtonFromTheField(SelectFieldRow:indexPath.row)
-        MyButtons[sortedData[indexPath.row].0].isSelected = false
-        MyButtons[sortedData[indexPath.row].0].outerCircleColor = GlobalData.shared.offColor
+         deSelectTheButton(whichButton: sortedData[indexPath.row].0)
+    //    MyButtons[sortedData[indexPath.row].0].isSelected = false
+     //   MyButtons[sortedData[indexPath.row].0].outerCircleColor = GlobalData.shared.offColor
         if let cell = tableView.cellForRow(at: indexPath) {
             cell.accessoryType = .none
-            
+
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let temp = sortedData[indexPath.row].0
-        print ("temp = \(temp)")
-        selectTheButtonFromTheField(SelectFieldRow: sortedData[indexPath.row].0)
-        MyButtons[sortedData[indexPath.row].0].isSelected = true
+      
+        selectTheButton(whichButton: sortedData[indexPath.row].0)
+      //  MyButtons[sortedData[indexPath.row].0].isSelected = true
        // print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].0)")
         if let cell = tableView.cellForRow(at: indexPath) {
             cell.accessoryType = .checkmark
