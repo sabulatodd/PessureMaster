@@ -73,7 +73,7 @@ class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetche
                 
                 let properpatientJSONresults = "{\"Patient_Summary\":" +  "\(patientJsonResults)" + "}"
                 
-              //print ("proper JSOMN resutls are \(properpatientJSONresults)")
+              print ("proper JSOMN resutls are \(properpatientJSONresults)")
                 
                 // unitJSONparse(json: json)
             }else{
@@ -114,8 +114,8 @@ class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetche
                 
                 let json = JSON(data: data)
                 jsonresults = json
-                let properJSONresults = "{\"UnitInfo\":" +  "\(jsonresults)" + "}"
-               // print ("PJR \(properJSONresults)")
+                let properunitJSONresults = "{\"UnitInfo\":" +  "\(jsonresults)" + "}"
+               print ("PJR \(properunitJSONresults)")
                 // unitJSONparse(json: json)
             }else{
                 print("Internet is not connected")

@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C9D5DF225C2BA0091CF44FF1 /* Pods_PressureUlcerSurvey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D33CBD0B6034AEDB88EC4F0A /* Pods_PressureUlcerSurvey.framework */; };
-		DD01982F1F67730E00967BB6 /* JSONCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD01982C1F67730E00967BB6 /* JSONCompatible.swift */; };
-		DD0198301F67730E00967BB6 /* Patient_Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD01982D1F67730E00967BB6 /* Patient_Detail.swift */; };
-		DD0198311F67730E00967BB6 /* Ulcer_info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD01982E1F67730E00967BB6 /* Ulcer_info.swift */; };
 		DD10E9631F60548F0016BCC4 /* wound location.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DD10E9621F60548F0016BCC4 /* wound location.JPG */; };
 		DD132EC61F86A5040014DC25 /* Radio Buttons in Resources */ = {isa = PBXBuildFile; fileRef = DD132EC51F86A5040014DC25 /* Radio Buttons */; };
 		DD132EC81F86ACED0014DC25 /* ISRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD132EC71F86ACED0014DC25 /* ISRadioButton.swift */; };
@@ -86,9 +83,6 @@
 		0DD3BDD0262F9886EF317B9B /* Pods-PressureUlcerSurvey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PressureUlcerSurvey.release.xcconfig"; path = "Pods/Target Support Files/Pods-PressureUlcerSurvey/Pods-PressureUlcerSurvey.release.xcconfig"; sourceTree = "<group>"; };
 		3B0E560E2B7C349D761F7B54 /* Pods-PressureUlcerSurvey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PressureUlcerSurvey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PressureUlcerSurvey/Pods-PressureUlcerSurvey.debug.xcconfig"; sourceTree = "<group>"; };
 		D33CBD0B6034AEDB88EC4F0A /* Pods_PressureUlcerSurvey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PressureUlcerSurvey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD01982C1F67730E00967BB6 /* JSONCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONCompatible.swift; sourceTree = "<group>"; };
-		DD01982D1F67730E00967BB6 /* Patient_Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient_Detail.swift; sourceTree = "<group>"; };
-		DD01982E1F67730E00967BB6 /* Ulcer_info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ulcer_info.swift; sourceTree = "<group>"; };
 		DD10E9621F60548F0016BCC4 /* wound location.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "wound location.JPG"; path = "PressureUlcerSurvey/wound location.JPG"; sourceTree = "<group>"; };
 		DD132EC51F86A5040014DC25 /* Radio Buttons */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Radio Buttons"; sourceTree = "<group>"; };
 		DD132EC71F86ACED0014DC25 /* ISRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISRadioButton.swift; sourceTree = "<group>"; };
@@ -102,6 +96,14 @@
 		DD2D51F01EDFCBD700111839 /* SimpleHuman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SimpleHuman.jpg; path = PressureUlcerSurvey/SimpleHuman.jpg; sourceTree = "<group>"; };
 		DD2D51F31EDFCF2E00111839 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD3B57A61F6ADD0800AD8245 /* FrontView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontView.swift; sourceTree = "<group>"; };
+		DD47589D1F8CF46B0046EC3B /* Patient_Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient_Detail.swift; sourceTree = "<group>"; };
+		DD47589E1F8CF46B0046EC3B /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		DD47589F1F8CF46B0046EC3B /* Ulcer_info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ulcer_info.swift; sourceTree = "<group>"; };
+		DD4758A11F8CF46B0046EC3B /* Patient_Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient_Summary.swift; sourceTree = "<group>"; };
+		DD4758A21F8CF46B0046EC3B /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		DD4758A41F8CF46B0046EC3B /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		DD4758A51F8CF46B0046EC3B /* Unitinfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unitinfo.swift; sourceTree = "<group>"; };
+		DD4758A61F8CF46B0046EC3B /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
 		DD4B09A71F6ECD97007859D4 /* BackUlcersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackUlcersTableViewController.swift; sourceTree = "<group>"; };
 		DD4B09A91F6ECDE6007859D4 /* FrontUlcersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontUlcersTableViewController.swift; sourceTree = "<group>"; };
 		DD5270731F6C699600389A60 /* Do what screen.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Do what screen.JPG"; sourceTree = "<group>"; };
@@ -181,16 +183,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		DD0198321F67793F00967BB6 /* JSON Junk */ = {
-			isa = PBXGroup;
-			children = (
-				DD01982C1F67730E00967BB6 /* JSONCompatible.swift */,
-				DD01982D1F67730E00967BB6 /* Patient_Detail.swift */,
-				DD01982E1F67730E00967BB6 /* Ulcer_info.swift */,
-			);
-			name = "JSON Junk";
-			sourceTree = "<group>";
-		};
 		DD2D51F21EDFCF2D00111839 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +201,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DD47589B1F8CF46B0046EC3B /* JSONDataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				DD47589C1F8CF46B0046EC3B /* SwiftModels_Patient_Detail */,
+				DD4758A01F8CF46B0046EC3B /* SwiftModels_Patient_Summary */,
+				DD4758A31F8CF46B0046EC3B /* SwiftModels_Units */,
+			);
+			path = JSONDataStructures;
+			sourceTree = SOURCE_ROOT;
+		};
+		DD47589C1F8CF46B0046EC3B /* SwiftModels_Patient_Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DD47589D1F8CF46B0046EC3B /* Patient_Detail.swift */,
+				DD47589E1F8CF46B0046EC3B /* Root.swift */,
+				DD47589F1F8CF46B0046EC3B /* Ulcer_info.swift */,
+			);
+			path = SwiftModels_Patient_Detail;
+			sourceTree = "<group>";
+		};
+		DD4758A01F8CF46B0046EC3B /* SwiftModels_Patient_Summary */ = {
+			isa = PBXGroup;
+			children = (
+				DD4758A11F8CF46B0046EC3B /* Patient_Summary.swift */,
+				DD4758A21F8CF46B0046EC3B /* Root.swift */,
+			);
+			path = SwiftModels_Patient_Summary;
+			sourceTree = "<group>";
+		};
+		DD4758A31F8CF46B0046EC3B /* SwiftModels_Units */ = {
+			isa = PBXGroup;
+			children = (
+				DD4758A41F8CF46B0046EC3B /* Root.swift */,
+				DD4758A51F8CF46B0046EC3B /* Unitinfo.swift */,
+				DD4758A61F8CF46B0046EC3B /* Units.swift */,
+			);
+			path = SwiftModels_Units;
+			sourceTree = "<group>";
+		};
 		DD54755C1F01D0E40091C63F /* UnitSelection */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,7 +255,6 @@
 				DD6B71BD1F1CF585001DFD0C /* GlobalsMethodsAndSingletons */,
 				DDF59D7F1F61832E003D44DF /* RadioButtons */,
 				DD56C0751ECF8FE0005B1C3A /* PressureUlcerSurvey */,
-				DD0198321F67793F00967BB6 /* JSON Junk */,
 				DD56C0911ECF96B1005B1C3A /* Images */,
 				DD9A2BCA1F140A9D0063EB3C /* JSON examples */,
 				DD56C0741ECF8FE0005B1C3A /* Products */,
@@ -279,6 +309,7 @@
 		DD9A2BCA1F140A9D0063EB3C /* JSON examples */ = {
 			isa = PBXGroup;
 			children = (
+				DD47589B1F8CF46B0046EC3B /* JSONDataStructures */,
 				DD1F17A51F63234700DB4818 /* PUAPIs.rtf */,
 				DDCD817D1F60394900AF63EB /* JSONCalls.txt */,
 				DD9A2BC41F140A960063EB3C /* patient_detail.json */,
@@ -572,7 +603,6 @@
 				DDD11D281F0EC7C700086D9F /* GoToLogin.swift in Sources */,
 				DD2D51EB1EDFC7DF00111839 /* MasterViewController.swift in Sources */,
 				DD9759581F7556F800A1D7CD /* BackHeaderCell.swift in Sources */,
-				DD0198301F67730E00967BB6 /* Patient_Detail.swift in Sources */,
 				DDF59D791F618136003D44DF /* DLAppDelegate.m in Sources */,
 				DD2D51E81EDFC7DF00111839 /* GoToUnits.swift in Sources */,
 				DD2D51E71EDFC7DF00111839 /* DetailViewController.swift in Sources */,
@@ -583,10 +613,8 @@
 				DDCD817C1F6030FF00AF63EB /* HeaderCell.swift in Sources */,
 				DD6B71BC1F1CF561001DFD0C /* GlobalMethods.swift in Sources */,
 				DDF7EB6D1F6A349E00AC243A /* UlcerLocation.swift in Sources */,
-				DD01982F1F67730E00967BB6 /* JSONCompatible.swift in Sources */,
 				DDABC9F11F71A76800C46144 /* HeaderViewCellMaster.swift in Sources */,
 				DDABC9EE1F71840100C46144 /* FrontViewCell.swift in Sources */,
-				DD0198311F67730E00967BB6 /* Ulcer_info.swift in Sources */,
 				DD54755B1F01D04C0091C63F /* UnitCollectionViewCell.swift in Sources */,
 				DDABC9EB1F71838400C46144 /* FrontHeaderCell.swift in Sources */,
 				DD9759561F75567700A1D7CD /* BackView.swift in Sources */,
