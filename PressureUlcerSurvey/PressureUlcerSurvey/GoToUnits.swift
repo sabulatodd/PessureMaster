@@ -230,7 +230,7 @@ class GoToUnits: UIViewController, UICollectionViewDataSource, UICollectionViewD
                 
                 
                 //  GlobalData.shared.unitListTuplesKVpair.setValue(unitName, forKey: unitForeignKey)
-                print("\(result["Unit_Name"].stringValue): \( result["Unit_Data_ID"].stringValue)")
+              //  ----------------->print("\(result["Unit_Name"].stringValue): \( result["Unit_Data_ID"].stringValue)")
                 
                 
                 
@@ -302,7 +302,7 @@ class GoToUnits: UIViewController, UICollectionViewDataSource, UICollectionViewD
     
        override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("gotounits view will appear")
+      //  print("gotounits view will appear")
         //   GlobalMethods.shared.ARequest(requestID:"Get_Units",dataRequiredbyRequest: "null")
                 // print (myDate)
     
@@ -315,7 +315,7 @@ class GoToUnits: UIViewController, UICollectionViewDataSource, UICollectionViewD
         //Todd
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print(" The seque identifier = \(String(describing: segue.identifier))")
+     //   print(" The seque identifier = \(String(describing: segue.identifier))")
 
         if segue.identifier == "showDetail" {
     }

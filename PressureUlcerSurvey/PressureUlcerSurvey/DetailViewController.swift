@@ -71,7 +71,7 @@ class DetailViewController: UIViewController {
         
         
 
-        print("dtiD3escrip[tion = \(String(describing: detailItem?.description))")
+      //  print("dtiD3escrip[tion = \(String(describing: detailItem?.description))")
         //Update the user interface for the detail item.
         if let detail = self.detailItem {
             if let label = self.PatientIInfo {
@@ -125,7 +125,7 @@ class DetailViewController: UIViewController {
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print(" The seque identifier withDetailVC = \(String(describing: segue.identifier))")
+      //  print(" The seque identifier withDetailVC = \(String(describing: segue.identifier))")
       
             if segue.identifier == "GoCheckUlcers" {
                 

@@ -34,7 +34,7 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         sender.isSelected = !sender.isSelected
         
 
-                            print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
+                          //  print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
 
     }
 
@@ -100,10 +100,10 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
    func selectTheButton(whichButton: Int)
     {
         let temp = whichButton
-        print ("in button is selectedtemp = \(temp)")
+       // print ("in button is selectedtemp = \(temp)")
         for (Button) in MyButtons{
             if Button.mySetKey == whichButton {
-                print ("yes \(Button.mySetKey) = whichButton \(whichButton)")
+              //  print ("yes \(Button.mySetKey) = whichButton \(whichButton)")
 //                Button.outerCircleColor = UIColor.red
                  Button.outerCircleColor = GlobalData.shared.onColor
               //  GlobalData.shared.onColor

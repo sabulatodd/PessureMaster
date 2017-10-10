@@ -52,28 +52,37 @@ class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetche
         }
         let YearQuarterString = String(year!) + quarter
         // print("return of string for URL is \(YearQuarterString)")
-        return YearQuarterString
+        return "20173"
+        //return YearQuarterString
     }
     //Mark PatientsUnits->>>>>>>>>>>>>>>>>>>>>>>>>> */
     func unitPatientViewJSONparse() {
-        
+       // let TheURL = (GlobalData.shared.uRlPrefixString + "fixedPatient_Summary/" + GlobalData.shared.currentUnitID! )
+      // let TheURL = (GlobalData.shared.uRlPrefixString + "Patient_Summary/" + GlobalData.shared.currentUnitID! )
         let TheURL = (GlobalData.shared.uRlPrefixString + "Patient_Summary/" + GlobalData.shared.currentUnitID! )
+         // let TheURL = (GlobalData.shared.uRlPrefixString + "Patient_Summary/" + "1JPE")
+     // let TheURL =
         print ("the URL is \(TheURL)")
         if let url = URL(string: TheURL) {
-            print ("the URL is \(url)")
+         //   print ("the URL is \(url)")
             if let data = try? Data(contentsOf: url) {
                 print("Internet is connected")
                 
                 let json = JSON(data: data)
                 patientJsonResults = json
                 
-                print ("JSOMN resutls are \(json)")
+                let properpatientJSONresults = "{\"Patient_Summary\":" +  "\(patientJsonResults)" + "}"
+                
+              //print ("proper JSOMN resutls are \(properpatientJSONresults)")
                 
                 // unitJSONparse(json: json)
             }else{
                 print("Internet is not connected")
-                if let file = Bundle.main.url(forResource: "patient_summary", withExtension: "json") {
-                    if let data = try? Data(contentsOf: file){
+              //  if let file = Bundle.main.url(forResource: "fixedpatient_summary", withExtension: "json") {
+                
+                    if let file = Bundle.main.url(forResource: "patient_summary", withExtension: "json") {
+                  //  if let file = Bundle.main.url(forResource: "fixedpatient_Summary", withExtension: "json") {
+                        if let data = try? Data(contentsOf: file){
                         
                         let json = JSON(data: data)
                         patientJsonResults = json
@@ -98,14 +107,15 @@ class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetche
         let myDate = GoGetTheDateString()
         //   print("------------<  \(myDate)")
         let TheURL = (GlobalData.shared.uNitsPrefixString + myDate)
-        print ("the URL is \(TheURL)")
+    //    print ("the URL is \(TheURL)")
         if let url = URL(string: TheURL) {
             if let data = try? Data(contentsOf: url) {
                 print("Internet is connected")
                 
                 let json = JSON(data: data)
                 jsonresults = json
-
+                let properJSONresults = "{\"UnitInfo\":" +  "\(jsonresults)" + "}"
+               // print ("PJR \(properJSONresults)")
                 // unitJSONparse(json: json)
             }else{
                 print("Internet is not connected")
@@ -115,7 +125,7 @@ class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetche
                         let json = JSON(data: data)
                         jsonresults = json
                         let properJSONresults = "{\"UnitInfo\":" +  "\(jsonresults)" + "}"
-                          print ("PJR \(properJSONresults)")
+                      //    print ("PJR \(properJSONresults)")
 
                         //    unitJSONparse(json: json)}
                 }else{
@@ -192,7 +202,7 @@ class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetche
 
 
     override func viewWillAppear(_ animated: Bool) {
-        print("MasterVIEW WILL APPEAR")
+     //   print("MasterVIEW WILL APPEAR")
         clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
 
         super.viewWillAppear(animated)
@@ -240,11 +250,11 @@ class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetche
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print(" The seque identifier = \(String(describing: segue.identifier))")
+      //  print(" The seque identifier = \(String(describing: segue.identifier))")
         //print ("MVC going to pick the unit")
 
         if segue.identifier == "PickTheUnit" {
-            print ("MVC going to pick the unit")
+       //     print ("MVC going to pick the unit")
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 //  let object = self.fetchedResultsController.object(at: indexPath) //as NSManagedObject
                 ///    let controller = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController

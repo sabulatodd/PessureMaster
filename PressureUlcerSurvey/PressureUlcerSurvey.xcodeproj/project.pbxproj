@@ -59,7 +59,6 @@
 		DDCD817C1F6030FF00AF63EB /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD817B1F6030FF00AF63EB /* HeaderCell.swift */; };
 		DDCD817E1F60394900AF63EB /* JSONCalls.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDCD817D1F60394900AF63EB /* JSONCalls.txt */; };
 		DDD11D281F0EC7C700086D9F /* GoToLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD11D271F0EC7C700086D9F /* GoToLogin.swift */; };
-		DDEDBF681F8692C5008741B4 /* AlternativeBackButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEDBF671F8692C5008741B4 /* AlternativeBackButtonViewController.swift */; };
 		DDF59D791F618136003D44DF /* DLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF59D781F618136003D44DF /* DLAppDelegate.m */; };
 		DDF59D7B1F61814D003D44DF /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF59D7A1F61814D003D44DF /* DLRadioButton.framework */; };
 		DDF59D7D1F6182A9003D44DF /* DLRadioButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDF59D7A1F61814D003D44DF /* DLRadioButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -146,7 +145,6 @@
 		DDCD817B1F6030FF00AF63EB /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		DDCD817D1F60394900AF63EB /* JSONCalls.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JSONCalls.txt; path = ../JSONCalls.txt; sourceTree = "<group>"; };
 		DDD11D271F0EC7C700086D9F /* GoToLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoToLogin.swift; sourceTree = "<group>"; };
-		DDEDBF671F8692C5008741B4 /* AlternativeBackButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternativeBackButtonViewController.swift; sourceTree = "<group>"; };
 		DDF59D761F618135003D44DF /* PressureUlcerSurvey-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PressureUlcerSurvey-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		DDF59D771F618136003D44DF /* DLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLAppDelegate.h; sourceTree = "<group>"; };
 		DDF59D781F618136003D44DF /* DLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLAppDelegate.m; sourceTree = "<group>"; };
@@ -247,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				DD2D51E51EDFC7DF00111839 /* Main.storyboard */,
-				DDEDBF671F8692C5008741B4 /* AlternativeBackButtonViewController.swift */,
 				DD9A2BCB1F140C570063EB3C /* MainViews */,
 				DD9A2BCC1F140C640063EB3C /* Login */,
 				DD54755C1F01D0E40091C63F /* UnitSelection */,
@@ -582,7 +579,6 @@
 				DD132EC81F86ACED0014DC25 /* ISRadioButton.swift in Sources */,
 				DD2D51E11EDFC7CA00111839 /* AppDelegate.swift in Sources */,
 				DD9A2BC31F13E8670063EB3C /* GlobalData.swift in Sources */,
-				DDEDBF681F8692C5008741B4 /* AlternativeBackButtonViewController.swift in Sources */,
 				DD3B57A71F6ADD0800AD8245 /* FrontView.swift in Sources */,
 				DDCD817C1F6030FF00AF63EB /* HeaderCell.swift in Sources */,
 				DD6B71BC1F1CF561001DFD0C /* GlobalMethods.swift in Sources */,
