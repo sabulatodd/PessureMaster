@@ -97,11 +97,9 @@
 		DD2D51F31EDFCF2E00111839 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD3B57A61F6ADD0800AD8245 /* FrontView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontView.swift; sourceTree = "<group>"; };
 		DD47589D1F8CF46B0046EC3B /* Patient_Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient_Detail.swift; sourceTree = "<group>"; };
-		DD47589E1F8CF46B0046EC3B /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		DD47589E1F8CF46B0046EC3B /* PDRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDRoot.swift; sourceTree = "<group>"; };
 		DD47589F1F8CF46B0046EC3B /* Ulcer_info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ulcer_info.swift; sourceTree = "<group>"; };
-		DD4758A11F8CF46B0046EC3B /* Patient_Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient_Summary.swift; sourceTree = "<group>"; };
-		DD4758A21F8CF46B0046EC3B /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
-		DD4758A41F8CF46B0046EC3B /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		DD4758A41F8CF46B0046EC3B /* URoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URoot.swift; sourceTree = "<group>"; };
 		DD4758A51F8CF46B0046EC3B /* Unitinfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unitinfo.swift; sourceTree = "<group>"; };
 		DD4758A61F8CF46B0046EC3B /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
 		DD4B09A71F6ECD97007859D4 /* BackUlcersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackUlcersTableViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +152,9 @@
 		DDF7EB621F6A2CAA00AC243A /* SimpleHumanBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SimpleHumanBack.png; sourceTree = "<group>"; };
 		DDF7EB631F6A2CAA00AC243A /* SimpleHumanFront.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SimpleHumanFront.jpg; sourceTree = "<group>"; };
 		DDF7EB6C1F6A349E00AC243A /* UlcerLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UlcerLocation.swift; path = PressureUlcerSurvey/UlcerLocation.swift; sourceTree = "<group>"; };
+		DDF9CBDC1F8CF618003C2366 /* PatientSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSummary.swift; sourceTree = "<group>"; };
+		DDF9CBDD1F8CF618003C2366 /* Patient_summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient_summary.swift; sourceTree = "<group>"; };
+		DDF9CBDE1F8CF618003C2366 /* PSRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSRoot.swift; sourceTree = "<group>"; };
 		DDFA02A51F6EB52000B323CF /* BMBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMBack.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,7 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				DD47589D1F8CF46B0046EC3B /* Patient_Detail.swift */,
-				DD47589E1F8CF46B0046EC3B /* Root.swift */,
+				DD47589E1F8CF46B0046EC3B /* PDRoot.swift */,
 				DD47589F1F8CF46B0046EC3B /* Ulcer_info.swift */,
 			);
 			path = SwiftModels_Patient_Detail;
@@ -224,8 +225,9 @@
 		DD4758A01F8CF46B0046EC3B /* SwiftModels_Patient_Summary */ = {
 			isa = PBXGroup;
 			children = (
-				DD4758A11F8CF46B0046EC3B /* Patient_Summary.swift */,
-				DD4758A21F8CF46B0046EC3B /* Root.swift */,
+				DDF9CBDD1F8CF618003C2366 /* Patient_summary.swift */,
+				DDF9CBDC1F8CF618003C2366 /* PatientSummary.swift */,
+				DDF9CBDE1F8CF618003C2366 /* PSRoot.swift */,
 			);
 			path = SwiftModels_Patient_Summary;
 			sourceTree = "<group>";
@@ -233,7 +235,7 @@
 		DD4758A31F8CF46B0046EC3B /* SwiftModels_Units */ = {
 			isa = PBXGroup;
 			children = (
-				DD4758A41F8CF46B0046EC3B /* Root.swift */,
+				DD4758A41F8CF46B0046EC3B /* URoot.swift */,
 				DD4758A51F8CF46B0046EC3B /* Unitinfo.swift */,
 				DD4758A61F8CF46B0046EC3B /* Units.swift */,
 			);

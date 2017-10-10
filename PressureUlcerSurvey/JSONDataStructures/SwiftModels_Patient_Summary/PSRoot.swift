@@ -1,6 +1,6 @@
 //
 //  Root.swift
-//  Patient_Summary
+//  PatientSummary
 //
 //  Created by Todd Papke on 10/10/17.
 //
@@ -10,7 +10,7 @@
 import Foundation
 
 
-struct Root: Patient_Summary {
+struct Root: PatientSummary {
     var Patient_Summary: [Patient_summary]
 
 
