@@ -1,0 +1,22 @@
+
+
+up vote
+2
+down vote
+A few more approaches:
+
+let array = ["1", "2", "3"]
+You can use forEach with trailing closure syntax:
+
+array.forEach { item in
+print(item)
+}
+You can use the $0 shorthand:
+
+array.forEach {
+print($0)
+}
+And if you need the indexes, you can use enumerate():
+
+array.enumerate().forEach { itemTuple in
+print("\(itemTuple.element) is at index \(itemTuple.index)")

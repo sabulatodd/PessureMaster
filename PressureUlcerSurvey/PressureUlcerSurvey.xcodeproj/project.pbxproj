@@ -27,6 +27,7 @@
 		DD56C0831ECF8FE0005B1C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD56C0821ECF8FE0005B1C3A /* Assets.xcassets */; };
 		DD56C0861ECF8FE0005B1C3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD56C0841ECF8FE0005B1C3A /* LaunchScreen.storyboard */; };
 		DD6B71BC1F1CF561001DFD0C /* GlobalMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6B71BB1F1CF561001DFD0C /* GlobalMethods.swift */; };
+		DD94F3121F8D6541000D7AA5 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94F3111F8D64C1000D7AA5 /* RestApiManager.swift */; };
 		DD9759561F75567700A1D7CD /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9759551F75567700A1D7CD /* BackView.swift */; };
 		DD9759581F7556F800A1D7CD /* BackHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9759571F7556F800A1D7CD /* BackHeaderCell.swift */; };
 		DD97595A1F75570D00A1D7CD /* BackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9759591F75570D00A1D7CD /* BackViewCell.swift */; };
@@ -56,6 +57,9 @@
 		DDCD817C1F6030FF00AF63EB /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD817B1F6030FF00AF63EB /* HeaderCell.swift */; };
 		DDCD817E1F60394900AF63EB /* JSONCalls.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDCD817D1F60394900AF63EB /* JSONCalls.txt */; };
 		DDD11D281F0EC7C700086D9F /* GoToLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD11D271F0EC7C700086D9F /* GoToLogin.swift */; };
+		DDE77D041F8D0B7A00EE12E1 /* Patient_summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF9CBDD1F8CF618003C2366 /* Patient_summary.swift */; };
+		DDE77D051F8D0B8700EE12E1 /* PatientSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF9CBDC1F8CF618003C2366 /* PatientSummary.swift */; };
+		DDE77D061F8D0B9100EE12E1 /* PSRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF9CBDE1F8CF618003C2366 /* PSRoot.swift */; };
 		DDF59D791F618136003D44DF /* DLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF59D781F618136003D44DF /* DLAppDelegate.m */; };
 		DDF59D7B1F61814D003D44DF /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF59D7A1F61814D003D44DF /* DLRadioButton.framework */; };
 		DDF59D7D1F6182A9003D44DF /* DLRadioButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDF59D7A1F61814D003D44DF /* DLRadioButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -117,6 +121,8 @@
 		DD866CC01F15682100496BD7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		DD866CC21F15682600496BD7 /* Pods_PressureUlcerSurvey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_PressureUlcerSurvey.framework; path = "Pods/../build/Debug-iphoneos/Pods_PressureUlcerSurvey.framework"; sourceTree = "<group>"; };
 		DD866CC41F15682900496BD7 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		DD94F30E1F8D36E5000D7AA5 /* arrayiterate */ = {isa = PBXFileReference; lastKnownFileType = text; path = arrayiterate; sourceTree = "<group>"; };
+		DD94F3111F8D64C1000D7AA5 /* RestApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestApiManager.swift; path = ../RestApiManager.swift; sourceTree = "<group>"; };
 		DD9759551F75567700A1D7CD /* BackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
 		DD9759571F7556F800A1D7CD /* BackHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackHeaderCell.swift; sourceTree = "<group>"; };
 		DD9759591F75570D00A1D7CD /* BackViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackViewCell.swift; sourceTree = "<group>"; };
@@ -314,6 +320,7 @@
 				DD47589B1F8CF46B0046EC3B /* JSONDataStructures */,
 				DD1F17A51F63234700DB4818 /* PUAPIs.rtf */,
 				DDCD817D1F60394900AF63EB /* JSONCalls.txt */,
+				DD94F30E1F8D36E5000D7AA5 /* arrayiterate */,
 				DD9A2BC41F140A960063EB3C /* patient_detail.json */,
 				DD9A2BC51F140A960063EB3C /* patient_summary.json */,
 				DDC585D91F8C34C400837392 /* fixedpatient_summary.json */,
@@ -326,6 +333,7 @@
 		DD9A2BCB1F140C570063EB3C /* MainViews */ = {
 			isa = PBXGroup;
 			children = (
+				DD94F3111F8D64C1000D7AA5 /* RestApiManager.swift */,
 				DD2D51E21EDFC7DF00111839 /* DetailViewController.swift */,
 				DD2D51E61EDFC7DF00111839 /* MasterViewController.swift */,
 				DD2D51E01EDFC7CA00111839 /* AppDelegate.swift */,
@@ -464,6 +472,9 @@
 		DD56C06B1ECF8FE0005B1C3A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Todd Papke";
@@ -600,6 +611,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD94F3121F8D6541000D7AA5 /* RestApiManager.swift in Sources */,
+				DDE77D061F8D0B9100EE12E1 /* PSRoot.swift in Sources */,
+				DDE77D051F8D0B8700EE12E1 /* PatientSummary.swift in Sources */,
+				DDE77D041F8D0B7A00EE12E1 /* Patient_summary.swift in Sources */,
 				DD4B09A81F6ECD97007859D4 /* BackUlcersTableViewController.swift in Sources */,
 				DD97595A1F75570D00A1D7CD /* BackViewCell.swift in Sources */,
 				DDD11D281F0EC7C700086D9F /* GoToLogin.swift in Sources */,

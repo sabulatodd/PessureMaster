@@ -11,7 +11,12 @@ import UIKit
 import CoreData
 import SwiftyJSON
 import Alamofire
+//var bigUnitsArray : [String:Any] = [:]
+//var bigPatient_SummaryArray : [String:Any] = [:]
+//var bigPatient_DetailArray : [String:Any] = [:]
 
+//let myStuffsorted = data.sorted (by: {$0.value  < $1.value})
+//sortedData = myStuffsorted
 
 class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetchedResultsControllerDelegate {
 
@@ -56,33 +61,101 @@ class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetche
         //return YearQuarterString
     }
     //Mark PatientsUnits->>>>>>>>>>>>>>>>>>>>>>>>>> */
+//    func makeGetCall(TheURL:String) {
+//        // Set up the URL request
+//       // let todoEndpoint: String = "https://jsonplaceholder.typicode.com/todos/1"
+//        guard let url = URL(string: TheURL) else {
+//            print("Error: cannot create URL")
+//            return
+//        }
+//        let urlRequest = URLRequest(url: url)
+//
+//        // set up the session
+//        let config = URLSessionConfiguration.default
+//        let session = URLSession(configuration: config)
+//
+//        // make the request
+//        let task = session.dataTask(with: urlRequest) {
+//            (data, response, error) in
+//            // check for any errors
+//            guard error == nil else {
+//                print("error calling GET on /todos/1")
+//                print(error as Any)
+//                return
+//            }
+//            // make sure we got data
+//            guard let responseData = data else {
+//                print("Error: did not receive data")
+//                return
+//            }
+//            // parse the result as JSON, since that's what the API provides
+//            do {
+//               // guard let todo = try let json = JSON(responseData) else {
+//               // guard let todo = try JSONSerialization.jsonObject(with: responseData, options: []) as? [String: AnyObject] else {
+//                   let todo = JSON(data: data)
+//                  {  print("error trying to convert data to JSON")
+//                    return
+//
+//                // now we have the todo, let's just print it to prove we can access it
+//                print("The todo is: " + todo.description)
+//                GlobalData.shared.makeGetCallResponseData = todo
+//                // the todo object is a dictionary
+//                // so we just access the title using the "title" key
+//                // so check for a title and print it if we have one
+//
+//            } catch  {
+//                print("error trying to convert data to JSON")
+//                return
+//            }
+//        }
+//
+//        task.resume()
+//    }
     func unitPatientViewJSONparse() {
-       // let TheURL = (GlobalData.shared.uRlPrefixString + "fixedPatient_Summary/" + GlobalData.shared.currentUnitID! )
-      // let TheURL = (GlobalData.shared.uRlPrefixString + "Patient_Summary/" + GlobalData.shared.currentUnitID! )
+        
         let TheURL = (GlobalData.shared.uRlPrefixString + "Patient_Summary/" + GlobalData.shared.currentUnitID! )
-         // let TheURL = (GlobalData.shared.uRlPrefixString + "Patient_Summary/" + "1JPE")
-     // let TheURL =
+       // makeGetCall(TheURL:TheURL)
         print ("the URL is \(TheURL)")
         if let url = URL(string: TheURL) {
-         //   print ("the URL is \(url)")
+            print ("the URL is \(url)")
             if let data = try? Data(contentsOf: url) {
                 print("Internet is connected")
+                print ("data is \(data)")
                 
+                print ("<-------------->\n\n")
                 let json = JSON(data: data)
                 patientJsonResults = json
+                let properPatientSummaryJSONresults = "{\"Patient_Summary\":" +  "\(patientJsonResults)" + "}"
+//                print ("properPatientSummaryJSONresults\(properPatientSummaryJSONresults)")
+//                 print ("<-------------->\n\n")
+                for result in jsonresults.arrayValue{
+                    
+                    
+                    print ("result is \(result)")
                 
-                let properpatientJSONresults = "{\"Patient_Summary\":" +  "\(patientJsonResults)" + "}"
+                }
+//                properPatientSummaryJSONresults.forEach { item in
+//                    print(item)
+//                }
+//                properPatientSummaryJSONresults.forEach{
+//
+//                    print ("\(properPatientSummaryJSONresults.Unit_ID)")
+////                                                            print("UnitName  \($0.Pat_Name)")
+//                                                        }
                 
-            //  print ("proper JSOMN resutls are \(properpatientJSONresults)")
                 
+                print ("patientJsonResults \(properPatientSummaryJSONresults)")
+                
+//                let AltJSON = properPatientSummaryJSONresults as? [String:Any]
+//                let root = Root.init(json: AltJSON)
+//                print ("newRoot \(root)")
+              
+                //                            if let myDict = json as? [String:Any]{
                 // unitJSONparse(json: json)
             }else{
                 print("Internet is not connected")
-              //  if let file = Bundle.main.url(forResource: "fixedpatient_summary", withExtension: "json") {
-                
-                    if let file = Bundle.main.url(forResource: "patient_summary", withExtension: "json") {
-                  //  if let file = Bundle.main.url(forResource: "fixedpatient_Summary", withExtension: "json") {
-                        if let data = try? Data(contentsOf: file){
+                if let file = Bundle.main.url(forResource: "patient_summary", withExtension: "json") {
+                    if let data = try? Data(contentsOf: file){
                         
                         let json = JSON(data: data)
                         patientJsonResults = json
@@ -101,6 +174,135 @@ class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetche
             }
         }
     }
+////OLD    func unitPatientViewJSONparse() {
+//       // let TheURL = (GlobalData.shared.uRlPrefixString + "fixedPatient_Summary/" + GlobalData.shared.currentUnitID! )
+//      // let TheURL = (GlobalData.shared.uRlPrefixString + "Patient_Summary/" + GlobalData.shared.currentUnitID! )
+//        let TheURL = (GlobalData.shared.uRlPrefixString + "Patient_Summary/" + GlobalData.shared.currentUnitID! )
+//         // let TheURL = (GlobalData.shared.uRlPrefixString + "Patient_Summary/" + "1JPE")
+//     // let TheURL =
+//        print ("the URL is \(TheURL)")
+//        if let url = URL(string: TheURL) {
+//         //   print ("the URL is \(url)")
+//            if let data = try? Data(contentsOf: url) {
+//                let json = JSON(data: data)
+//                patientJsonResults = json
+//                print("  OLDJSON \(patientJsonResults)")
+//
+//                print("Internet is connected")
+//                do {
+//                    let altJson = try JSONSerialization.jsonObject(with: data, options: []) as! [String: AnyObject]
+//                    if let myDict = altJson as? [String:Any]{
+//
+//                        let myRoot = Root.init(json: myDict)
+//                        let myNames = myRoot?.Patient_Summary
+//
+//                        print ("myRoot is \(myRoot?.Patient_Summary[1].Pat_Name)\n\n\n")
+//                        // let aPatient = Patient_summary
+//                        let anotherRoot = myRoot?.jsonDictionary()
+//                        print ("anotherRoot is \(anotherRoot)\n\n\n")
+//
+//                        let arrayofpatientnames = anotherRoot!
+//                        print ("arrayofpatientnames is \(arrayofpatientnames)\n\n\n")
+//
+//                        myNames!.forEach{
+//                            // print ($0)
+//                            print("Pat_Name  \($0.Pat_Name)")
+//                        }
+//
+//
+//
+//                        //      let andYetanotherRoot = PatientSummary.init(json: myDict)
+//                        // print ("andYetanotherRoot is \(andYetanotherRoot)\n\n\n")
+//
+//                    }
+//                    // print ("patients are \(json)")
+//                   // let bob = JSON(json)
+//                //    print("  >---------JSON'd Patenients \(bob)")
+//                    // let myRoot = Patient_Summary.init(json: <#T##[String : Any]?#>)
+////                    if let patients = json["Patient_Summary"] as? [String] {
+////                        print(patients)
+////                    }
+//                } catch let error as NSError {
+//                    print("Failed to load: \(error.localizedDescription)")
+//
+//                }
+//                //                        let json = json(data: fixedData)
+//                //                           let json = JSON(data: fixedData)
+//                //   let myRoot = Patient_summary.init(json: fixedData)
+//
+//                // print ("MR \(String(describing: myRoot))")
+//            }else{
+//                print("Internet is not connected")
+//              //  if let file = Bundle.main.url(forResource: "fixedpatient_summary", withExtension: "json") {
+//                if let anotherdataFile = Bundle.main.url(forResource: "fixedpatient_summary", withExtension: "json"){
+//                    if let fixedData = try? Data(contentsOf: anotherdataFile){
+//                       // let myRoot = Root.init(data: fixedData)
+//                        do {
+//                            let json = try JSONSerialization.jsonObject(with: fixedData, options: []) as! [String: AnyObject]
+//                            if let myDict = json as? [String:Any]{
+//
+//                                 let myRoot = Root.init(json: myDict)
+//                                let myNames = myRoot?.Patient_Summary
+//
+//                                print ("myRoot is \(myRoot?.Patient_Summary[1].Pat_Name)\n\n\n")
+//                               // let aPatient = Patient_summary
+//                                let anotherRoot = myRoot?.jsonDictionary()
+//                                 print ("anotherRoot is \(anotherRoot)\n\n\n")
+//
+//                                let arrayofpatientnames = anotherRoot!
+//                                 print ("arrayofpatientnames is \(arrayofpatientnames)\n\n\n")
+//
+//                                myNames!.forEach{
+//                                   // print ($0)
+//                                        print("Pat_Name  \($0.Pat_Name)")
+//                                    }
+//
+//
+//
+//                          //      let andYetanotherRoot = PatientSummary.init(json: myDict)
+//                               // print ("andYetanotherRoot is \(andYetanotherRoot)\n\n\n")
+//
+//                            }
+//                            // print ("patients are \(json)")
+//                            let bob = JSON(json)
+//                          print("  >---------JSON'd Patenients \(bob)")
+//                           // let myRoot = Patient_Summary.init(json: <#T##[String : Any]?#>)
+//                            if let patients = json["Patient_Summary"] as? [String] {
+//                                print(patients)
+//                            }
+//                        } catch let error as NSError {
+//                            print("Failed to load: \(error.localizedDescription)")
+//
+//                        }
+////                        let json = json(data: fixedData)
+////                           let json = JSON(data: fixedData)
+//                  //   let myRoot = Patient_summary.init(json: fixedData)
+//
+//                       // print ("MR \(String(describing: myRoot))")
+//                    }
+//                }
+////                    if let file = Bundle.main.url(forResource: "patient_summary", withExtension: "json") {
+//////                  if let file = Bundle.main.url(forResource: "fixedpatient_Summary", withExtension: "json") {
+////                        if let data = try? Data(contentsOf: file){
+////
+////
+////                        let json = JSON(data: data)
+////                        patientJsonResults = json
+////
+////                        //    unitJSONparse(json: json)}
+////                    }else{
+////                        print ("Error - no Data encountered")
+////                        //
+////
+////                    }
+////                }
+//            }
+//
+////            if patientJsonResults != nil{
+////
+////            }
+//        }
+//    }
     // MARK      Units->>>>>>>>>>>>>>>>>>>>>>>>>>              */
     func unitJSONparse() {
         
@@ -114,7 +316,28 @@ class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetche
                 
                 let json = JSON(data: data)
                 jsonresults = json
-                let properunitJSONresults = "{\"UnitInfo\":" +  "\(jsonresults)" + "}"
+                
+                
+              //  let myUnits = json as? [String:Any]
+                
+          //      if let myDict = altJson as? [String:Any]{
+                    //
+                    //                        let myRoot = Root.init(json: myDict)
+                    //                        let myNames = myRoot?.Patient_Summary
+                    //
+                    //                        print ("myRoot is \(myRoot?.Patient_Summary[1].Pat_Name)\n\n\n")
+                    //                        // let aPatient = Patient_summary
+                    //                        let anotherRoot = myRoot?.jsonDictionary()
+                    //                        print ("anotherRoot is \(anotherRoot)\n\n\n")
+                    //
+                    //                        let arrayofpatientnames = anotherRoot!
+                    //                        print ("arrayofpatientnames is \(arrayofpatientnames)\n\n\n")
+                    //
+                    //                        myNames!.forEach{
+                    //                            // print ($0)
+                    //                            print("Pat_Name  \($0.Pat_Name)")
+                    //                        }
+         //       GlobalData.shared.bigUnitsArray  = "{\"UnitInfo\":" +  "\(myUnits)" + "}"
            //    print ("PJR \(properunitJSONresults)")
                 // unitJSONparse(json: json)
             }else{
@@ -123,8 +346,11 @@ class MasterViewController: UITableViewController, UITextFieldDelegate, NSFetche
                     if let data = try? Data(contentsOf: file){
                         
                         let json = JSON(data: data)
-                        jsonresults = json
-                        let properJSONresults = "{\"UnitInfo\":" +  "\(jsonresults)" + "}"
+                      jsonresults = json
+//                        let myUnits = json.ArrayValue[1] as? [String:Any]
+                 //     GlobalData.shared.bigUnitsArray = "{\"UnitInfo\":" +  "\(jsonresults)" + "}"
+                      //  print ("PSP \(properJSONresults)")
+                  //      GlobalData.shared.bigUnitsArray = jsonresults($0)
                       //    print ("PJR \(properJSONresults)")
 
                         //    unitJSONparse(json: json)}

@@ -40,7 +40,7 @@ final class GlobalData {
     var items = ["2JPE", "3JPW", "3RCE", "4JPE", "4JPW", "7RCS", "8JC", "CVICU", "MICU", "NICU", "2JCP", "PICU", "SNIC1", "SNIC2", "SNIC3", "SNIC4", "NIC2-5", "NIC1", "2BTEP", "3RCWA", "3JCP", "7JCP", "2RCW2", "3BT2", "5 SOUTH", "SICU", "4RCE", "4RCW", "6JCE", "6JCW"]
     var loadStatus = ["loggedin":false, "patientsloaded":false, "unitselected":false, "surveydone":false]
     var dataReturnedFromURLcall : JSON = []
-    
+    var makeGetCallResponseData : [String:AnyObject] = [:]
     //var URLCallReturn : Data = ()
     
     //var myJson : [Any] = []
@@ -54,6 +54,9 @@ final class GlobalData {
     var currentUnitID : String! = String()
     var myUnitList : [String] = []
     var patientsForUnit: [String] = []
+    var bigUnitsArray : [String:Any] = [:]
+    var bigPatient_SummaryArray : [String:Any] = [:]
+    var bigPatient_DetailArray : [String:Any] = [:]
 
     
 //    fileprivate var rawArray: [Any] = []
