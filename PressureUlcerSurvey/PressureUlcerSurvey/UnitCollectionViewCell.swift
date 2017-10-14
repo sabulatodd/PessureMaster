@@ -12,3 +12,4 @@ class UnitCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var myLabel: UILabel!
 
 }
+

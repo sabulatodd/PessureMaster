@@ -23,11 +23,11 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     @IBAction func OnOffSwitch(_ sender: KGRadioButton) {
         if (sender.isSelected == true)
         {
-        deSelectTheField(whichField: sender.mySetKey)
+   //     deSelectTheField(whichField: sender.mySetKey)
                sender.outerCircleColor = GlobalData.shared.offColor
         }else
         {
-        selectTheField(whichField: sender.mySetKey)
+      //  selectTheField(whichField: sender.mySetKey)
             //sender.outerCircleColor = UIColor.red
             sender.outerCircleColor = GlobalData.shared.onColor
         }
@@ -44,49 +44,58 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         })
     }
 
-    func selectTheField(whichField: Int)
-    {
-        
-       // selectTheField(whichField: sender.mySetKey)
-//        if let i = sortedData.index(of: sortedData.0) {
-//            students[i] = "Max"
-//        }
-      //  let totalListItems in sortedData.count
+    func selectTheField(whichField: Int){
         var count = 0
         for _ in sortedData{
+            /*
+             let indexPath = IndexPath(row: 0, section: 0);
+             self.tableView.selectRow(at: indexPath, animated: false, scrollPosition: UITableViewScrollPosition.none)
+             self.tableView(self.tableView, didSelectRowAt: indexPath)
+             
+             self.tableView.reloadRowsAtIndexPaths(paths, withRowAnimation: UITableViewRowAnimation.None)
+             
+             pTableView.beginUpdates()
+             
+             pTableView.reloadRows(at: pMessagesTableView.indexPathsForVisibleRows!, with: .none)
+             
+             pTableView.endUpdates()
+
+ */
             
             if sortedData[count].0 == whichField{
                 print("sortedData[count].0 \(sortedData[count].0)  whichField \(whichField)")
                 let tempindexpath = IndexPath(row:count, section: 0)
-                           FrontTable.selectRow(at: tempindexpath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
+                           // FrontTable.deselectRow(at: tempindexpath, animated: true)
+                FrontTable.selectRow(at: tempindexpath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
+                   FrontTable.deselectRow(at: tempindexpath, animated: true)
+                 FrontTable.selectRow(at: tempindexpath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
                             if let cell = FrontTable.cellForRow(at: tempindexpath) {
                                  cell.accessoryType = .checkmark
+
+
+                                
+                         //       self.FrontTable.reloadData()
                 }
             }
             
         count = count + 1
         }
-        
-        
-//
-        
-        
     }
-    private func deSelectTheField(whichField: Int)
-    {
-        
-        
-        var count = 0
+    private func deSelectTheField(whichField: Int){
+          var count = 0
         for _ in sortedData{
             
             if sortedData[count].0 == whichField{
                 print("sortedData[count].0 \(sortedData[count].0)  whichField \(whichField)")
                 let tempindexpath = IndexPath(row:count, section: 0)
-                
+                   FrontTable.deselectRow(at: tempindexpath, animated: true)
+                FrontTable.selectRow(at: tempindexpath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
+
                 FrontTable.deselectRow(at: tempindexpath, animated: true)
                 if let cell = FrontTable.cellForRow(at: tempindexpath) {
                     cell.accessoryType = .none
-                }
+                    //self.FrontTable.reloadData()
+                    }
             }
             
             count = count + 1
@@ -97,12 +106,11 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         
         
     }
-   func selectTheButton(whichButton: Int)
+ func selectTheButton(whichButton: String)
     {
-        let temp = whichButton
        // print ("in button is selectedtemp = \(temp)")
         for (Button) in MyButtons{
-            if Button.mySetKey == whichButton {
+            if Button.myName == whichButton {
               //  print ("yes \(Button.mySetKey) = whichButton \(whichButton)")
 //                Button.outerCircleColor = UIColor.red
                  Button.outerCircleColor = GlobalData.shared.onColor
@@ -112,10 +120,10 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
             }
             }
     }
- func deSelectTheButton(whichButton: Int)
+ func deSelectTheButton(whichButton: String)
     {
         for (Button) in MyButtons{
-            if Button.mySetKey == whichButton {
+            if Button.myName == whichButton {
                 Button.outerCircleColor = GlobalData.shared.offColor
 
 
@@ -123,24 +131,32 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
             }
         }
     }
+    
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-         deSelectTheButton(whichButton: sortedData[indexPath.row].0)
-    //    MyButtons[sortedData[indexPath.row].0].isSelected = false
-     //   MyButtons[sortedData[indexPath.row].0].outerCircleColor = GlobalData.shared.offColor
+        let text = sortedData[indexPath.row].1
+        deSelectTheButton(whichButton: text)
+//      MyButtons[sortedData[indexPath.row].0].isSelected = false
+//     MyButtons[sortedData[indexPath.row].0].outerCircleColor = GlobalData.shared.offColor
         if let cell = tableView.cellForRow(at: indexPath) {
+            if  cell.accessoryType == .checkmark {
             cell.accessoryType = .none
-
+        }
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-      
-        selectTheButton(whichButton: sortedData[indexPath.row].0)
-      //  MyButtons[sortedData[indexPath.row].0].isSelected = true
-       // print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].0)")
+       let text = sortedData[indexPath.row].1
+       selectTheButton(whichButton:  text)
+//        MyButtons[sortedData[indexPath.row].0].isSelected = true
+        print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].0)")
         if let cell = tableView.cellForRow(at: indexPath) {
-            cell.accessoryType = .checkmark
-            
+
+                if  cell.accessoryType == .checkmark {
+                    cell.accessoryType = .none
+
+                }
+
         }
+
         // print ("You selected cell number: \(data[indexPath.row])")
         //self.performSegueWithIdentifier("yourIdentifier", sender: self)
     }
