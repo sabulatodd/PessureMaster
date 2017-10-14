@@ -235,7 +235,7 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     }
 
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-       text = sortedData[indexPath.row].1
+      let text = sortedData[indexPath.row].1
         deSelectTheButton(whichButton: text)
         //      MyButtons[sortedData[indexPath.row].0].isSelected = false
         //     MyButtons[sortedData[indexPath.row].0].outerCircleColor = GlobalData.shared.offColor
@@ -246,7 +246,7 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-     text =  sortedData[indexPath.row].1
+     let text =  sortedData[indexPath.row].1
         selectTheButton(whichButton:  text)
         //        MyButtons[sortedData[indexPath.row].0].isSelected = true
         print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].0)")

@@ -15,6 +15,7 @@ class BackHeaderCell: UITableViewCell {
     //  class BackHeaderCell: UITableViewHeaderFooterView {
  //   class BackHeaderCell: UIView {
     @IBOutlet weak var BackViewTableHeader: UILabel!
+   
     
     override func awakeFromNib() {
                      super.awakeFromNib()
