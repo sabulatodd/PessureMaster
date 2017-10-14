@@ -89,9 +89,9 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
                 print("sortedData[count].0 \(sortedData[count].0)  whichField \(whichField)")
                 let tempindexpath = IndexPath(row:count, section: 0)
                    FrontTable.deselectRow(at: tempindexpath, animated: true)
-                FrontTable.selectRow(at: tempindexpath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
+              //  FrontTable.selectRow(at: tempindexpath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
 
-                FrontTable.deselectRow(at: tempindexpath, animated: true)
+               // FrontTable.deselectRow(at: tempindexpath, animated: true)
                 if let cell = FrontTable.cellForRow(at: tempindexpath) {
                     cell.accessoryType = .none
                     //self.FrontTable.reloadData()
@@ -138,9 +138,9 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
 //      MyButtons[sortedData[indexPath.row].0].isSelected = false
 //     MyButtons[sortedData[indexPath.row].0].outerCircleColor = GlobalData.shared.offColor
         if let cell = tableView.cellForRow(at: indexPath) {
-            if  cell.accessoryType == .checkmark {
+
             cell.accessoryType = .none
-        }
+
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -150,10 +150,10 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
         print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].0)")
         if let cell = tableView.cellForRow(at: indexPath) {
 
-                if  cell.accessoryType == .checkmark {
+
                     cell.accessoryType = .none
 
-                }
+                
 
         }
 
