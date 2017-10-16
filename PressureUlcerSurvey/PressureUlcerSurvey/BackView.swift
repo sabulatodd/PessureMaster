@@ -40,20 +40,20 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
     @IBOutlet var MyButtons: [KGRadioButton]!
 
     @IBAction func OnAndOff(_ sender:  KGRadioButton){
-        if (sender.isSelected == true)
-        {
-            deSelectTheField(whichField: sender.mySetKey)
-            sender.outerCircleColor = GlobalData.shared.offColor
-        }else
-        {
-            selectTheField(whichField: sender.mySetKey)
-            //sender.outerCircleColor = UIColor.red
-            sender.outerCircleColor = GlobalData.shared.onColor
-        }
-        sender.isSelected = !sender.isSelected
+//        if (sender.isSelected == true)
+//        {
+//            deSelectTheField(whichField: sender.mySetKey)
+//            sender.outerCircleColor = GlobalData.shared.offColor
+//        }else
+//        {
+//            selectTheField(whichField: sender.mySetKey)
+//            //sender.outerCircleColor = UIColor.red
+//            sender.outerCircleColor = GlobalData.shared.onColor
+//        }
+//        sender.isSelected = !sender.isSelected
 
 
-        print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
+//        print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
     }
     func selectTheField(whichField: Int)
     {
@@ -71,7 +71,7 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
                 let tempindexpath = IndexPath(row:count, section: 0)
                 BackTable.selectRow(at: tempindexpath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
                 if let cell = BackTable.cellForRow(at: tempindexpath) {
-                    cell.accessoryType = .checkmark
+                //    cell.accessoryType = .checkmark
                 }
             }
 
@@ -97,7 +97,7 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
 
                 BackTable.deselectRow(at: tempindexpath, animated: true)
                 if let cell = BackTable.cellForRow(at: tempindexpath) {
-                    cell.accessoryType = .none
+                   // cell.accessoryType = .none
                 }
             }
 
@@ -180,7 +180,7 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         //  tableView.register(UITableViewCell.classForKeyedArchiver(), forCellReuseIdentifier: "FrontViewCell")
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "BackViewCell", for: indexPath) as! BackViewCell
-        print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].1)")
+     //   print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].1)")
 
 
         //cell.layoutIfNeeded()
@@ -240,8 +240,8 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
         //      MyButtons[sortedData[indexPath.row].0].isSelected = false
         //     MyButtons[sortedData[indexPath.row].0].outerCircleColor = GlobalData.shared.offColor
         if let cell = tableView.cellForRow(at: indexPath) {
-
-            cell.accessoryType = .none
+            cell.backgroundColor = UIColor.white
+          //  cell.accessoryType = .none
 
         }
     }
@@ -249,11 +249,11 @@ class BackView: UIViewController, UITableViewDataSource, UITableViewDelegate
      let text =  sortedData[indexPath.row].1
         selectTheButton(whichButton:  text)
         //        MyButtons[sortedData[indexPath.row].0].isSelected = true
-        print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].0)")
+    //    print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].0)")
         if let cell = tableView.cellForRow(at: indexPath) {
+            cell.backgroundColor = UIColor.red
 
-
-            cell.accessoryType = .none
+         //   cell.accessoryType = .checkmark
 
 
 

@@ -14,6 +14,8 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
     
     var delegate : FrontHeaderTableViewCellDelegate?
+    
+    
 
     @IBOutlet weak var FrontTable: UITableView!
     @IBOutlet var MyButtons: [KGRadioButton]!
@@ -21,18 +23,18 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
     private var sortedData: [(Int,String)] = [(0,"Hi Todd")]
 
     @IBAction func OnOffSwitch(_ sender: KGRadioButton) {
-        if (sender.isSelected == true)
-        {
-   //     deSelectTheField(whichField: sender.mySetKey)
-               sender.outerCircleColor = GlobalData.shared.offColor
-        }else
-        {
-      //  selectTheField(whichField: sender.mySetKey)
-            //sender.outerCircleColor = UIColor.red
-            sender.outerCircleColor = GlobalData.shared.onColor
-        }
-        sender.isSelected = !sender.isSelected
-        
+//        if (sender.isSelected == true)
+//        {
+//   //     deSelectTheField(whichField: sender.mySetKey)
+//               sender.outerCircleColor = GlobalData.shared.offColor
+//        }else
+//        {
+//      //  selectTheField(whichField: sender.mySetKey)
+//            //sender.outerCircleColor = UIColor.red
+//            sender.outerCircleColor = GlobalData.shared.onColor
+//        }
+//        sender.isSelected = !sender.isSelected
+//
 
                           //  print ("you selected -> \(sender.myName) with IDNumber = \(sender.mySetKey) ")
 
@@ -139,19 +141,18 @@ class FrontView: UIViewController, UITableViewDataSource, UITableViewDelegate
 //     MyButtons[sortedData[indexPath.row].0].outerCircleColor = GlobalData.shared.offColor
         if let cell = tableView.cellForRow(at: indexPath) {
 
-            cell.accessoryType = .none
-
+         //   cell.accessoryType = .none
+            cell.backgroundColor = UIColor.white
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        let text = sortedData[indexPath.row].1
        selectTheButton(whichButton:  text)
 //        MyButtons[sortedData[indexPath.row].0].isSelected = true
-        print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].0)")
+    // print ("indexPath \( indexPath.row) \(sortedData[indexPath.row].0)")
         if let cell = tableView.cellForRow(at: indexPath) {
 
-
-                    cell.accessoryType = .none
+           // cell.AmSelected
 
                 
 

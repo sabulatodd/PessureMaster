@@ -19,9 +19,25 @@ class FrontViewCell: UITableViewCell {
         // Initialization code
     }
     
+    func AmSelected()
+    {
+        let selectColor = UIColor.red
+        //
+             self.backgroundColor = selectColor
+    }
+    func amDeselected(){
+        
+        let selectColor = UIColor.white
+        //
+        self.backgroundColor = selectColor
+    }
+    
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
+//        let selectColor = UIColor.red
+//
+//        self.backgroundColor = selectColor
         // Configure the view for the selected state
     }
     
