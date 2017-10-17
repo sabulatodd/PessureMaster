@@ -26,6 +26,8 @@
 		DD56C07A1ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD56C0781ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodeld */; };
 		DD56C0831ECF8FE0005B1C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD56C0821ECF8FE0005B1C3A /* Assets.xcassets */; };
 		DD56C0861ECF8FE0005B1C3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD56C0841ECF8FE0005B1C3A /* LaunchScreen.storyboard */; };
+		DD5C61111F9533DF007C8630 /* FrontBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C61101F9533DF007C8630 /* FrontBig.swift */; };
+		DD5C61131F9533F0007C8630 /* BackBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C61121F9533F0007C8630 /* BackBig.swift */; };
 		DD6B71BC1F1CF561001DFD0C /* GlobalMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6B71BB1F1CF561001DFD0C /* GlobalMethods.swift */; };
 		DD94F3121F8D6541000D7AA5 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94F3111F8D64C1000D7AA5 /* RestApiManager.swift */; };
 		DD9759561F75567700A1D7CD /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9759551F75567700A1D7CD /* BackView.swift */; };
@@ -115,6 +117,11 @@
 		DD56C0821ECF8FE0005B1C3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD56C0851ECF8FE0005B1C3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD56C0871ECF8FE0005B1C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5C61101F9533DF007C8630 /* FrontBig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontBig.swift; sourceTree = "<group>"; };
+		DD5C61121F9533F0007C8630 /* BackBig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackBig.swift; sourceTree = "<group>"; };
+		DD5C61161F953C7F007C8630 /* Donejp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Donejp.jpg; path = ../../../Donejp.jpg; sourceTree = "<group>"; };
+		DD5C61181F953EA7007C8630 /* SimpleHumanFrontBig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SimpleHumanFrontBig.jpg; sourceTree = "<group>"; };
+		DD5C61191F953EB2007C8630 /* SimpleHumanBackBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SimpleHumanBackBig.png; sourceTree = "<group>"; };
 		DD6B71BB1F1CF561001DFD0C /* GlobalMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalMethods.swift; path = PressureUlcerSurvey/GlobalMethods.swift; sourceTree = "<group>"; };
 		DD8448871F1519FA0039DA60 /* SwiftyJSON */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SwiftyJSON; path = "../../../Library/Developer/Xcode/DerivedData/SwiftyJSON-ggrphxvqkrnnpaahnhriqxigqtjd/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework/SwiftyJSON"; sourceTree = "<group>"; };
 		DD8448891F151A3D0039DA60 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/SwiftyJSON-ggrphxvqkrnnpaahnhriqxigqtjd/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework"; sourceTree = "<group>"; };
@@ -283,6 +290,8 @@
 			isa = PBXGroup;
 			children = (
 				DD2D51E51EDFC7DF00111839 /* Main.storyboard */,
+				DD5C61101F9533DF007C8630 /* FrontBig.swift */,
+				DD5C61121F9533F0007C8630 /* BackBig.swift */,
 				DD9A2BCB1F140C570063EB3C /* MainViews */,
 				DD9A2BCC1F140C640063EB3C /* Login */,
 				DD54755C1F01D0E40091C63F /* UnitSelection */,
@@ -299,6 +308,8 @@
 				DDF7EB631F6A2CAA00AC243A /* SimpleHumanFront.jpg */,
 				DD10E9621F60548F0016BCC4 /* wound location.JPG */,
 				DD5270731F6C699600389A60 /* Do what screen.JPG */,
+				DD5C61191F953EB2007C8630 /* SimpleHumanBackBig.png */,
+				DD5C61181F953EA7007C8630 /* SimpleHumanFrontBig.jpg */,
 				DD2D51F01EDFCBD700111839 /* SimpleHuman.jpg */,
 			);
 			name = Images;
@@ -360,6 +371,7 @@
 				DD56C0841ECF8FE0005B1C3A /* LaunchScreen.storyboard */,
 				DD56C0871ECF8FE0005B1C3A /* Info.plist */,
 				DD56C0821ECF8FE0005B1C3A /* Assets.xcassets */,
+				DD5C61161F953C7F007C8630 /* Donejp.jpg */,
 				DD56C0781ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodeld */,
 			);
 			name = infoDataModel;
@@ -618,6 +630,7 @@
 				DD4B09A81F6ECD97007859D4 /* BackUlcersTableViewController.swift in Sources */,
 				DD97595A1F75570D00A1D7CD /* BackViewCell.swift in Sources */,
 				DDD11D281F0EC7C700086D9F /* GoToLogin.swift in Sources */,
+				DD5C61131F9533F0007C8630 /* BackBig.swift in Sources */,
 				DD2D51EB1EDFC7DF00111839 /* MasterViewController.swift in Sources */,
 				DD9759581F7556F800A1D7CD /* BackHeaderCell.swift in Sources */,
 				DDF59D791F618136003D44DF /* DLAppDelegate.m in Sources */,
@@ -636,6 +649,7 @@
 				DDABC9EB1F71838400C46144 /* FrontHeaderCell.swift in Sources */,
 				DD9759561F75567700A1D7CD /* BackView.swift in Sources */,
 				DD56C07A1ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodeld in Sources */,
+				DD5C61111F9533DF007C8630 /* FrontBig.swift in Sources */,
 				DD4B09AA1F6ECDE6007859D4 /* FrontUlcersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
