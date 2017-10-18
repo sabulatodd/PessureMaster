@@ -340,7 +340,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SimpleHumanFrontBig.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JKt-es-del">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NewHumanHFront" translatesAutoresizingMaskIntoConstraints="NO" id="JKt-es-del">
                                 <rect key="frame" x="20" y="87" width="984" height="629"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -375,7 +375,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SimpleHumanBackBig.png" translatesAutoresizingMaskIntoConstraints="NO" id="oh1-JS-eW0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NewHumanHBack" translatesAutoresizingMaskIntoConstraints="NO" id="oh1-JS-eW0">
                                 <rect key="frame" x="20" y="85" width="984" height="647"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -415,7 +415,7 @@
                                     <action selector="DismissBack:" destination="y07-Uf-tWh" eventType="touchUpInside" id="uwq-Dl-IG5"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SimpleHumanBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="SQq-B3-f3j">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NewHumanBack" translatesAutoresizingMaskIntoConstraints="NO" id="SQq-B3-f3j">
                                 <rect key="frame" x="-1" y="35" width="378" height="656"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -619,7 +619,7 @@
                                     <action selector="DismissFront:" destination="toz-er-Ujq" eventType="touchUpInside" id="JvV-qG-V5K"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SimpleHumanFront.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="loj-l2-WfX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NewHumanFront.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="loj-l2-WfX">
                                 <rect key="frame" x="0.0" y="34" width="400" height="657"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1249,10 +1249,10 @@
         <image name="BMBack.png" width="30" height="30"/>
         <image name="BMFront.png" width="30" height="30"/>
         <image name="Donejp" width="68" height="111"/>
-        <image name="SimpleHumanBack.png" width="752" height="1475"/>
-        <image name="SimpleHumanBackBig.png" width="1475" height="752"/>
-        <image name="SimpleHumanFront.jpg" width="778" height="1474"/>
-        <image name="SimpleHumanFrontBig.jpg" width="1474" height="778"/>
+        <image name="NewHumanBack" width="655" height="1470"/>
+        <image name="NewHumanFront.jpg" width="646" height="1469"/>
+        <image name="NewHumanHBack" width="1470" height="655"/>
+        <image name="NewHumanHFront" width="1469" height="646"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6S0-TO-JiA"/>
