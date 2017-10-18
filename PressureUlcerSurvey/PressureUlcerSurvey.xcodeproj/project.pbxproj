@@ -149,11 +149,11 @@
 		DDB493611F6D83A80054441B /* BMFront@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMFront@3x.png"; sourceTree = "<group>"; };
 		DDBDEE531F9797CF0092C5C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDBDEE561F979BF80092C5C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DDBDEE571F979CCC0092C5C5 /* xNewHumanHFront.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = xNewHumanHFront.jpg; path = PressureUlcerSurvey/Assets.xcassets/NewHumanHFront.imageset/xNewHumanHFront.jpg; sourceTree = "<group>"; };
-		DDBDEE581F979CD60092C5C5 /* xNewHumanHBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xNewHumanHBack.png; path = PressureUlcerSurvey/Assets.xcassets/NewHumanHBack.imageset/xNewHumanHBack.png; sourceTree = "<group>"; };
-		DDBDEE591F979CEB0092C5C5 /* xNewHumanFront.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = xNewHumanFront.jpg; path = PressureUlcerSurvey/Assets.xcassets/NewHumanFront.imageset/xNewHumanFront.jpg; sourceTree = "<group>"; };
-		DDBDEE5A1F979CF40092C5C5 /* xNewHumanBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xNewHumanBack.png; path = PressureUlcerSurvey/Assets.xcassets/NewHumanBack.imageset/xNewHumanBack.png; sourceTree = "<group>"; };
-		DDBDEE5B1F979F3C0092C5C5 /* xDonejp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = xDonejp.jpg; path = PressureUlcerSurvey/Assets.xcassets/Donejp.imageset/xDonejp.jpg; sourceTree = "<group>"; };
+		DDBDEE5C1F97A1AB0092C5C5 /* zDonejp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zDonejp.jpg; path = Images/Icons/zDonejp.jpg; sourceTree = "<group>"; };
+		DDBDEE5D1F97A1BC0092C5C5 /* zNewHumanBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zNewHumanBack.png; path = Images/SimpleHumans/zNewHumanBack.png; sourceTree = "<group>"; };
+		DDBDEE5E1F97A1C70092C5C5 /* zNewHumanFront.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zNewHumanFront.jpg; path = Images/SimpleHumans/zNewHumanFront.jpg; sourceTree = "<group>"; };
+		DDBDEE5F1F97A1D30092C5C5 /* zNewHumanHBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zNewHumanHBack.png; path = Images/SimpleHumans/zNewHumanHBack.png; sourceTree = "<group>"; };
+		DDBDEE601F97A1DC0092C5C5 /* zNewHumanHFront.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zNewHumanHFront.jpg; path = Images/SimpleHumans/zNewHumanHFront.jpg; sourceTree = "<group>"; };
 		DDC585D91F8C34C400837392 /* fixedpatient_summary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fixedpatient_summary.json; sourceTree = "<group>"; };
 		DDCD817B1F6030FF00AF63EB /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		DDCD817D1F60394900AF63EB /* JSONCalls.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JSONCalls.txt; path = ../JSONCalls.txt; sourceTree = "<group>"; };
@@ -302,11 +302,11 @@
 		DD56C0911ECF96B1005B1C3A /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				DDBDEE5B1F979F3C0092C5C5 /* xDonejp.jpg */,
-				DDBDEE5A1F979CF40092C5C5 /* xNewHumanBack.png */,
-				DDBDEE591F979CEB0092C5C5 /* xNewHumanFront.jpg */,
-				DDBDEE581F979CD60092C5C5 /* xNewHumanHBack.png */,
-				DDBDEE571F979CCC0092C5C5 /* xNewHumanHFront.jpg */,
+				DDBDEE5C1F97A1AB0092C5C5 /* zDonejp.jpg */,
+				DDBDEE5F1F97A1D30092C5C5 /* zNewHumanHBack.png */,
+				DDBDEE601F97A1DC0092C5C5 /* zNewHumanHFront.jpg */,
+				DDBDEE5D1F97A1BC0092C5C5 /* zNewHumanBack.png */,
+				DDBDEE5E1F97A1C70092C5C5 /* zNewHumanFront.jpg */,
 				DD5270731F6C699600389A60 /* Do what screen.JPG */,
 				DD10E9621F60548F0016BCC4 /* wound location.JPG */,
 				DD2D51F01EDFCBD700111839 /* SimpleHuman.jpg */,
