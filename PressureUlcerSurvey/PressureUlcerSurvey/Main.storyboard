@@ -340,13 +340,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NewHumanHFront" translatesAutoresizingMaskIntoConstraints="NO" id="JKt-es-del">
-                                <rect key="frame" x="20" y="87" width="984" height="629"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
-                                </accessibility>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gig-UT-RWx">
                                 <rect key="frame" x="931" y="28" width="75" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -355,6 +348,10 @@
                                     <action selector="DismissMe:" destination="nWc-v0-jl4" eventType="touchUpInside" id="woz-F1-gB8"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xNewHumanHFront.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PFU-Ap-BUu">
+                                <rect key="frame" x="392" y="320" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -375,10 +372,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NewHumanHBack" translatesAutoresizingMaskIntoConstraints="NO" id="oh1-JS-eW0">
-                                <rect key="frame" x="20" y="85" width="984" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iT0-ug-Bhn">
                                 <rect key="frame" x="929" y="28" width="75" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -387,6 +380,10 @@
                                     <action selector="DismissMe:" destination="e0r-2g-Vv4" eventType="touchUpInside" id="Lhw-mi-TN3"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xNewHumanHBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="chD-88-igh">
+                                <rect key="frame" x="392" y="320" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -415,8 +412,8 @@
                                     <action selector="DismissBack:" destination="y07-Uf-tWh" eventType="touchUpInside" id="uwq-Dl-IG5"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NewHumanBack" translatesAutoresizingMaskIntoConstraints="NO" id="SQq-B3-f3j">
-                                <rect key="frame" x="-1" y="35" width="378" height="656"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xNewHumanBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="R4Z-wc-nps">
+                                <rect key="frame" x="392" y="320" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="black" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xp5-DO-FjG" userLabel="BackTable">
@@ -611,6 +608,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xNewHumanFront.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zv4-1r-gum">
+                                <rect key="frame" x="392" y="320" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vu1-Lc-7E5">
                                 <rect key="frame" x="912" y="686" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -619,10 +620,6 @@
                                     <action selector="DismissFront:" destination="toz-er-Ujq" eventType="touchUpInside" id="JvV-qG-V5K"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NewHumanFront.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="loj-l2-WfX">
-                                <rect key="frame" x="0.0" y="34" width="400" height="657"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <tableView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-fv-IWy">
                                 <rect key="frame" x="512" y="87" width="402" height="557"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1249,10 +1246,10 @@
         <image name="BMBack.png" width="30" height="30"/>
         <image name="BMFront.png" width="30" height="30"/>
         <image name="Donejp" width="68" height="111"/>
-        <image name="NewHumanBack" width="655" height="1470"/>
-        <image name="NewHumanFront.jpg" width="646" height="1469"/>
-        <image name="NewHumanHBack" width="1470" height="655"/>
-        <image name="NewHumanHFront" width="1469" height="646"/>
+        <image name="xNewHumanBack.png" width="655" height="1470"/>
+        <image name="xNewHumanFront.jpg" width="646" height="1469"/>
+        <image name="xNewHumanHBack.png" width="1470" height="655"/>
+        <image name="xNewHumanHFront.jpg" width="1469" height="646"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6S0-TO-JiA"/>
