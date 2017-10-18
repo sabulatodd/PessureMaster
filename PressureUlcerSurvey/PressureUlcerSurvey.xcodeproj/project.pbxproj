@@ -154,6 +154,7 @@
 		DDB4935F1F6D83A80054441B /* BMFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMFront.png; sourceTree = "<group>"; };
 		DDB493601F6D83A80054441B /* BMFront@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMFront@2x.png"; sourceTree = "<group>"; };
 		DDB493611F6D83A80054441B /* BMFront@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMFront@3x.png"; sourceTree = "<group>"; };
+		DDBDEE501F978E6B0092C5C5 /* SHFrontBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SHFrontBig.png; sourceTree = "<group>"; };
 		DDC585D91F8C34C400837392 /* fixedpatient_summary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fixedpatient_summary.json; sourceTree = "<group>"; };
 		DDCD817B1F6030FF00AF63EB /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		DDCD817D1F60394900AF63EB /* JSONCalls.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JSONCalls.txt; path = ../JSONCalls.txt; sourceTree = "<group>"; };
@@ -305,6 +306,7 @@
 			children = (
 				DDB4935A1F6D82210054441B /* ICONS */,
 				DDF7EB621F6A2CAA00AC243A /* SimpleHumanBack.png */,
+				DDBDEE501F978E6B0092C5C5 /* SHFrontBig.png */,
 				DDF7EB631F6A2CAA00AC243A /* SimpleHumanFront.jpg */,
 				DD10E9621F60548F0016BCC4 /* wound location.JPG */,
 				DD5270731F6C699600389A60 /* Do what screen.JPG */,
