@@ -24,7 +24,6 @@
 		DD5270741F6C699600389A60 /* Do what screen.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DD5270731F6C699600389A60 /* Do what screen.JPG */; };
 		DD54755B1F01D04C0091C63F /* UnitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54755A1F01D04C0091C63F /* UnitCollectionViewCell.swift */; };
 		DD56C07A1ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD56C0781ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodeld */; };
-		DD56C0831ECF8FE0005B1C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD56C0821ECF8FE0005B1C3A /* Assets.xcassets */; };
 		DD56C0861ECF8FE0005B1C3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD56C0841ECF8FE0005B1C3A /* LaunchScreen.storyboard */; };
 		DD5C61111F9533DF007C8630 /* FrontBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C61101F9533DF007C8630 /* FrontBig.swift */; };
 		DD5C61131F9533F0007C8630 /* BackBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C61121F9533F0007C8630 /* BackBig.swift */; };
@@ -114,7 +113,6 @@
 		DD54755A1F01D04C0091C63F /* UnitCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitCollectionViewCell.swift; sourceTree = "<group>"; };
 		DD56C0731ECF8FE0005B1C3A /* PressureUlcerSurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PressureUlcerSurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD56C0791ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PressureUlcerSurvey.xcdatamodel; sourceTree = "<group>"; };
-		DD56C0821ECF8FE0005B1C3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD56C0851ECF8FE0005B1C3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD56C0871ECF8FE0005B1C3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD5C61101F9533DF007C8630 /* FrontBig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontBig.swift; sourceTree = "<group>"; };
@@ -154,7 +152,11 @@
 		DDB4935F1F6D83A80054441B /* BMFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BMFront.png; sourceTree = "<group>"; };
 		DDB493601F6D83A80054441B /* BMFront@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMFront@2x.png"; sourceTree = "<group>"; };
 		DDB493611F6D83A80054441B /* BMFront@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMFront@3x.png"; sourceTree = "<group>"; };
-		DDBDEE501F978E6B0092C5C5 /* SHFrontBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SHFrontBig.png; sourceTree = "<group>"; };
+		DDBDEE511F9797530092C5C5 /* NewHumanBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewHumanBack.png; sourceTree = "<group>"; };
+		DDBDEE521F97975E0092C5C5 /* NewHumanFront.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NewHumanFront.jpg; sourceTree = "<group>"; };
+		DDBDEE531F9797CF0092C5C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDBDEE541F9798700092C5C5 /* NewHumanHBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewHumanHBack.png; sourceTree = "<group>"; };
+		DDBDEE551F9798780092C5C5 /* NewHumanHFront.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NewHumanHFront.jpg; sourceTree = "<group>"; };
 		DDC585D91F8C34C400837392 /* fixedpatient_summary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fixedpatient_summary.json; sourceTree = "<group>"; };
 		DDCD817B1F6030FF00AF63EB /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		DDCD817D1F60394900AF63EB /* JSONCalls.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JSONCalls.txt; path = ../JSONCalls.txt; sourceTree = "<group>"; };
@@ -306,8 +308,11 @@
 			children = (
 				DDB4935A1F6D82210054441B /* ICONS */,
 				DDF7EB621F6A2CAA00AC243A /* SimpleHumanBack.png */,
-				DDBDEE501F978E6B0092C5C5 /* SHFrontBig.png */,
 				DDF7EB631F6A2CAA00AC243A /* SimpleHumanFront.jpg */,
+				DDBDEE551F9798780092C5C5 /* NewHumanHFront.jpg */,
+				DDBDEE541F9798700092C5C5 /* NewHumanHBack.png */,
+				DDBDEE521F97975E0092C5C5 /* NewHumanFront.jpg */,
+				DDBDEE511F9797530092C5C5 /* NewHumanBack.png */,
 				DD10E9621F60548F0016BCC4 /* wound location.JPG */,
 				DD5270731F6C699600389A60 /* Do what screen.JPG */,
 				DD5C61191F953EB2007C8630 /* SimpleHumanBackBig.png */,
@@ -372,9 +377,9 @@
 			children = (
 				DD56C0841ECF8FE0005B1C3A /* LaunchScreen.storyboard */,
 				DD56C0871ECF8FE0005B1C3A /* Info.plist */,
-				DD56C0821ECF8FE0005B1C3A /* Assets.xcassets */,
 				DD5C61161F953C7F007C8630 /* Donejp.jpg */,
 				DD56C0781ECF8FE0005B1C3A /* PressureUlcerSurvey.xcdatamodeld */,
+				DDBDEE531F9797CF0092C5C5 /* Assets.xcassets */,
 			);
 			name = infoDataModel;
 			sourceTree = "<group>";
@@ -544,7 +549,6 @@
 				DDCD817E1F60394900AF63EB /* JSONCalls.txt in Resources */,
 				DD132EC61F86A5040014DC25 /* Radio Buttons in Resources */,
 				DD9A2BC81F140A960063EB3C /* patient_summary.json in Resources */,
-				DD56C0831ECF8FE0005B1C3A /* Assets.xcassets in Resources */,
 				DD1F17A61F63234700DB4818 /* PUAPIs.rtf in Resources */,
 				DDF7EB641F6A2CAA00AC243A /* SimpleHumanBack.png in Resources */,
 				DD9A2BC91F140A960063EB3C /* units.json in Resources */,
