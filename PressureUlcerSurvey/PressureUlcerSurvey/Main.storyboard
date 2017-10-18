@@ -340,18 +340,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gig-UT-RWx">
-                                <rect key="frame" x="931" y="28" width="75" height="88"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtE-tx-WML">
+                                <rect key="frame" x="755" y="199" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="zDonejp"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="DismissMe:" destination="nWc-v0-jl4" eventType="touchUpInside" id="woz-F1-gB8"/>
+                                    <action selector="DismissMe:" destination="nWc-v0-jl4" eventType="touchUpInside" id="Msp-km-g89"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zNewHumanFront" translatesAutoresizingMaskIntoConstraints="NO" id="VsP-26-CNB">
-                                <rect key="frame" x="392" y="320" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -372,18 +368,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iT0-ug-Bhn">
-                                <rect key="frame" x="929" y="28" width="75" height="88"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUo-ok-IXT">
+                                <rect key="frame" x="677" y="172" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="zDonejp"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="DismissMe:" destination="e0r-2g-Vv4" eventType="touchUpInside" id="Lhw-mi-TN3"/>
+                                    <action selector="DismissMe:" destination="e0r-2g-Vv4" eventType="touchUpInside" id="5of-AK-ZpP"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zNewHumanHBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="v7n-Fp-JDy">
-                                <rect key="frame" x="311" y="320" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -576,10 +568,6 @@
                                     <segue destination="e0r-2g-Vv4" kind="presentation" id="D6j-bJ-8GG"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zNewHumanHBack" translatesAutoresizingMaskIntoConstraints="NO" id="UHO-PZ-fdQ">
-                                <rect key="frame" x="106" y="302" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1186,10 +1174,6 @@
                                     <segue destination="nWc-v0-jl4" kind="presentation" id="gcz-ns-Tj6"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zNewHumanHFront" translatesAutoresizingMaskIntoConstraints="NO" id="EeJ-m4-QZe">
-                                <rect key="frame" x="51" y="280" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1245,11 +1229,6 @@
     <resources>
         <image name="BMBack.png" width="30" height="30"/>
         <image name="BMFront.png" width="30" height="30"/>
-        <image name="zDonejp" width="68" height="111"/>
-        <image name="zNewHumanFront" width="646" height="1469"/>
-        <image name="zNewHumanHBack" width="1470" height="655"/>
-        <image name="zNewHumanHBack.png" width="1470" height="655"/>
-        <image name="zNewHumanHFront" width="1469" height="646"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6S0-TO-JiA"/>
